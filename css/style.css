@@ -158,16 +158,6 @@ hr {
   margin-left: 344px;
 }
 
-.item1 {
-  background-color: #ecebeb;
-  padding: 25px 20px;
-  margin: 50px auto;
-  color: black;
-  padding: 2em;
-  width: 733px;
-  font-size: 23px;
-}
-
 /* About me styling  */
 
 .listHeader {
@@ -177,10 +167,10 @@ hr {
   text-align: left;
 }
  
-
 #about-list {
   background-color: rgb(216, 216, 216);
   margin-right: 11%;
+  margin-top: 5em;
   padding: 53px;
   position: absolute;
   right: -200%;
@@ -197,13 +187,6 @@ hr {
 
 @keyframes slide {
   100% { right: 0; }
-}
-
-.item2 {
-  width: 100%;
-  margin: 20px auto;
-  padding: 75px 20px;
-  height: auto;
 }
 
 #projectsLbl {
@@ -227,6 +210,24 @@ hr {
 }
 
 /* Grid item styling  */
+
+.item1 {
+  background-color: #ecebeb;
+  padding: 25px 20px;
+  margin: 50px auto;
+  color: black;
+  padding: 2em;
+  width: 733px;
+  font-size: 23px;
+}
+
+.item2 {
+  width: 100%;
+  align-content: center;
+  margin-left: -15em;
+  padding-bottom: 3em;
+}
+
 .item3 {
   grid-column: span 2;
   width: 100%;
@@ -267,13 +268,6 @@ hr {
 }
 
 .item7 {
-  width: 100%;
-  align-content: center;
-  margin-left: -15em;
-  padding-bottom: 3em;
-}
-
-.item8 {
   grid-column: span 2;
   width: 100%;
   padding-top: 43px;
