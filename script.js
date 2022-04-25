@@ -1,36 +1,4 @@
-/* Javascript array of strings*/
-var cars = ["Bently", "Porshe", "Ferrari", "Mercedes"];
-console.log(cars[0]);
-
-var user = {
-  name: "Nolan",
-  username: "silverfox",
-  password: "torontobaseball",
-};
-
-var database = [
-  {
-    username: "silverfox",
-    password: "supersecret",
-  },
-  {
-    username: "Paul",
-    password: "Burn",
-  },
-];
-
-var newsfeed = [
-  {
-    username: "Bobby",
-    timeline: "So tired from all that learning!",
-  },
-
-  {
-    username: "Smith",
-    timeline: "This is a test of javascript in web design!",
-  },
-];
-
+ 
 $(document).ready(function () {
   $(".menu-btn").click(function (event) {
     $(".navbar-demo").toggleClass("open-nav");

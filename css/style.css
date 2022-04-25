@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   min-height: 10vh;
 }
 
 .container {
   display: grid;
-  width: 100%;
-  margin-top: 7em;
+  width: 90%;
+  margin-top: 2em;
   grid-gap: 60px;
   grid-template-columns: repeat(auto-fill, minmax(380px, 3fr));
   grid-template-rows: 3fr;
@@ -170,11 +171,14 @@ hr {
 #about-list {
   background-color: rgb(216, 216, 216);
   margin-right: 11%;
+  border-radius: 11px;
   margin-top: 5em;
-  padding: 53px;
+  padding: 23px;
   position: absolute;
+  align-items: center;
   right: -200%;
-  width: 600px;
+  width: 550px;
+ 
   -webkit-animation: slide 0.2s forwards;
   -webkit-animation-delay: 1s;
   animation: slide 0.5s forwards;
@@ -198,17 +202,6 @@ hr {
   font-weight: 800;
 }
 
-#app-highlights {
-  text-align: left;
-  margin-left: -3em;
-}
-
-#app-highlights2 {
-  text-align: left;
-  margin-left: -25em;
-  font-size: 15px;
-}
-
 /* Grid item styling  */
 
 .item1 {
@@ -216,6 +209,8 @@ hr {
   padding: 25px 20px;
   margin: 50px auto;
   color: black;
+  align-self: center;
+  border-radius: 11px;
   padding: 2em;
   width: 733px;
   font-size: 23px;
@@ -337,8 +332,7 @@ hr {
 
 /* Toolbadge list css config */
 .listItem {
-  font-size: 22px;
-  text-align: left;
+  font-size: 18px;
 }
 
 ul {
@@ -504,6 +498,16 @@ textarea {
   display: none;
 }
 
+@media (max-width: 900px) {
+
+  #about-list {
+    position: relative;
+    width: 100%;
+    height: 40%;
+  }
+
+}
+
 @media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -521,7 +525,6 @@ textarea {
   #about-list {
     position: relative;
     width: 100%;
-    height: 100%;
   }
 
   .nav > .nav-btn > label:hover,
