@@ -1,240 +1,270 @@
-
 <!DOCTYPE html>
 <html>
-	<head>
-  <title>Home</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Home Page">
-  <meta name="author" content="Isaiah Sylvester">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600" rel="stylesheet">  
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-</head>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Home Page" />
+    <meta name="author" content="Isaiah Sylvester" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
 
-<body>
-  <h1 class="d-flex justify-content-center header-title">&lt;Isaiah Sylvester/&gt;</h1>
-  <header id="header" class="navbar-demo">
-    <div class="nav justify-content-center">
-      <input type="checkbox" id="nav-check">
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+  <body>
+    <h1
+      class="h-32 pt-9 bg-[#467255] text-[#fff] align-middle text-center title text-5xl"
+    >
+      &lt;Isaiah Sylvester/&gt;
+    </h1>
+    <header>
+      <!-- Navigation / Mobile Navigation -->
+      <div class="nav text-center">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="capstone.html">Capstone</a>
+          <a href="#work">Academic Work Samples</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
-      
-      <div class="nav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="capstone.html">Capstone</a>
-        <a href="#work">Academic Work Samples</a>
-        <a href="contact.html">Contact</a>
+    </header>
+    <main>
+      <div class="flex flex-row">
+        <div
+          class="bg-[#80765a5f] text-2xl w-full sm:w-full lg:w-2/4 lg:ml-80 max-w-6xl lg:m-28 rounded-xl p-14"
+        >
+          <div class="item-2">
+            <img
+              id="profile-pic"
+              src="assets/profile_pic.jpg"
+              alt="Profile portrait"
+              width="320px"
+              height="320px"
+              style="border-radius: 50%"
+            />
+          </div>
+          <p>
+            I'm Isaiah Sylvester a 26 year old Canadian fullstack developer
+            based in Toronto city. I maintain a broad, optimistic and healthy
+            mindstate, passion for design and logic in the world. I enjoy all
+            formats of the arts especially both visual and digital arts given my
+            past 13 years experience with digital photography which I leverage
+            in designing. I began my jounry as a freelance designer & developer
+            for mobile and web applications upon graduating from George Brown
+            College 2021
+          </p>
+        </div>
       </div>
-    </div>
-  </header> 
-  
-  <main class="container">
-    <div class="item1">
-      <div class="item2">
-        <img
-          id="profile-pic"
-          src="assets/profile_pic.jpg"
-          alt="Profile portrait"
-          width="320px"
-          height="320px"
-          style="border-radius: 50%"
-        />
-      </div>
-      <p>
-        I'm Isaiah Sylvester a 26 year old Canadian fullstack developer based in Toronto city.
-         I maintain a broad, optimistic and healthy mindstate, passion for design and logic in the world. I enjoy all formats of the arts especially both visual and 
-         digital arts given my past 13 years experience with digital photography which I leverage in designing. I began my jounry as a 
-         freelance designer & developer for mobile and web applications upon graduating from George Brown College 2021 
-      </p>
-    </div>
       <div id="about-list">
         <ul>
-          <li class="listHeader">About Me</li>
+          <li class="title text-3xl text-black font-bold mb-5">About Me</li>
           <li class="listItem">
-            <strong>Software Developer</strong>
+            <strong>Junior Software Developer</strong>
           </li>
+          <li class="listItem"><strong>Location:</strong> Toronto, Canada</li>
           <li class="listItem">
-            <strong>Location:</strong> Toronto, Canada
+            <strong>Email:</strong> contact@isaiahsylvester.com
           </li>
-          <li class="listItem">
-            <strong>Email:</strong> pictureisaiah@gmail.com
-          </li>
-          <li class="listItem">
-            <strong>Phone:</strong> 647-237-2620
-          </li>
+          <li class="listItem"><strong>Phone:</strong> 647-237-2620</li>
           <li class="listItem">
             <strong>Credential:</strong> Ontario College Advanced Diploma
           </li>
-        </ul>  
+        </ul>
       </div>
-    <div class="item3">
-      <div>
-        <h1 id="toolset-header">Toolset</h1>
-        <ul>
-          <li class="service-list fa">
-            <a href="https://reactjs.org/">
-              <img src="assets/react_logo.png" alt="ReactJs Logo" width="80" height="68" />
-            </a>
-            <p classname="listTitle">ReactJS</p>
-          </li>
-          <li class="service-list fa">
-            <a href="https://developer.apple.com/swift/">
-              <img src="assets/swift-logo.webp" alt="Swift Logo" width="75" height="70" />
-            </a>
-            <p classname="listTitle">Swift iOS</p>
-          </li>
-          <li class="service-list fa">
-            <a href="https://www.oracle.com/java/">
-              <img src="assets/java-logo.webp" alt="Java Logo" width="78" height="88" />
-            </a>
-            <p classname="listTitle">Java</p>
-          </li>
-          <li class="service-list fa">
+      <div class="h-auto wrap">
+        <h1 class="text-center title pt-12 text-4xl font-bold text-black">Toolset</h1>
+        <!-- toolset grid -->
+        <div class="flex flex-wrap justify-center p-8">
+          <div class="p-4">
             <a href="https://www.mongodb.com/">
               <img
                 src="assets/mongodb-logo.png"
-                alt="MongoDB Logo"
+                alt="MongoDB Icon"
                 width="83"
                 height="75"
               />
             </a>
-            <p classname="listTitle">MongoDB</p>
-          </li>
-          <li class="service-list fa">
+          </div>
+          <div class="p-4">
+            <a href="https://www.oracle.com/java/">
+              <img
+                src="assets/java-logo.webp"
+                alt="Java Icon"
+                width="68"
+                height="88"
+              />
+            </a>
+          </div>
+          <div class="p-4">
+            <a href="https://www.cypress.io/">
+              <img
+                src="assets/cypress-logo.png"
+                alt="Cypress Icon"
+                width="68"
+                height="67"
+              />
+            </a>
+          </div>
+          <div class="p-4">
+            <a href="https://reactjs.org/">
+              <img
+                src="assets/react_logo.png"
+                alt="ReactJs Icon"
+                width="80"
+                height="68"
+              />
+            </a>
+          </div>
+          <div class="p-4">
+            <a href="https://www.postgresql.org/">
+              <img
+                src="assets/postgres.jpg"
+                alt="PostgreSQL Icon"
+                width="68"
+                height="67"
+              />
+            </a>
+          </div>
+          <div class="p-4">
             <a href="https://www.javascript.com/">
               <img
                 src="assets/javaScript_logo2.png"
-                alt="Javascript Logo"
+                alt="Javascript Icon"
                 width="65"
                 height="60"
               />
             </a>
-            <p classname="listTitle">Javascript</p>
-          </li>
-          <li class="service-list fa">
+          </div>
+          <div class="p-4">
+            <a href="https://nextjs.org/">
+              <img
+                src="assets/next.svg"
+                alt="Next.JS Icon"
+                width="70"
+                height="70"
+              />
+            </a>
+          </div>
+          <div class="p-4">
             <a href="https://html.spec.whatwg.org/">
-              <img src="assets/html_logo.png" alt="HTML logo" width="81" height="73" />
+              <img
+                src="assets/html_logo.png"
+                alt="HTML Icon"
+                width="81"
+                height="73"
+              />
             </a>
-            <p classname="listTitle">HTML 5</p>
-          </li>
-          <li class="service-list fa">
+          </div>
+          <div class="p-4">
             <a href="https://html.spec.whatwg.org/">
-              <img src="assets/nodejs_logo.png" alt="NodeJS logo" width="75" height="66" />
+              <img
+                src="assets/nodejs_logo.png"
+                alt="NodeJS Icon"
+                width="75"
+                height="66"
+              />
             </a>
-            <p classname="listTitle">NodeJS</p>
-          </li>
-          <li class="service-list fa">
+          </div>
+          <div class="p-4">
             <a href="https://github.com/about">
-              <img src="assets/git_logo.png" alt="Github logo" width="75" height="66" />
+              <img
+                src="assets/git_logo.png"
+                alt="Github Icon"
+                width="75"
+                height="66"
+              />
             </a>
-            <p classname="listTitle">Github</p>
-          </li>
-          <li class="service-list fa">
-            <a href="https://github.com/about">
-              <img src="assets/cs6-logo.png" alt="CS6 logo" width="68" height="67" />
+          </div>
+          <div class="p-4">
+            <a href="https://www.adobe.com/ca/products/photoshop.html">
+              <img
+                src="assets/cs6-logo.png"
+                alt="CS6 Icon"
+                width="68"
+                height="67"
+              />
             </a>
-            <p classname="listTitle">Photoshop</p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-      <h1 id="projectsLbl">Projects</h1>
-    </div>
-    
-    <!-- Grid card display    -->
-
-    <div class="item4 image">
-      <img
-        class="image__img"
-        src="assets/petsNpals1.png"
-        alt="PetsNPals iOS Application"
-        width="100%"
-        height="100%"
-      />
-      <div class="image__overlay image__overlay--blur">
-        <div class="image__title">2021</div>
-        <p class="image__description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        </p>
-        <ul>
-          <p class="list-hd">Technologies:</p>
-          <li>Swfit iOS</li>
-          <br/>
-          <p class="list-hd">Capabilites:</p>
-          <li>Database Storage</li>
-          <li>User Authorization</li>
-          <li>Screen Navigation</li>
-          <li>Analytics</li>
-          <li>CRUD</li>
-        </ul>
+      <div class="bg-[#d7cec74a] flex flex-col h-auto wrap gap-y-12">
+        <div class="">
+          <h1 class="text-center font-bold title pt-12 text-4xl mb-14">Projects</h1>
+        </div>
+        <div class="sm:flex sm:p-14 items-center justify-center">
+          <div class="md:w-4/5 lg:w-2/2 max-w-2xl">
+            <img src="assets/web1.png" alt="Atmosphere website" />
+          </div>
+          <div class="p-14 md:w-3/5 lg:w-2/4">
+            <p class="title mb-8">2020</p>
+            <div></div>
+            <p class="max-w-3xl mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim
+            </p>
+            <ul>
+              <p class="text-lg font-extrabold">Technologies:</p>
+              <li>React Native</li>
+              <br />
+              <p class="font-extrabold">Capabilites:</p>
+              <li>Database Storage</li>
+              <li>User Authorization</li>
+              <li>Screen Navigation</li>
+              <li>CRUD</li>
+            </ul>
+          </div>
+        </div>
+        <!-- --------------------------------------------------- -->
+        <div class="sm:flex sm:p-14 items-center justify-center">
+          <div class="md:w-4/5 lg:w-2/2 max-w-2xl">
+            <img src="assets/web1.png" alt="Atmosphere website" />
+          </div>
+          <div class="p-14 md:w-3/5 lg:w-2/4">
+            <p class="title mb-8">2020</p>
+            <div></div>
+            <p class="max-w-3xl mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim
+            </p>
+            <ul>
+              <p class="text-lg font-extrabold">Technologies:</p>
+              <li>React Native</li>
+              <br />
+              <p class="font-extrabold">Capabilites:</p>
+              <li>Database Storage</li>
+              <li>User Authorization</li>
+              <li>Screen Navigation</li>
+              <li>CRUD</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="item6 image">
-      <img
-        class="image__img"
-        src="assets/sample-app.jpg"
-        alt="Atmosphere website"
-        width="100%"
-        height="100%"
-      />
-      <div class="image__overlay image__overlay--blur">
-        <div class="image__title">2020</div>
-        <p class="image__description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        </p>
-        <ul>
-          <p class="list-hd">Technologies:</p>
-          <li>React Native</li>
-          <br/> 
-          <p class="list-hd">Capabilites:</p>
-          <li>Database Storage</li>
-          <li>User Authorization</li>
-          <li>Screen Navigation</li>
-          <li>CRUD</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="item5 image">
-      <img
-        class="image__img"
-        src="assets/web1.png"
-        alt="Atmosphere website"
-        width="100%"
-        height="100%"
-      />
-      <div class="image__overlay image__overlay--blur">
-        <div class="image__title">2019</div>
-        <p class="image__description">
-          An responsive website utilizing bootstrap, css and HTML5 educating
-          visitors on the
-        </p>
-        <ul>
-          <p class="list-hd">Technologies:</p>
-          <li>HTML5, CSS and Javascript</li>
-          <br/>
-          <p class="list-hd">Capabilites:</p>
-          <li>Responsive web design</li>
-        </ul>
-      </div>
-    </div>
-  </main>
-  <!-- Footer -->
-<footer class="bg-light text-center text-lg-start">
+    </main>
+    <!-- Footer -->
+<footer class="text-center">
   <!-- Grid container -->
-  <h5 class="text-uppercase connect-label">Connect</h5>
+  <h5 class="uppercase connect-label text-4xl pt-12">Connect</h5>
   <div class="p-4 d-flex justify-content-center">
     <div class="row justify-content-center social-badge">
       <div class="col-lg-4 col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
@@ -263,5 +293,5 @@
     © 2021 Copyright: Isaiah Sylvester
   </div>
 </footer>
-</body>
+  </body>
 </html>

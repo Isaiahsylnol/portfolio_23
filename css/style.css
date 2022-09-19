@@ -2,14 +2,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
-  min-height: 10vh;
+  background-color: #d7cec74a;
 }
 
 .container {
   display: grid;
-  width: 90%;
+  width: 100%;
   margin-top: 2em;
   grid-gap: 60px;
   grid-template-columns: repeat(auto-fill, minmax(380px, 3fr));
@@ -22,7 +21,8 @@ body {
   margin-bottom: 14px;
   width: 100%;
   text-align: center;
-  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background: rgba(45, 156, 97, 0.668);
 }
 
 h1 {
@@ -111,16 +111,7 @@ hr {
   .item7 {
     max-width: 100%;
     align-content: center;
-  }
-
-  #web1 {
-    width: 107%;
-  }
-
-  .item1 {
-    width: 100%;
-    max-width: 100%;
-  }
+  } 
 
   .item5 {
     width: 100%;
@@ -147,13 +138,6 @@ hr {
   }
 }
 
-@media only screen and (max-width: 1800px) {
-  #toolset-header {
-    margin-left: 6%;
-    padding-bottom: 33em;
-  }
-}
-
 #profile-pic {
   max-width: 400px;
   margin-left: 344px;
@@ -170,9 +154,9 @@ hr {
  
 #about-list {
   background-color: rgb(216, 216, 216);
-  margin-right: 11%;
+  margin-right: 15%;
   border-radius: 11px;
-  margin-top: 5em;
+  top: 22rem;
   padding: 23px;
   position: absolute;
   align-items: center;
@@ -198,40 +182,25 @@ hr {
   padding-top: 3em;
 }
 
-.list-hd {
-  font-weight: 800;
-}
-
 /* Grid item styling  */
 
-.item1 {
-  background-color: #ecebeb;
-  padding: 25px 20px;
-  margin: 50px auto;
-  color: black;
-  align-self: center;
-  border-radius: 11px;
-  padding: 2em;
-  width: 733px;
-  font-size: 23px;
-}
-
-.item2 {
+.item-2 {
   width: 100%;
   align-content: center;
   margin-left: -15em;
   padding-bottom: 3em;
 }
 
-.item3 {
+.item-3 {
   grid-column: span 2;
+  background-color: cadetblue;
   width: 100%;
   margin: 50px auto;
   margin-top: -40px;
   padding: 75px;
 }
 
-.item4 {
+.item-4 {
   max-height: 100%;
   max-width: 78%;
   align-self: center;
@@ -241,7 +210,7 @@ hr {
   font-size: 18px;
 }
 
-.item5 {
+.item-5 {
   grid-column: span 2;
   width: 100%;
   height: 100%;
@@ -252,7 +221,7 @@ hr {
   font-size: 1em;
 }
 
-.item6 {
+.item-6 {
   width: 100%;
   align-content: center;
   max-height: 50%;
@@ -262,7 +231,7 @@ hr {
   font-size: 1em;
 }
 
-.item7 {
+.item-7 {
   grid-column: span 2;
   width: 100%;
   padding-top: 43px;
@@ -297,7 +266,6 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.25s;
@@ -325,9 +293,9 @@ hr {
   font-weight: bold;
 }
 
-.image__description {
-  font-size: 1.25em;
-  margin-top: 0.25em;
+.image_description {
+ width: auto;
+ height:fit-content;
 }
 
 /* Toolbadge list css config */
@@ -361,13 +329,15 @@ ul {
 }
 
 .service-list p {
-  margin: 0;
+
   padding: 0;
 }
 
 .listTitle {
+  margin-top: 23px;
   font-size: 23px;
   text-align: center;
+  user-select: none;
 }
 
 /* footer css styling  */
@@ -380,11 +350,7 @@ footer {
   font-size: small;
   flex-shrink: 0;
   width: 100%;
-}
-
-.connect-label {
-  padding-top: 2em;
-}
+} 
 
 .social-badge {
   display: contents;
@@ -478,8 +444,6 @@ textarea {
 }
 
 .nav > .nav-links {
-  display: inline;
-  float: right;
   font-size: 18px;
 }
 
@@ -498,17 +462,19 @@ textarea {
   display: none;
 }
 
-@media (max-width: 900px) {
-
+@media (max-width: 1300px) {
   #about-list {
     position: relative;
+    top: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
     width: 100%;
     height: 40%;
   }
-
 }
 
 @media (max-width: 600px) {
+  
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -521,12 +487,10 @@ textarea {
     height: 50px;
     padding: 13px;
   }
-
   #about-list {
     position: relative;
     width: 100%;
   }
-
   .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
@@ -561,46 +525,7 @@ textarea {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-  ul li a {
-    display:table-row;
-  }
-  
-}
-
-.img-container {
-  width: 100%;
-  height: 500px;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.img-content-hover {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  display: none;
-  padding: 1rem;
-  background: #ffffff;
-  font-weight: 400;
-  margin-top: 1.25rem;
-  margin-left: -2rem;
-}
-
-.title {
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.category {
-  font-size: 1rem;
-  color: #707070;
-}
-
-.img-content {
-  display: none;
-}
+   
+}  
 
 
