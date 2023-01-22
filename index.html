@@ -1,297 +1,286 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Home Page" />
-    <meta name="author" content="Isaiah Sylvester" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-
-  <body>
-    <h1
-      class="h-32 pt-9 bg-[#467255] text-[#fff] align-middle text-center title text-5xl"
-    >
-      &lt;Isaiah Sylvester/&gt;
-    </h1>
-    <header>
-      <!-- Navigation / Mobile Navigation -->
-      <div class="nav text-center">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-
-        <div class="nav-links">
-          <a class="active" href="index.html">Home</a>
-          <a href="capstone.html">Capstone</a>
-          <a href="#work">Academic Work Samples</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="flex flex-row">
-        <div
-          class="bg-[#80765a5f] text-2xl w-full sm:w-full lg:w-2/4 lg:ml-80 max-w-6xl lg:m-28 rounded-xl p-14"
-        >
-          <div class="item-2">
-            <img
-              id="profile-pic"
-              src="assets/profile_pic.jpg"
-              alt="Profile portrait"
-              width="320px"
-              height="320px"
-              style="border-radius: 50%"
-            />
-          </div>
-          <p>
-            I'm Isaiah Sylvester a 26 year old Canadian fullstack developer
-            based in Toronto city. I maintain a broad, optimistic and healthy
-            mindstate, passion for design and logic in the world. I enjoy all
-            formats of the arts especially both visual and digital arts given my
-            past 13 years experience with digital photography which I leverage
-            in designing. I began my jounry as a freelance designer & developer
-            for mobile and web applications upon graduating from George Brown
-            College 2021
-          </p>
-        </div>
-      </div>
-      <div id="about-list">
-        <ul>
-          <li class="title text-3xl text-black font-bold mb-5">About Me</li>
-          <li class="listItem">
-            <strong>Junior Software Developer</strong>
-          </li>
-          <li class="listItem"><strong>Location:</strong> Toronto, Canada</li>
-          <li class="listItem">
-            <strong>Email:</strong> contact@isaiahsylvester.com
-          </li>
-          <li class="listItem"><strong>Phone:</strong> 647-237-2620</li>
-          <li class="listItem">
-            <strong>Credential:</strong> Ontario College Advanced Diploma
-          </li>
-        </ul>
-      </div>
-      <div class="h-auto wrap">
-        <h1 class="text-center title pt-12 text-4xl font-bold text-black">Toolset</h1>
-        <!-- toolset grid -->
-        <div class="flex flex-wrap justify-center p-8">
-          <div class="p-4">
-            <a href="https://www.mongodb.com/">
-              <img
-                src="assets/mongodb-logo.png"
-                alt="MongoDB Icon"
-                width="83"
-                height="75"
-              />
+<head>
+ <title>Home</title>
+ <meta charset="UTF-8" />
+ <meta name="description" content="Home Page" />
+ <meta name="author" content="Isaiah Sylvester" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+   tailwind.config = {
+         darkMode: 'class'
+   }
+ </script>
+ <link rel="stylesheet" type="text/css" href="css/dark-toggle-btn.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+ <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600" rel="stylesheet" />
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+ <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script type="text/javascript" src="/js/theme_toggle.js" defer></script>
+</head>
+<body class="bg-[#d7cec74a] dark:bg-[#444546]">
+ <header class="bg-[#467255] text-white">
+   <!-- Navigation / Mobile Navigation -->
+   <nav class="p-5 shadow-lg">
+       <div class="flex justify-between">
+           <!-- Website Logo -->
+           <a href="/" class="text-4xl font-semibold">
+             Isaiah Sylvester
+           </a>
+         <div class="flex space-x-7">
+           <!-- Primary Navbar items -->
+           <div class="hidden md:flex space-x-3 items-center text-white">
+             <a href="/" class="px-2 text-white border-b-4 border-white font-semibold">Home</a>
+             <a href="create.html" class="px-2 font-semibold hover:text-gray-400 transition duration-300">CSS Art</a>
+             <a href="contact.html" class="px-2 font-semibold hover:text-gray-400 transition duration-300">Contact
+             </a>
+             <a href="/Isaiah_Sylvester.pdf" target="_blank" class="px-2 border-4 p-1 font-semibold hover:text-gray-400 transition duration-300">Resume
             </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.oracle.com/java/">
-              <img
-                src="assets/java-logo.webp"
-                alt="Java Icon"
-                width="68"
-                height="88"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.cypress.io/">
-              <img
-                src="assets/cypress-logo.png"
-                alt="Cypress Icon"
-                width="68"
-                height="67"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://reactjs.org/">
-              <img
-                src="assets/react_logo.png"
-                alt="ReactJs Icon"
-                width="80"
-                height="68"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.postgresql.org/">
-              <img
-                src="assets/postgres.jpg"
-                alt="PostgreSQL Icon"
-                width="68"
-                height="67"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.javascript.com/">
-              <img
-                src="assets/javaScript_logo2.png"
-                alt="Javascript Icon"
-                width="65"
-                height="60"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://nextjs.org/">
-              <img
-                src="assets/next.svg"
-                alt="Next.JS Icon"
-                width="70"
-                height="70"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://html.spec.whatwg.org/">
-              <img
-                src="assets/html_logo.png"
-                alt="HTML Icon"
-                width="81"
-                height="73"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://html.spec.whatwg.org/">
-              <img
-                src="assets/nodejs_logo.png"
-                alt="NodeJS Icon"
-                width="75"
-                height="66"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://github.com/about">
-              <img
-                src="assets/git_logo.png"
-                alt="Github Icon"
-                width="75"
-                height="66"
-              />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.adobe.com/ca/products/photoshop.html">
-              <img
-                src="assets/cs6-logo.png"
-                alt="CS6 Icon"
-                width="68"
-                height="67"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="bg-[#d7cec74a] flex flex-col h-auto wrap gap-y-12">
-        <div class="">
-          <h1 class="text-center font-bold title pt-12 text-4xl mb-14">Projects</h1>
-        </div>
-        <div class="sm:flex sm:p-14 items-center justify-center">
-          <div class="md:w-4/5 lg:w-2/2 max-w-2xl">
-            <img src="assets/web1.png" alt="Atmosphere website" />
-          </div>
-          <div class="p-14 md:w-3/5 lg:w-2/4">
-            <p class="title mb-8">2020</p>
-            <div></div>
-            <p class="max-w-3xl mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim
-            </p>
-            <ul>
-              <p class="text-lg font-extrabold">Technologies:</p>
-              <li>React Native</li>
-              <br />
-              <p class="font-extrabold">Capabilites:</p>
-              <li>Database Storage</li>
-              <li>User Authorization</li>
-              <li>Screen Navigation</li>
-              <li>CRUD</li>
-            </ul>
-          </div>
-        </div>
-        <!-- --------------------------------------------------- -->
-        <div class="sm:flex sm:p-14 items-center justify-center">
-          <div class="md:w-4/5 lg:w-2/2 max-w-2xl">
-            <img src="assets/web1.png" alt="Atmosphere website" />
-          </div>
-          <div class="p-14 md:w-3/5 lg:w-2/4">
-            <p class="title mb-8">2020</p>
-            <div></div>
-            <p class="max-w-3xl mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim
-            </p>
-            <ul>
-              <p class="text-lg font-extrabold">Technologies:</p>
-              <li>React Native</li>
-              <br />
-              <p class="font-extrabold">Capabilites:</p>
-              <li>Database Storage</li>
-              <li>User Authorization</li>
-              <li>Screen Navigation</li>
-              <li>CRUD</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- Footer -->
-<footer class="text-center">
-  <!-- Grid container -->
-  <h5 class="uppercase connect-label text-4xl pt-12">Connect</h5>
-  <div class="p-4 d-flex justify-content-center">
-    <div class="row justify-content-center social-badge">
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
-          <div class="social_media">
-            <div class="social">
-              <div class="button">
-                <a class="fa fa-linkedin fa-4x icon-3d" href="https://www.linkedin.com/in/isaiah-sylvester-5184785b/"></a>
-              </div>
-            </div>
-            <div class="social">
-              <div class="button">
-                <a class="fa fa-twitter fa-4x icon-3d" href="https://github.com/Isaiahsylnol"></a>
-              </div>
-            </div>
-            <div class="social">
-              <div class="button">
-                <a class="fa fa-github fa-4x icon-3d" href="https://github.com/Isaiahsylnol"></a>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <!-- Copyright -->
-  <div class="text-center p-3">
-    © 2021 Copyright: Isaiah Sylvester
-  </div>
-</footer>
-  </body>
+             <div class="pl-4">
+               <input type="checkbox" class="checkbox" id="checkbox">
+               <label for="checkbox" class="label">
+                 <i class="bg-yellow-500 h-4 w-4 rounded-xl"></i>
+                 <i class='fas fa-sun'></i>
+                 <div class='ball'>
+               </label>
+             </div>
+           </div>
+         </div>
+         <!-- Mobile menu button -->
+         <div class="md:hidden flex items-center">
+           <button class="outline-none mobile-menu-button">
+             <svg class="w-6 h-6 text-gray-200 hover:text-green-500" x-show="!showMenu" fill="none"
+               stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+               stroke="currentColor">
+               <path d="M4 6h16M4 12h16M4 18h16"></path>
+             </svg>
+           </button>
+         </div>
+       </div>
+     </div>
+     <!-- mobile menu -->
+     <div class="hidden md:hidden mobile-menu mt-8">
+       <ul>
+         <li class="active p-2">
+           <a href="index.html"
+             class="block text-sm px-2 py-4 text-white text-2xl border-b-4 font-semibold w-fit">Home</a>
+           </li>
+         <li class="p-2 hover:bg-[#3f664c] hover:rounded-xl">
+           <a href="create.html" class="block text-sm px-2 py-4 transition duration-300">CSS Art</a>
+         </li>
+         <li class="p-2 hover:bg-[#3f664c] hover:rounded-xl">
+           <a href="contact.html"
+             class="block text-sm px-2 py-4 transition duration-300">Contact</a>
+           </li>
+           <li class="p-2 hover:bg-[#3f664c] hover:rounded-xl">
+            <a href="contact.html"
+              class="block text-sm px-2 py-4 transition duration-300">Resume</a>
+            </li>
+       </ul>
+     </div>
+     <script>
+       const btn = document.querySelector("button.mobile-menu-button");
+       const menu = document.querySelector(".mobile-menu");
+       btn.addEventListener("click", () => {
+         menu.classList.toggle("hidden");
+       });
+     </script>
+   </nav>
+ </header>
+ <main>
+   <section>
+     <div class="flex flex-col dark:text-white sm:flex-row sm:p-8 w-fit mx-auto">
+       <div class="bg-[#80765a5f] text-2xl max-w-3xl mx-auto sm:rounded-xl p-14">
+         <img src="assets/profile_pic.jpg" alt="Profile portrait"
+           style="border-radius: 50%" class="mx-auto mb-20 w-64 h-64" />
+         <p>
+           I'm Isaiah Sylvester a 26 year old Canadian fullstack developer
+           based in Toronto city. I maintain a broad, optimistic and healthy
+           mindstate, passion for design and logic in the world. I enjoy all
+           formats of the arts especially both visual and digital arts given
+           my past 13 years experience with digital photography which I
+           leverage in design. I began my jounry as a freelance designer &
+           developer for mobile and web applications upon graduating from
+           George Brown College 2021.
+         </p>
+       </div>
+       <section class="mb-10 max-w-2xl p-8 mt-8 sm:mt-0">
+         <ul class="sm:rounded-xl mb-16">
+           <li class="text-3xl uppercase text-black dark:text-white font-bold pb-4">About Me</li>
+           <li>
+             <strong>Software Developer</strong>
+           </li>
+           <li>
+             <strong class="pr-2">Location:</strong>Toronto, Canada
+           </li>
+           <li>
+             <strong class="pr-2">Email:</strong>contact@isaiahsylvester.com
+           </li>
+           <li ><strong class="pr-2">Phone:</strong>647-237-2620</li>
+           <li>
+             <strong class="pr-2">Credential:</strong>Ontario College Advanced Diploma
+           </li>
+         </ul>
+         <!-- toolset section -->
+         <section class="sm:mt-5">
+           <h2 class="text-3xl uppercase text-black dark:text-white font-bold">
+             Development Tools
+           </h2>
+             <ul class="mt-8 font-semibold grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-x-12">
+               <li class="text-xl mb-2">
+                 <a href="https://reactjs.org/" target="_blank">
+                 <img src="assets/react_logo.png" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="React logo"/>
+                 React</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://nodejs.org/" target="_blank">
+                 <img src="assets/nodejs_logo.png" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="NodeJS logo"/>
+                 NodeJS</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://nextjs.org/" target="_blank">
+                 <img src="assets/next-js-logo.svg" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="NextJS logo"/>
+                 NextJS</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://www.cypress.io/" target="_blank">
+                 <img src="assets/cypress-logo.png" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="Cypress logo"/>
+                 Cypress</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://www.mongodb.com/" target="_blank">
+                 <img src="assets/mongodb-logo.svg" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="MongoDB logo"/>
+                 MongoDB</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://graphql.org/" target="_blank">
+                 <img src="assets/GraphQL-Logo.svg" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="GraphQL logo"/>
+                 GraphQL</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://www.javascript.com/" target="_blank">
+                 <img src="assets/javaScript_logo2.png" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="Javascript logo"/>
+                 Javascript</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">
+                 <img src="assets/html_logo.png" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="HTML5 logo" />
+                 HTML5</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                 <img src="assets/CSS3_logo.svg" class="sm:hidden  inline xl:inline h-8 w-8 mr-2" alt="CSS3 logo"/>
+                 CSS3</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://git-scm.com/" target="_blank">
+                 <img src="assets/git_logo.png" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="Git logo"/>
+                 Git</a>
+               </li>
+               <li class="text-xl mb-2">
+                 <a href="https://tailwindcss.com/" target="_blank">
+                 <img src="assets/Tailwind_CSS_Logo.svg" class="sm:hidden inline xl:inline h-8 w-8 mr-2" alt="Tailwind CSS logo"/>
+                 Tailwind CSS</a>
+               </li>
+             </ul>
+         </section>
+       </section>
+     </div>
+   </section>
+   <section class="bg-[#d9d2cc] dark:bg-[#323232] dark:text-white flex flex-col gap-y-12 pb-20">
+     <h1 class="text-center font-bold pt-12 text-4xl m-10 uppercase">Projects</h1>
+     <div class="sm:flex sm:p-14 justify-center">
+       <div class="md:w-4/5 lg:w-2/2 max-w-2xl">
+         <img src="assets/rental_shop_app/figma_design.png" class="sm:rounded-lg" alt="Movie Rental web application" />
+       </div>
+       <div class="pl-14 mt-8 md:w-3/5 lg:w-2/4">
+         <p class="mb-4 text-lg font-extrabold">Mar 22, 2021</p>
+         <p class="max-w-3xl mb-4">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+           enim
+         </p>
+         <ul>
+           <li class="text-lg font-extrabold pt-4 pb-2">Technologies:</li>
+           <li>React</li>
+           <li>Node.JS</li>
+           <li>GraphQL</li>
+           <li>MongoDB</li>
+           <li>Tailwind CSS</li>
+           <li class="text-lg font-extrabold pt-4 pb-2">Capabilities:</li>
+           <li>Database Storage</li>
+           <li>User Registration</li>
+           <li>Screen Navigation</li>
+           <li>Cypress Testing</li>
+           <li>Responsive Design</li>
+         </ul>
+       </div>
+     </div>
+     <div class="sm:flex sm:p-14 justify-center">
+       <div class="md:w-4/5 lg:w-2/2 max-w-2xl">
+         <img src="assets/atmosphere_site/site_1.png" class="sm:rounded-lg" alt="Atmosphere website" />
+       </div>
+       <div class="pl-14 mt-8 md:w-3/5 lg:w-2/4">
+         <p class="mb-4 text-lg font-extrabold">Mar 22, 2021</p>
+         <p class="max-w-3xl mb-4">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+           enim
+         </p>
+         <ul>
+           <li class="text-lg font-extrabold pt-4">Technologies:</li>
+           <li>React</li>
+           <li class="mt-5 text-lg font-extrabold ">Capabilities:</li>
+           <li>Database Storage</li>
+           <li>User Authorization</li>
+           <li>Screen Navigation</li>
+           <li>CRUD</li>
+         </ul>
+       </div>
+     </div>
+     <div class="sm:flex sm:p-14 justify-center">
+       <div class="md:w-4/5 lg:w-2/2 max-w-2xl">
+         <img src="assets/petsnpals/landing-page.png" class="sm:rounded-lg" alt="Pets N Pals website" />
+       </div>
+       <div class="pl-14 mt-8 md:w-3/5 lg:w-2/4 cursor-default">
+         <p class="mb-4 text-lg font-extrabold">Mar 22, 2021</p>  
+         <p class="max-w-3xl mb-4">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+           enim
+         </p>
+         <ul>
+           <li class="text-lg font-extrabold pt-4">Technologies:</li>
+           <li>NextJS</li>
+           <li>MongoDB</li>
+           <li>Cypress</li>
+           <li class="mt-5 text-lg font-extrabold">Capabilities:</li>
+           <li>Database Storage</li>
+           <li>User Authorization</li>
+           <li>Stripe integration</li>
+           <li>CRUD</li>
+         </ul>
+       </div>
+     </div>
+   </section>
+ </main>
+ <!-- Footer -->
+ <footer class="text-center text-[#707070] w-full text-sm">
+   <!-- Grid container -->
+   <h5 class="uppercase text-4xl p-8">Connect</h5>
+             <a class="fa fa-linkedin fa-4x p-4" href="https://www.linkedin.com/in/isaiah-sylvester-5184785b/"></a>
+            <a class="fa fa-twitter fa-4x p-4" href="https://twitter.com/IsaiahSyl"></a>
+            <a class="fa fa-github fa-4x p-4" href="https://github.com/Isaiahsylnol"></a>
+            <a class="fa fa-codepen fa-4x p-4" href="https://codepen.io/isaiahsylnol"></a>
+           <a class="fa fa-instagram fa-4x p-4" href="https://www.instagram.com/capmatic/"></a>
+   <!-- Copyright -->
+   <div class="text-center p-3 mt-8">© 2021 Isaiah Sylvester</div>
+ </footer>
+</body>
 </html>
+
+
+
+
