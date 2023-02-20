@@ -14,11 +14,11 @@
       }
     </script>
     <link rel="stylesheet" type="text/css" href="css/dark-toggle-btn.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:600" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/c8c08aa244.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/theme_toggle.js" defer></script>
    </head>
 <body class="bg-[#d7cec74a] dark:bg-[#444546]">
@@ -39,15 +39,15 @@
               </a>
               <a href="/Isaiah_Sylvester.pdf" target="_blank" class="px-2 border-4 p-1 font-semibold hover:text-gray-400 transition duration-300">Resume
              </a>
-              <div class="pl-4">
-                <input type="checkbox" class="checkbox" id="checkbox">
-                <label for="checkbox" class="label">
-                  <i class="bg-yellow-500 h-4 w-4 rounded-xl"></i>
-                  <i class='fas fa-sun'></i>
-                  <div class='ball'>
-                </label>
-              </div>
+             <div class="pl-4">
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="label">
+               <i class="fa-regular fa-moon text-blue-400"></i>
+                <i class="fa-regular fa-sun text-yellow-300"></i>
+                <div class='ball'>
+              </label>
             </div>
+          </div>
           </div>
           <!-- Mobile menu button -->
           <div class="md:hidden flex items-center">
@@ -91,14 +91,15 @@
     </nav>
     </header>
 <div class="flex justify-center sm:p-14">
-<div class=" bg-gray-300 p-12">
-  <form class="w-full max-w-lg">
+<div class="bg-gray-300 dark:bg-[#353935] p-12">
+  <form class="w-full max-w-lg" action="https://formspree.io/f/mbjwplbn"
+  method="POST">
     <div class="flex flex-wrap -mx-3 mb-6">
       <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Name">    
       </div>
       <div class="w-full md:w-1/2 px-3">
-        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="Email">
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="email" name="email" placeholder="Email">
       </div>
     </div>
     <div class="flex flex-wrap -mx-3 mb-6">
@@ -108,14 +109,16 @@
       <div class="w-full px-3 mt-10">
         <textarea class="w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="message" rows="12" placeholder="Message"></textarea>
       </div>
-    </div><div class="bg-gray-200 w-32 p-3 mx-auto hover:bg-blue-500 hover:text-white">
-      <button type="submit" class="btn btn-start-order">Send Message</button>
-  </div>
+    </div>
+      <button type="submit" class="bg-blue-500 w-full text-center p-3 rounded-md mx-auto hover:bg-blue-600 text-white">Send Message</button>
+      <div>
+    </div>
     <div class="flex flex-wrap -mx-3 mb-2">
     </div>
   </form>
 </div>
 </div>
+<span class="p-8 text-2xl text-[#707070] flex justify-center mx-auto">contact@isaiahsylvester.com</span>
 <!-- Footer -->
 <footer class="text-center text-[#707070] w-full text-sm">
   <!-- Grid container -->
