@@ -94,8 +94,8 @@ tailwind.config = {
   <section class="flex flex-col dark:text-white lg:flex-row mt-8 w-fit mx-auto pb-8">
       <img src="assets/portrait_3.jpg" alt="Profile portrait"
        class="mx-auto object-contain pr-16 pl-20 sm:rounded-xl" />
-    <div class="max-w-2xl text-base p-12">
-      <h1 class="text-3xl text-black dark:text-white font-bold pb-6">About Me</h1>
+    <div class="max-w-2xl text-base p-6 sm:p-12">
+      <h1 class="text-3xl text-black dark:text-white font-bold pt-4 pb-6">About Me</h1>
       <p>
         I hold a passion for creativity, design and logic which I leverage through my development to ensure the end user's experience feels intuitive & responsive. I value creating the time for day to day practice & mental stimulation with side projects and exploring curiosities.
       </p>
@@ -114,12 +114,12 @@ tailwind.config = {
           <strong class="pr-2">Credential:</strong>Ontario College Advanced Diploma
         </li>
       </ul>
+      <h2 class="uppercase text-center sm:text-start text-black dark:text-white font-bold pb-6">
+        Development Tools
+      </h2>
       <!-- Development tools section -->
-      <div>
-        <h2 class="uppercase text-black dark:text-white font-bold pb-6">
-          Development Tools
-        </h2>
-          <ul class="grid grid-cols-3">
+      <div class="flex justify-center mx-auto items-center">
+          <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-8">
             <li class="mb-2">
               <a href="https://reactjs.org/" target="_blank">
               <img src="assets/react_logo.png" class="inline h-8 w-8 mr-2" alt="React logo"/>
@@ -180,22 +180,23 @@ tailwind.config = {
        </div>
   </section>
   <!-- Project section (Row layout) -->
-<section class="items-center bg-[#d9d2cc] dark:bg-[#323232] dark:text-white flex flex-col">
-  <h1 class="text-3xl uppercase text-black dark:text-white font-bold m-10 p-12">Projects</h1>
+<section class="items-center bg-[#d9d2cc] dark:bg-[#323232] dark:text-white flex flex-col p-6">
+  <h1 class="text-3xl uppercase text-black dark:text-white font-bold mt-16">Projects</h1>
+  <hr class="bg-[#527640] h-1 w-10 mt-2 mb-16" />
   <div class="grid gap-y-16 sm:gap-y-40">
   <div class="md:flex">
    <div class="max-w-2xl">
      <img src="assets/petsnpals/petsnpals_figma.png" class="sm:rounded-lg shadow-md" alt="Pets N Pals web application" />
    </div>
-   <div class="p-8 -mt-3 sm:pl-14 text-lg">
-    <h2 class="text-2xl font-bold inline">Pets N Pals</h2>
+   <div class="p-8 -mt-3 sm:pl-14">
+    <h2 class="text-2xl font-semibold inline">Pets N Pals</h2>
     <a class="fa fa-github fa-2x pl-3 hover:text-blue-600 pt-3 md:pt-0" href="https://github.com/Isaiahsylnol/pets_n_pals"></a>
      <ul>
-       <li class="font-bold pt-5 pb-2">Technologies:</li>
+       <li class="font-semibold pt-5 pb-2">Technologies:</li>
        <li>Next.js</li>
        <li>MongoDB</li>
        <li>Cypress</li>
-       <li class="font-bold pt-5 pb-2">Capabilities:</li>
+       <li class="font-semibold pt-5 pb-2">Capabilities:</li>
        <li>Database Storage</li>
        <li>User Authorization</li>
        <li>Stripe integration</li>
@@ -207,17 +208,17 @@ tailwind.config = {
     <div class="max-w-2xl">
       <img src="assets/rental_shop_app/figma_design.png" class="sm:rounded-lg shadow-md" alt="Movie Rental web application" />
     </div>
-    <div class="p-8 -mt-3 sm:pl-14 text-lg">
-      <h2 class="text-2xl font-bold inline">Movie Web APP</h2>
+    <div class="p-8 -mt-3 sm:pl-14">
+      <h2 class="text-2xl font-semibold inline">Movie Web APP</h2>
       <a class="fa fa-github fa-2x pl-3 hover:text-blue-600 pt-3 lg:pt-0" href="https://github.com/Isaiahsylnol/rentalStoreWebApp"></a>
       <ul>
-        <li class="font-bold pt-5 pb-2">Technologies:</li>
+        <li class="font-semibold pt-5 pb-2">Technologies:</li>
         <li>React</li>
         <li>Node.JS</li>
         <li>GraphQL</li>
         <li>MongoDB</li>
         <li>Tailwind CSS</li>
-        <li class="font-bold pt-6 pb-2">Capabilities:</li>
+        <li class="font-semibold pt-6 pb-2">Capabilities:</li>
         <li>Database Storage</li>
         <li>User Registration</li>
         <li>Screen Navigation</li>
@@ -230,8 +231,8 @@ tailwind.config = {
    <div class="max-w-2xl">
      <img src="assets/atmosphere_site/atmosphere_figma.jpg" class="sm:rounded-lg shadow-md" alt="Atmosphere website" />
    </div>
-   <div class="p-8 -mt-3 sm:pl-14 text-lg">
-    <h2 class="text-2xl font-bold inline">Atmosphere Static Site</h2>
+   <div class="p-8 -mt-3 sm:pl-14">
+    <h2 class="text-2xl font-semibold inline">Atmosphere Static Site</h2>
     <a class="fa fa-github fa-2x pl-3 hover:text-blue-600 pr-1" href="https://github.com/Isaiahsylnol/Atmosphere-site"></a>
      <a class="fa fa-globe fa-2x hover:text-blue-600 pt-3 xl:pt-0" href="https://isaiahsylnol.github.io/Atmosphere-site/"></a>
      <ul>
