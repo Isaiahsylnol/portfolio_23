@@ -91,98 +91,103 @@ tailwind.config = {
 </header>
  <!-- Page content  -->
 <main>
-  <section class="flex flex-col dark:text-white lg:flex-row mt-8 w-fit mx-auto pb-8">
-      <img src="assets/portrait_3.jpg" alt="Profile portrait"
-       class="mx-auto object-contain pr-16 pl-20 sm:rounded-xl" />
-    <div class="max-w-2xl text-base p-6 sm:p-12">
-      <h1 class="text-3xl text-black dark:text-white font-bold pt-4 pb-6">About Me</h1>
-      <p>
-        I hold a passion for creativity, design and logic which I leverage through my development to ensure the end user's experience feels intuitive & responsive. I value creating the time for day to day practice & mental stimulation with side projects and exploring curiosities.
+  <section class="sm:flex dark:text-white lg:flex-row w-fit mx-auto sm:mt-8 lg:space-x-12 md:p-4">
+      <div class="w-full p-4">
+        <img src="assets/portrait-sq.png" alt="Profile portrait" class="object-contain lg:w-10/12 mx-auto"
+      />
+      <h1 class="text-3xl text-black dark:text-white font-bold pb-4 pt-8">About Me</h1>
+      <p class="max-w-2xl">
+        I hold a passion for creativity, design and understanding which I leverage through my development to ensure the end user's experience feels intuitive & responsive. I value creating the time for day to day practice & mental stimulation exploring side projects and curiosities in pursuit to expand my abilities.
       </p>
-      <ul class="mb-10 mt-10">
-        <li class="font-bold">
-          Software Developer
-        </li>
-        <li>
-          <strong class="pr-2">Location:</strong>Toronto, Canada
-        </li>
-        <li>
-          <strong class="pr-2">Email:</strong>contact@isaiahsylvester.com
-        </li>
-        <li ><strong class="pr-2">Phone:</strong>647-237-2620</li>
-        <li>
-          <strong class="pr-2">Credential:</strong>Ontario College Advanced Diploma
-        </li>
-      </ul>
-      <h2 class="uppercase text-center sm:text-start text-black dark:text-white font-bold pb-6">
-        Development Tools
-      </h2>
-      <!-- Development tools section -->
-      <div class="flex justify-center mx-auto items-center">
-          <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-8">
-            <li class="mb-2">
-              <a href="https://reactjs.org/" target="_blank">
-              <img src="assets/react_logo.png" class="inline h-8 w-8 mr-2" alt="React logo"/>
-              React</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://nodejs.org/" target="_blank">
-              <img src="assets/nodejs_logo.png" class="inline h-8 w-8 mr-2" alt="Node.js logo"/>
-              Node.js</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://nextjs.org/" target="_blank">
-              <img src="assets/next-js-logo.svg" class="inline h-8 w-8 mr-2" alt="Next.js logo"/>
-              Next.js</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://www.cypress.io/" target="_blank">
-              <img src="assets/cypress-logo.png" class="inline h-8 w-8 mr-2" alt="Cypress logo"/>
-              Cypress</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://www.mongodb.com/" target="_blank">
-              <img src="assets/mongodb-logo.svg" class="inline h-8 w-8 mr-2" alt="MongoDB logo"/>
-              MongoDB</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://graphql.org/" target="_blank">
-              <img src="assets/GraphQL-Logo.svg" class="inline h-8 w-8 mr-2" alt="GraphQL logo"/>
-              GraphQL</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://www.javascript.com/" target="_blank">
-              <img src="assets/javaScript_logo2.png" class="inline h-8 w-8 mr-2" alt="Javascript logo"/>
-              Javascript</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">
-              <img src="assets/html_logo.png" class="inline h-8 w-8 mr-2" alt="HTML5 logo" />
-              HTML5</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-              <img src="assets/CSS3_logo.svg" class="inline h-8 w-8 mr-2" alt="CSS3 logo"/>
-              CSS3</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://git-scm.com/" target="_blank">
-              <img src="assets/git_logo.png" class="inline h-8 w-8 mr-2" alt="Git logo"/>
-              Git</a>
-            </li>
-            <li class="mb-2">
-              <a href="https://tailwindcss.com/" target="_blank">
-              <img src="assets/Tailwind_CSS_Logo.svg" class="inline h-8 w-8 mr-2" alt="Tailwind CSS logo"/>
-              Tailwind CSS</a>
-            </li>
-          </ul>
-         </div>
+      </div>
+    <div class="text-base w-full flex flex-col p-4">
+      <div class="justify-start w-full">
+        <ul class="mb-10 mt-4">
+          <li class="font-bold mb-3">
+            Software Developer
+          </li>
+          <li>
+            <strong class="pr-2">Location:</strong>Toronto, Canada
+          </li>
+          <li>
+            <strong class="pr-2">Email:</strong>contact@isaiahsylvester.com
+          </li>
+          <li ><strong class="pr-2">Phone:</strong>647-237-2620</li>
+          <li>
+            <strong class="pr-2">Credential:</strong>Ontario College Advanced Diploma
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="sm:text-start text-black dark:text-white font-bold pb-6">
+          Development Tools
+        </h2>
+        <!-- Development tools section -->
+        <div class="flex">
+            <ul class="grid grid-cols-2 lg:grid-cols-3 gap-5">
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://reactjs.org/" target="_blank">
+                <img src="assets/react_logo.png" class="inline h-8 w-8 mr-2" alt="React logo"/>
+                React</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://nodejs.org/" target="_blank">
+                <img src="assets/nodejs_logo.png" class="inline h-8 w-8 mr-2" alt="Node.js logo"/>
+                Node.js</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://nextjs.org/" target="_blank">
+                <img src="assets/next-js-logo.svg" class="inline h-8 w-8 mr-2" alt="Next.js logo"/>
+                Next.js</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://www.cypress.io/" target="_blank">
+                <img src="assets/cypress-logo.png" class="inline h-8 w-8 mr-2" alt="Cypress logo"/>
+                Cypress</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://www.mongodb.com/" target="_blank">
+                <img src="assets/mongodb-logo.svg" class="inline h-8 w-8 mr-2" alt="MongoDB logo"/>
+                MongoDB</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://graphql.org/" target="_blank">
+                <img src="assets/GraphQL-Logo.svg" class="inline h-8 w-8 mr-2" alt="GraphQL logo"/>
+                GraphQL</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://www.javascript.com/" target="_blank">
+                <img src="assets/javaScript_logo2.png" class="inline h-8 w-8 mr-2" alt="Javascript logo"/>
+                Javascript</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">
+                <img src="assets/html_logo.png" class="inline h-8 w-8 mr-2" alt="HTML5 logo" />
+                HTML5</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                <img src="assets/CSS3_logo.svg" class="inline h-8 w-8 mr-2" alt="CSS3 logo"/>
+                CSS3</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://git-scm.com/" target="_blank">
+                <img src="assets/git_logo.png" class="inline h-8 w-8 mr-2" alt="Git logo"/>
+                Git</a>
+              </li>
+              <li class="border-2 rounded-lg p-1 hover:border-gray-300">
+                <a href="https://tailwindcss.com/" target="_blank">
+                <img src="assets/Tailwind_CSS_Logo.svg" class="inline h-8 w-8 mr-2" alt="Tailwind CSS logo"/>
+                Tailwind CSS</a>
+              </li>
+            </ul>
+           </div>
+      </div>
        </div>
   </section>
   <!-- Project section (Row layout) -->
 <section class="items-center bg-[#d9d2cc] dark:bg-[#323232] dark:text-white flex flex-col p-6">
-  <h1 class="text-3xl uppercase text-black dark:text-white font-bold mt-16">Projects</h1>
-  <hr class="bg-[#527640] h-1 w-10 mt-2 mb-16" />
+  <h1 class="text-4xl text-black dark:text-white font-bold m-16">Projects</h1>
   <div class="grid gap-y-16 sm:gap-y-40">
   <div class="md:flex">
    <div class="max-w-2xl">
@@ -245,7 +250,7 @@ tailwind.config = {
   </div>
 </section>
 <!-- Contact form -->
-<section id="contact">
+<section>
   <h2 class="text-4xl text-center dark:text-white uppercase font-extrabold p-16">Get In Touch</h2>
   <div class="flex justify-center pb-14">
     <div class="bg-gray-300 dark:bg-[#353935] p-12">
@@ -278,7 +283,7 @@ tailwind.config = {
 </section>
 </main>
 <!-- Footer -->
-<footer class="text-center text-[#707070] w-full text-sm">
+<footer id="contact" class="text-center text-[#707070] w-full text-sm">
 <!-- Grid container -->
           <a class="fa fa-linkedin fa-4x p-4 hover:text-neutral-600" href="https://www.linkedin.com/in/isaiah-sylvester-5184785b/"></a>
          <a class="fa fa-twitter fa-4x p-4 hover:text-neutral-600" href="https://twitter.com/IsaiahSyl"></a>
@@ -286,7 +291,7 @@ tailwind.config = {
          <a class="fa fa-codepen fa-4x p-4 hover:text-neutral-600" href="https://codepen.io/isaiahsylnol"></a>
         <a class="fa fa-instagram fa-4x p-4 hover:text-neutral-600" href="https://www.instagram.com/capmatic/"></a>
 <!-- Copyright -->
-<div class="text-center p-3 mt-8">© 2021 Isaiah Sylvester</div>
+<div class="mt-8">© 2021 Isaiah Sylvester</div>
 </footer>
 <script>
   function scrollFunction() {
