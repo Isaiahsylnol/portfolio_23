@@ -19,10 +19,7 @@ const Header = () => {
 
   return (
     <nav className="flex justify-between flex-wrap bg-[#467255] text-white fixed w-full z-10 top-0 h-16 shadow-md">
-      <Link
-        href="/isaiah_s_23_portfolio"
-        className="text-4xl font-semibold w-auto mt-2 ml-4"
-      >
+      <Link href="/" className="text-4xl font-semibold w-auto mt-2 ml-4">
         Isaiah Sylvester
       </Link>
       <div className="block md:hidden">
