@@ -18,18 +18,22 @@ const Header = () => {
   }
 
   return (
-    <nav className="flex justify-between flex-wrap bg-[#467255] text-white fixed w-full z-10 top-0 h-16 shadow-md">
-      <Link href="/" className="text-4xl font-semibold w-auto mt-2 ml-4">
-        Isaiah Sylvester
+    <nav className="flex justify-between dark:bg-[#444546] bg-white flex-wrap text-black w-full pt-8 h-16">
+      <Link
+        to="/"
+        className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4"
+      >
+        IS
       </Link>
+
       <div className="block md:hidden">
         <button
           id="nav-toggle"
           onClick={menuToggle}
-          className="flex items-center px-3 py-2 mt-4 border rounded mr-4 text-gray-200 border-gray-200 hover:text-white hover:border-white"
+          className="flex items-center mt-2 mr-4 text-gray-700 hover:text-green-600 dark:text-white"
         >
           <svg
-            className="fill-current h-3 w-3"
+            className="fill-current h-5 w-5"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -40,20 +44,20 @@ const Header = () => {
       </div>
 
       <div
-        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center p-4 bg-zinc-600 sm:bg-[#467255] mt-4 sm:mt-0 sm:h-full md:w-auto hidden"
+        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#444546] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden rounded-3xl "
         id="nav-content"
       >
-        <ul className="md:flex justify-end items-center text-lg md:space-x-8 lg:space-x-8">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li onClick={scrollFunction}>
+        <ul className="md:flex text-black font-poppinsFont md:text-black dark:text-white justify-end items-center text-xl md:space-x-8">
+          <li
+            onClick={scrollFunction}
+            className="hover:text-gray-400 transition duration-300 p-2"
+          >
             <Link to="/#contact">Contact</Link>
           </li>
-          <li className="sm:px-2 sm:border-4 sm:p-1 hover:text-gray-400 transition duration-300">
+          <li className="hover:text-gray-400 transition duration-300 p-2">
             <Link to="/resume">Resume</Link>
           </li>
-          <li>
+          <li className="p-3">
             <Switcher />
           </li>
         </ul>
