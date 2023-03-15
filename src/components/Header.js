@@ -18,19 +18,18 @@ const Header = () => {
   }
 
   return (
-    <nav className="flex justify-between dark:bg-[#444546] bg-white flex-wrap text-black w-full pt-8 h-16">
+    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#444546] bg-white text-black">
       <Link
         to="/"
         className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4"
       >
         IS
       </Link>
-
       <div className="block md:hidden">
         <button
           id="nav-toggle"
           onClick={menuToggle}
-          className="flex items-center mt-2 mr-4 text-gray-700 hover:text-green-600 dark:text-white"
+          className="flex items-center mt-2 mr-4 text-gray-700 hover:text-[#af7ac3] dark:text-white"
         >
           <svg
             className="fill-current h-5 w-5"
@@ -42,9 +41,8 @@ const Header = () => {
           </svg>
         </button>
       </div>
-
       <div
-        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#444546] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden rounded-3xl "
+        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#444546] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden rounded-3xl"
         id="nav-content"
       >
         <ul className="md:flex text-black font-poppinsFont md:text-black dark:text-white justify-end items-center text-xl md:space-x-8">
