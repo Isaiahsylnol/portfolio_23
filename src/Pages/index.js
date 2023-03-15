@@ -12,11 +12,13 @@ export default function index() {
     <main className="sm:pt-8 dark:bg-[#2c2a2e]">
       <section className="sm:flex dark:text-[#e4e4e4] lg:flex-row w-fit mx-auto sm:mt-8 lg:space-x-12 md:p-4">
         <div className="w-full p-4 mb-5">
-          <h1 className="text-5xl font-poppinsFont text-black dark:text-[#e4e4e4] font-bold pt-8">
-            Hello, I'm Isaiah
+          <h1 className=" text-[#57b39a] text-5xl font-poppinsFont font-bold inline">
+            Hello
           </h1>
-          <hr class="mb-4 border-4 w-28 border-[#57b39a]" />
-          <p className="max-w-lg">
+          <h1 className="text-5xl font-poppinsFont text-black dark:text-[#e4e4e4] font-bold inline">
+            , I'm Isaiah
+          </h1>
+          <p className="max-w-lg mt-4">
             I hold a passion for creativity, design and understanding which I
             leverage through my development to ensure the end user's experience
             feels intuitive & responsive. I value creating the time for day to
@@ -24,7 +26,6 @@ export default function index() {
             curiosities in pursuit to expand my abilities.
           </p>
         </div>
-
         <img
           src={require("../assets/portrait-sq.png")}
           alt="Profile portrait"
@@ -32,16 +33,16 @@ export default function index() {
           style={{ borderRadius: "50% 50% 16% 84% / 50% 50% 50% 50%" }}
         />
       </section>
-      <section className="flex mx-auto items-center justify-center mt-10">
-        <div className="text-base sm:flex space-y-16 sm:space-y-0 p-4 md:p-0 mx-auto items-center justify-center sm:space-x-11 md:space-x-28 mb-16">
-          <div>
+      <section className="flex mt-6">
+        <div className="text-base justify-center sm:flex space-y-16 sm:space-x-20 mx-auto mb-16 w-full sm:w-auto">
+          <div className="max-w-xl p-4">
             <h2 className="sm:text-start text-black dark:text-[#e4e4e4] font-bold pb-4">
               Frequent Development Tools
             </h2>
             {/* <!-- Development tools section --> */}
-            <div className="flex">
-              <ul className="grid grid-cols-2 lg:grid-cols-3 gap-5 dark:text-[#e4e4e4]">
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+            <div className="flex w-full">
+              <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full sm:max-w-sm md:max-w-xl">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={require("../assets/react_logo.png")}
                     className="inline h-8 w-8 mr-2"
@@ -49,7 +50,7 @@ export default function index() {
                   />
                   React
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={require("../assets/nodejs_logo.png")}
                     className="inline h-8 w-8 mr-2"
@@ -57,7 +58,7 @@ export default function index() {
                   />
                   Node.js
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={pic}
                     className="inline h-8 w-8 mr-2"
@@ -65,7 +66,7 @@ export default function index() {
                   />
                   Next.js
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={require("../assets/cypress-logo.png")}
                     className="inline h-8 w-8 mr-2"
@@ -73,7 +74,7 @@ export default function index() {
                   />
                   Cypress
                 </li>
-                <li className="w-32 border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={mongoDBIcon}
                     className="inline h-8 w-8 mr-2"
@@ -81,7 +82,7 @@ export default function index() {
                   />
                   MongoDB
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={graphqlIcon}
                     className="inline h-8 w-8 mr-2"
@@ -89,7 +90,7 @@ export default function index() {
                   />
                   GraphQL
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={require("../assets/javaScript_logo2.png")}
                     className="inline h-8 w-8 mr-2"
@@ -97,7 +98,7 @@ export default function index() {
                   />
                   Javascript
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={require("../assets/html_logo.png")}
                     className="inline h-8 w-8 mr-2"
@@ -105,7 +106,7 @@ export default function index() {
                   />
                   HTML5
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={cssIcon}
                     className="inline h-8 w-8 mr-2"
@@ -113,7 +114,7 @@ export default function index() {
                   />
                   CSS3
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={require("../assets/git_logo.png")}
                     className="inline h-8 w-8 mr-2"
@@ -121,7 +122,7 @@ export default function index() {
                   />
                   Git
                 </li>
-                <li className="border-2 border-gray-300 rounded-lg w-36 p-1">
+                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
                     src={tailwindIcon}
                     className="inline h-8 w-8 mr-2"
@@ -132,7 +133,7 @@ export default function index() {
               </ul>
             </div>
           </div>
-          <ul className="dark:text-[#e4e4e4]">
+          <ul className="dark:text-[#e4e4e4] p-8 sm:p-0">
             <li className="font-bold">Software Developer</li>
             <li>
               <strong className="pr-2">Phone:</strong>647-237-2620

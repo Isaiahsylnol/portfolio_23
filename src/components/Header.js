@@ -18,7 +18,7 @@ const Header = () => {
   }
 
   return (
-    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#444546] bg-white text-black">
+    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#444546] bg-white text-black h-20 z-10 top-0 sticky">
       <Link
         to="/"
         className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4"
@@ -42,7 +42,7 @@ const Header = () => {
         </button>
       </div>
       <div
-        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#444546] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden rounded-3xl"
+        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#444546] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden"
         id="nav-content"
       >
         <ul className="md:flex text-black font-poppinsFont md:text-black dark:text-white justify-end items-center text-xl md:space-x-8">
