@@ -9,9 +9,9 @@ function menuToggle() {
 }
 
 const Header = () => {
-  function scrollFunction() {
-    let e = document.getElementById("contact");
-    e.scrollIntoView({
+  function scrollFunction(id) {
+    let e = document?.getElementById(id);
+    e?.scrollIntoView({
       block: "start",
       behavior: "smooth",
       inline: "start",
@@ -19,13 +19,18 @@ const Header = () => {
   }
 
   return (
-    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#444546] bg-white text-black h-20 z-10 top-0 sticky">
-      <Link
-        to="/"
-        className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4"
+    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#323232] bg-white text-black h-20 z-10 top-0 sticky">
+      <button
+        onClick={() => scrollFunction("/")}
+        className="hover:text-gray-400 transition duration-300 p-2"
       >
-        IS
-      </Link>
+        <Link
+          to="/"
+          className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4"
+        >
+          IS
+        </Link>
+      </button>
       <div className="block md:hidden">
         <button
           id="nav-toggle"
@@ -43,12 +48,12 @@ const Header = () => {
         </button>
       </div>
       <div
-        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#444546] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden"
+        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#323232] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden"
         id="nav-content"
       >
         <ul className="md:flex text-black font-poppinsFont md:text-black dark:text-white justify-end items-center text-xl md:space-x-8">
           <li
-            onClick={scrollFunction}
+            onClick={() => scrollFunction("contact")}
             className="hover:text-gray-400 transition duration-300 p-2"
           >
             <Link to="/#contact">Contact</Link>

@@ -9,7 +9,7 @@ import cssIcon from "../assets/CSS3_logo.svg";
 
 export default function index() {
   return (
-    <main className="sm:pt-8 dark:bg-[#2c2a2e]">
+    <main id="/" className="sm:pt-8 dark:bg-[#2c2a2e]">
       <section className="sm:flex dark:text-[#e4e4e4] lg:flex-row w-fit mx-auto sm:mt-8 lg:space-x-12 md:p-4">
         <div className="w-full p-4 mb-5">
           <h1 className=" text-[#57b39a] text-5xl font-poppinsFont font-bold inline">
@@ -30,17 +30,17 @@ export default function index() {
           src={require("../assets/portrait-sq.png")}
           alt="Profile portrait"
           className="object-cover mx-auto"
-          style={{ borderRadius: "50% 50% 16% 84% / 50% 50% 50% 50%" }}
+          style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
         />
       </section>
       <section className="flex mt-6">
-        <div className="text-base justify-center sm:flex space-y-16 sm:space-x-20 mx-auto mb-16 w-full sm:w-auto">
+        <div className="text-base justify-center sm:flex space-y-12 sm:space-x-20 mx-auto mb-16 w-full sm:w-auto">
           <div className="max-w-xl p-4">
-            <h2 className="sm:text-start text-black dark:text-[#e4e4e4] font-bold pb-4">
+            <h2 className="sm:text-start text-black dark:text-[#e4e4e4] text-xl font-bold pb-4">
               Frequent Development Tools
             </h2>
             {/* <!-- Development tools section --> */}
-            <div className="flex w-full">
+            <div className="flex w-full select-none">
               <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full sm:max-w-sm md:max-w-xl">
                 <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
                   <img
@@ -133,21 +133,49 @@ export default function index() {
               </ul>
             </div>
           </div>
-          <ul className="dark:text-[#e4e4e4] p-8 sm:p-0">
-            <li className="font-bold">Software Developer</li>
-            <li>
-              <strong className="pr-2">Phone:</strong>647-237-2620
+          <ul className="text-xl sm:text-base dark:text-[#e4e4e4] justify-center items-center p-8 sm:p-0">
+            <li className="font-bold text-xl sm:text-xl mb-3">
+              Software Developer
             </li>
             <li>
-              <strong className="pr-2">Email:</strong>
+              <strong className="pr-2">
+                <i
+                  className="fa fa-phone fa-1x p-2 text-stone-700 dark:text-[#e4e4e4]"
+                  aria-hidden="true"
+                ></i>
+              </strong>
+              647-237-2620
+            </li>
+            <li>
+              <strong className="pr-2">
+                <i
+                  className="fa fa-envelope-o fa-1x p-2 text-stone-700 dark:text-[#e4e4e4]"
+                  aria-hidden="true"
+                ></i>
+              </strong>
               contact@isaiahsylvester.com
             </li>
             <li>
-              <strong className="pr-2">Residence:</strong>Toronto, ON, Canada
+              <strong className="pr-2">
+                <i
+                  className="fa fa-map-marker fa-1x p-2 text-stone-700 dark:text-[#e4e4e4]"
+                  aria-hidden="true"
+                ></i>
+              </strong>
+              Toronto, ON, Canada
             </li>
-            <li>
-              <strong className="pr-2">Credential:</strong>Ontario College
-              Advanced Diploma
+            <li className="flex">
+              <i
+                className="fa-solid fa-graduation-cap fa-1x p-2 inline text-stone-700 dark:text-[#e4e4e4]"
+                aria-hidden="true"
+              ></i>
+              <div className="inline">
+                <h4 className="p-0 m-0"> George Brown College</h4>
+                <h5 className="sm:text-sm text-sm text-neutral-500 dark:text-neutral-400">
+                  {" "}
+                  Advanced Diploma
+                </h5>
+              </div>
             </li>
           </ul>
         </div>
@@ -343,29 +371,29 @@ export default function index() {
         </div>
       </section>
       {/* <!-- Contact form --> */}
-      <section className="pb-8">
-        <h2 className="text-4xl text-center dark:text-[#e4e4e4] font-poppinsFont font-extrabold p-16">
-          Get In Touch
+      <section className="pb-4">
+        <h2 className="text-4xl text-center dark:text-[#e4e4e4] font-poppinsFont font-extrabold pt-16">
+          Let's Connect
         </h2>
         {/* <!-- Container --> */}
-        <div className="md:flex sm:flex-row justify-center -mt-20 md:mt-6 sm:p-6">
+        <div className="flex flex-col md:flex-row justify-center items-center mx-auto md:mt-6 sm:p-6">
           {/* <!-- Left column --> */}
-          <div className="sm:p-4 lg:p-15 sm:space-y-4 mt-12 sm:mt-0 dark:text-[#e4e4e4]">
-            <div className="p-6 rounded-lg flex mx-auto">
+          <div className="pb-8 sm:p-4 sm:space-y-4 lg:p-15 mt-12 sm:mt-0 dark:text-[#e4e4e4]">
+            <div className="p-6 rounded-lg flex mx-auto items-center">
               <i
                 className="fa fa-map-marker fa-2x text-stone-700 dark:text-[#e4e4e4]"
                 aria-hidden="true"
               ></i>
               <h2 className="inline pl-4">Toronto, ON, Canada</h2>
             </div>
-            <div className="p-6 rounded-lg flex mx-auto">
+            <div className="p-6 rounded-lg flex mx-auto items-center">
               <i
                 className="fa fa-phone fa-2x text-stone-700 dark:text-[#e4e4e4]"
                 aria-hidden="true"
               ></i>
               <h2 className="inline pl-4">647-237-2620</h2>
             </div>
-            <div className="p-6 rounded-lg flex mx-auto">
+            <div className="p-6 rounded-lg flex mx-auto items-center">
               <i
                 className="fa fa-envelope-o fa-2x text-stone-700 dark:text-[#e4e4e4]"
                 aria-hidden="true"
@@ -374,7 +402,7 @@ export default function index() {
             </div>
           </div>
           {/* <!-- Right column --> */}
-          <div className="bg-gray-300 dark:bg-[#353935] p-12">
+          <div className="p-8 -mb-8 sm:m-0">
             <form
               className="w-full max-w-lg"
               action="https://formspree.io/f/mbjwplbn"
