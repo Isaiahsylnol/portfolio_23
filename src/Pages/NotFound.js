@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
@@ -9,11 +10,11 @@ export default function NotFound() {
       <h1 className="block text-2xl uppercase font-poppinsFont font-extrabold cursor-default">
         Page not found
       </h1>
-      <p className="text-neutral-500 dark:text-neutral-400 font-semibold font-poppinsFont uppercase mt-5">
+      <p className="text-neutral-500 dark:text-neutral-400 text-center sm:text-start font-semibold font-poppinsFont uppercase mt-5">
         The page you were looking for doesn't exist.
       </p>
       <button className="font-medium uppercase border-4 border-gray-700 dark:border-gray-400 p-2 w-36 m-4">
-        Return Home
+        <Link to="/">Return Home</Link>
       </button>
     </div>
   );
