@@ -1,6 +1,7 @@
 import "./App.css";
-import Resume from "./Pages/resume";
+
 import Profile from "./Pages/index";
+import NotFound from "./Pages/NotFound";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
@@ -11,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Profile />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="text-center text-[#707070] dark:bg-[#444546] w-full"
+      className="text-center text-[#707070] dark:bg-[#444546] w-full pt-8"
     >
       {/* <!-- Grid container --> */}
       <a
@@ -40,7 +40,7 @@ export default function Footer() {
         href="https://www.instagram.com/capmatic/"
       ></a>
       {/* <!-- Copyright --> */}
-      <div className="mt-8">© 2021 Isaiah Sylvester</div>
+      <div className="mt-3 p-5">© 2021 Isaiah Sylvester</div>
     </footer>
   );
 }

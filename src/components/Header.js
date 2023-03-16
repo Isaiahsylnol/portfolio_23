@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Switcher from "./toggleDarkMode";
+import pdf from "../Pages/isaiah_sylvester.pdf";
 
 // Small screen x Mobile menu
 function menuToggle() {
@@ -53,7 +54,9 @@ const Header = () => {
             <Link to="/#contact">Contact</Link>
           </li>
           <li className="hover:text-gray-400 transition duration-300 p-2">
-            <Link to="/resume">Resume</Link>
+            <a href={pdf} target="_blank">
+              Resume
+            </a>
           </li>
           <li className="p-3">
             <Switcher />
