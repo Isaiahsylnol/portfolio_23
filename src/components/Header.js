@@ -51,7 +51,7 @@ const Header = () => {
         className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#323232] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden"
         id="nav-content"
       >
-        <ul className="md:flex text-black font-poppinsFont md:text-black dark:text-white justify-end items-center text-xl md:space-x-8">
+        <ul className="md:flex text-black font-poppinsFont font-semibold md:text-black dark:text-white justify-end items-center text-xl md:space-x-8">
           <li
             onClick={() => scrollFunction("contact")}
             className="hover:text-gray-400 transition duration-300 p-2"

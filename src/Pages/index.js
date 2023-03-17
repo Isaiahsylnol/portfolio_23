@@ -9,180 +9,190 @@ import cssIcon from "../assets/CSS3_logo.svg";
 
 export default function index() {
   return (
-    <main id="/" className="sm:pt-8 dark:bg-[#2c2a2e]">
-      <section className="sm:flex dark:text-[#e4e4e4] lg:flex-row w-fit mx-auto sm:mt-8 lg:space-x-12 md:p-4">
-        <div className="w-full p-4 mb-5">
-          <h1 className=" text-[#57b39a] text-5xl font-poppinsFont font-bold inline">
-            Hello
-          </h1>
-          <h1 className="text-5xl font-poppinsFont text-black dark:text-[#e4e4e4] font-bold inline">
-            , I'm Isaiah
-          </h1>
-          <p className="max-w-lg mt-4">
-            I hold a passion for creativity, design and understanding which I
-            leverage through my development to ensure the end user's experience
-            feels intuitive & responsive. I value creating the time for day to
-            day practice & mental stimulation exploring side projects and
-            curiosities in pursuit to expand my abilities.
-          </p>
-        </div>
-        <img
-          src={require("../assets/portrait-sq.png")}
-          alt="Profile portrait"
-          className="object-cover mx-auto"
-          style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
-        />
-      </section>
-      <section className="flex mt-6">
-        <div className="text-base justify-center sm:flex space-y-12 sm:space-x-20 mx-auto mb-16 w-full sm:w-auto">
-          <div className="max-w-xl p-4">
-            <h2 className="sm:text-start text-black dark:text-[#e4e4e4] text-xl font-bold pb-4">
-              Frequent Development Tools
-            </h2>
-            {/* <!-- Development tools section --> */}
-            <div className="flex w-full select-none">
-              <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full sm:max-w-sm md:max-w-xl">
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={require("../assets/react_logo.png")}
-                    className="inline h-8 w-8 mr-2"
-                    alt="React logo"
-                  />
-                  React
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={require("../assets/nodejs_logo.png")}
-                    className="inline h-8 w-8 mr-2"
-                    alt="Node.js logo"
-                  />
-                  Node.js
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={pic}
-                    className="inline h-8 w-8 mr-2"
-                    alt="Node.js logo"
-                  />
-                  Next.js
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={require("../assets/cypress-logo.png")}
-                    className="inline h-8 w-8 mr-2"
-                    alt="Cypress logo"
-                  />
-                  Cypress
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={mongoDBIcon}
-                    className="inline h-8 w-8 mr-2"
-                    alt="MongoDB logo"
-                  />
-                  MongoDB
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={graphqlIcon}
-                    className="inline h-8 w-8 mr-2"
-                    alt="GraphQL logo"
-                  />
-                  GraphQL
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={require("../assets/javaScript_logo2.png")}
-                    className="inline h-8 w-8 mr-2"
-                    alt="Javascript logo"
-                  />
-                  Javascript
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={require("../assets/html_logo.png")}
-                    className="inline h-8 w-8 mr-2"
-                    alt="HTML5 logo"
-                  />
-                  HTML5
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={cssIcon}
-                    className="inline h-8 w-8 mr-2"
-                    alt="GraphQL logo"
-                  />
-                  CSS3
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={require("../assets/git_logo.png")}
-                    className="inline h-8 w-8 mr-2"
-                    alt="Git logo"
-                  />
-                  Git
-                </li>
-                <li className="border-2 flex items-center border-gray-300 dark:border-gray-500 rounded-lg p-2 text-base font-semibold">
-                  <img
-                    src={tailwindIcon}
-                    className="inline h-8 w-8 mr-2"
-                    alt="Tailwind CSS logo"
-                  />
-                  Tailwind CSS
-                </li>
-              </ul>
+    <main id="/" className="dark:bg-[#2c2a2e] text-[#252525]">
+      <section id="profile">
+        <section className="sm:flex dark:text-[#e4e4e4] lg:flex-row w-fit mx-auto lg:space-x-28 p-4">
+          <div>
+            <div className="flex flex-row mb-5 pt-8">
+              <div className="w-fit">
+                <h1 className="w-fit text-5xl font-poppinsFont font-bold">
+                  Hello
+                  <hr class="border-4 w-full border-[#c37a8e] cursor-pointer hover:border-red-500 duration-500 mb-5" />
+                </h1>
+                <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
+                  I'm Isaiah Sylvester
+                </h1>
+              </div>
+            </div>
+            <p className="max-w-lg">
+              I hold a passion for creativity, design and understanding which I
+              leverage through my development to ensure the end user's
+              experience feels intuitive & responsive. I value creating the time
+              for day to day practice & mental stimulation exploring side
+              projects and curiosities in pursuit to expand my abilities.
+            </p>
+          </div>
+          <img
+            src={require("../assets/portrait-sq.png")}
+            alt="Profile portrait"
+            className="object-cover mx-auto scale-90"
+            style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
+          />
+        </section>
+        <section className="flex">
+          <div className="text-base w-full sm:w-auto sm:mx-auto sm:mb-12">
+            <div className="sm:grid sm:grid-cols-2 p-8 sm:space-x-20 lg:space-x-48 w-full sm:justify-center sm:mx-auto sm:items-center">
+              <div>
+                <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold pb-4">
+                  Frequent Development Tools
+                </h2>
+                {/* <!-- Development tools section --> */}
+                <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full max-w-xl text-base font-semibold select-none">
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={require("../assets/react_logo.png")}
+                      className="inline h-8 w-8 mr-2"
+                      alt="React logo"
+                    />
+                    React
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={require("../assets/nodejs_logo.png")}
+                      className="inline h-8 w-8 mr-2"
+                      alt="Node.js logo"
+                    />
+                    Node.js
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={pic}
+                      className="inline h-8 w-8 mr-2"
+                      alt="Node.js logo"
+                    />
+                    Next.js
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={require("../assets/cypress-logo.png")}
+                      className="inline h-8 w-8 mr-2"
+                      alt="Cypress logo"
+                    />
+                    Cypress
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={mongoDBIcon}
+                      className="inline h-8 w-8 mr-2"
+                      alt="MongoDB logo"
+                    />
+                    MongoDB
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={graphqlIcon}
+                      className="inline h-8 w-8 mr-2"
+                      alt="GraphQL logo"
+                    />
+                    GraphQL
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={require("../assets/javaScript_logo2.png")}
+                      className="inline h-8 w-8 mr-2"
+                      alt="Javascript logo"
+                    />
+                    Javascript
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={require("../assets/html_logo.png")}
+                      className="inline h-8 w-8 mr-2"
+                      alt="HTML5 logo"
+                    />
+                    HTML5
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={cssIcon}
+                      className="inline h-8 w-8 mr-2"
+                      alt="GraphQL logo"
+                    />
+                    CSS3
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={require("../assets/git_logo.png")}
+                      className="inline h-8 w-8 mr-2"
+                      alt="Git logo"
+                    />
+                    Git
+                  </li>
+                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                    <img
+                      src={tailwindIcon}
+                      className="inline h-8 w-8 mr-2"
+                      alt="Tailwind CSS logo"
+                    />
+                    Tailwind CSS
+                  </li>
+                </ul>
+              </div>
+              <div>
+                {/* <!-- Personal Info --> */}
+                <ul className="text-base dark:text-[#e4e4e4] space-y-2 sm:space-y-0 sm:justify-center sm:items-center pt-12 pb-6 sm:p-0">
+                  <li className="font-bold text-2xl mb-3">
+                    Software Developer
+                  </li>
+                  <li className="flex items-center">
+                    <strong className="pr-6 sm:pr-2">
+                      <i
+                        className="fa fa-phone fa-2x scale-90 p-2 text-[#252525] dark:text-[#e4e4e4]"
+                        aria-hidden="true"
+                      ></i>
+                    </strong>
+                    647-237-2620
+                  </li>
+                  <li className="flex items-center">
+                    <strong className="pr-6 sm:pr-2">
+                      <i
+                        className="fa fa-envelope-o fa-2x scale-90 p-2 text-[#252525] dark:text-[#e4e4e4]"
+                        aria-hidden="true"
+                      ></i>
+                    </strong>
+                    contact@isaiahsylvester.com
+                  </li>
+                  <li className="flex items-center">
+                    <strong className="pr-6 sm:pr-2">
+                      <i
+                        className="fa fa-map-marker fa-2x scale-90 p-2 text-[#252525] dark:text-[#e4e4e4]"
+                        aria-hidden="true"
+                      ></i>
+                    </strong>
+                    Toronto, ON, Canada
+                  </li>
+                  <li className="flex pt-2">
+                    <i
+                      className="fa-solid fa-graduation-cap fa-2x scale-90 pr-6 inline text-[#252525] dark:text-[#e4e4e4]"
+                      aria-hidden="true"
+                    ></i>
+                    <div className="inline">
+                      <h4 className="p-0 m-0"> George Brown College</h4>
+                      <h5 className="sm:text-sm text-sm text-neutral-500 dark:text-neutral-400">
+                        {" "}
+                        Advanced Diploma
+                      </h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <ul className="text-xl sm:text-base dark:text-[#e4e4e4] justify-center items-center p-8 sm:p-0">
-            <li className="font-bold text-xl sm:text-xl mb-3">
-              Software Developer
-            </li>
-            <li>
-              <strong className="pr-2">
-                <i
-                  className="fa fa-phone fa-1x p-2 text-stone-700 dark:text-[#e4e4e4]"
-                  aria-hidden="true"
-                ></i>
-              </strong>
-              647-237-2620
-            </li>
-            <li>
-              <strong className="pr-2">
-                <i
-                  className="fa fa-envelope-o fa-1x p-2 text-stone-700 dark:text-[#e4e4e4]"
-                  aria-hidden="true"
-                ></i>
-              </strong>
-              contact@isaiahsylvester.com
-            </li>
-            <li>
-              <strong className="pr-2">
-                <i
-                  className="fa fa-map-marker fa-1x p-2 text-stone-700 dark:text-[#e4e4e4]"
-                  aria-hidden="true"
-                ></i>
-              </strong>
-              Toronto, ON, Canada
-            </li>
-            <li className="flex">
-              <i
-                className="fa-solid fa-graduation-cap fa-1x p-2 inline text-stone-700 dark:text-[#e4e4e4]"
-                aria-hidden="true"
-              ></i>
-              <div className="inline">
-                <h4 className="p-0 m-0"> George Brown College</h4>
-                <h5 className="sm:text-sm text-sm text-neutral-500 dark:text-neutral-400">
-                  {" "}
-                  Advanced Diploma
-                </h5>
-              </div>
-            </li>
-          </ul>
-        </div>
+        </section>
       </section>
       {/* <!-- Project section (Row layout) --> */}
-      <section className="items-center bg-[#d9d2cc] dark:bg-[#323232] dark:text-[#e4e4e4] flex flex-col">
-        <h1 className="text-4xl font-poppinsFont font-semibold text-black dark:text-[#e4e4e4] mt-20 mb-20">
+      <section className="items-center bg-[#c5bae7] dark:bg-[#323232] text-[#252525] dark:text-[#e4e4e4] flex flex-col">
+        <h1 className="text-4xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-20 mb-20">
           Projects
         </h1>
         <div className="space-y-36 w-full lg:w-11/12 max-w-5xl sm:p-4">
@@ -371,34 +381,33 @@ export default function index() {
         </div>
       </section>
       {/* <!-- Contact form --> */}
-      <section className="pb-4">
-        <h2 className="text-4xl text-center dark:text-[#e4e4e4] font-poppinsFont font-extrabold pt-16">
+      <section className="pb-4 bg-[#d1ada3] text-[#252525] dark:text-[#e4e4e4]">
+        <h2 className="text-4xl text-center font-poppinsFont font-extrabold pt-16">
           Let's Connect
         </h2>
         {/* <!-- Container --> */}
-        <div className="flex flex-col md:flex-row justify-center items-center mx-auto md:mt-6 sm:p-6">
+        <div className="flex flex-col lg:flex-row justify-center items-center mx-auto md:mt-6 sm:p-6">
           {/* <!-- Left column --> */}
-          <div className="pb-8 sm:p-4 sm:space-y-4 lg:p-15 mt-12 sm:mt-0 dark:text-[#e4e4e4]">
+          <div className="sm:pb-8 sm:p-4 sm:space-y-4 lg:p-15 mt-12 sm:mt-0 font-semibold text-xl sm:text-2xl">
             <div className="p-6 rounded-lg flex mx-auto items-center">
               <i
-                className="fa fa-map-marker fa-2x text-stone-700 dark:text-[#e4e4e4]"
+                className="fa fa-map-marker fa-1x scale-150"
                 aria-hidden="true"
               ></i>
-              <h2 className="inline pl-4">Toronto, ON, Canada</h2>
+              <h2 className="inline pl-7 sm:pl-16">Toronto, ON, Canada</h2>
+            </div>
+            <div className="p-6 rounded-lg flex mx-auto items-center">
+              <i className="fa fa-phone fa-1x scale-150" aria-hidden="true"></i>
+              <h2 className="inline pl-7 sm:pl-16">647-237-2620</h2>
             </div>
             <div className="p-6 rounded-lg flex mx-auto items-center">
               <i
-                className="fa fa-phone fa-2x text-stone-700 dark:text-[#e4e4e4]"
+                className="fa fa-envelope-o fa-1x scale-150"
                 aria-hidden="true"
               ></i>
-              <h2 className="inline pl-4">647-237-2620</h2>
-            </div>
-            <div className="p-6 rounded-lg flex mx-auto items-center">
-              <i
-                className="fa fa-envelope-o fa-2x text-stone-700 dark:text-[#e4e4e4]"
-                aria-hidden="true"
-              ></i>
-              <h2 className="inline pl-4">contact@isaiahsylvester.com</h2>
+              <h2 className="inline pl-7 sm:pl-16">
+                contact@isaiahsylvester.com
+              </h2>
             </div>
           </div>
           {/* <!-- Right column --> */}
