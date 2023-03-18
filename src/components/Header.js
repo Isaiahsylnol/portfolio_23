@@ -19,7 +19,7 @@ const Header = () => {
   }
 
   return (
-    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#323232] bg-white text-black h-20 z-10 top-0 sticky">
+    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#323232] bg-[#fffff2] text-black h-20 z-10 top-0 sticky">
       <button
         onClick={() => scrollFunction("/")}
         className="hover:text-gray-400 transition duration-300 p-2"
@@ -51,7 +51,7 @@ const Header = () => {
         className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#323232] md:bg-white z-10 backdrop-filter backdrop-blur-lg mt-3 sm:mt-0 lg:h-full md:w-auto hidden"
         id="nav-content"
       >
-        <ul className="md:flex text-black font-poppinsFont font-semibold md:text-black dark:text-white justify-end items-center text-xl md:space-x-8">
+        <ul className="md:flex text-black dark:text-white font-poppinsFont justify-end items-center text-2xl md:space-x-8">
           <li
             onClick={() => scrollFunction("contact")}
             className="hover:text-gray-400 transition duration-300 p-2"

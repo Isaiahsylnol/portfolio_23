@@ -9,54 +9,56 @@ import cssIcon from "../assets/CSS3_logo.svg";
 
 export default function index() {
   return (
-    <main id="/" className="dark:bg-[#2c2a2e] text-[#252525]">
+    <main id="/" className="dark:bg-[#202120] text-[#252525]">
       <section id="profile">
-        <section className="sm:flex dark:text-[#e4e4e4] lg:flex-row w-fit mx-auto lg:space-x-28 p-4">
-          <div>
-            <div className="flex flex-row mb-5 pt-8">
-              <div className="w-fit">
-                <h1 className="w-fit text-5xl font-poppinsFont font-bold">
-                  Hello
-                  <hr class="border-4 w-full border-[#c37a8e] cursor-pointer hover:border-red-500 duration-500 mb-5" />
-                </h1>
-                <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
-                  I'm Isaiah Sylvester
-                </h1>
+        <div className="dark:bg-[#202120]">
+          <section className="sm:flex dark:text-[#e4e4e4] dark:bg-[#202120] lg:flex-row w-fit mx-auto lg:space-x-28 p-4">
+            <div>
+              <div className="flex flex-row mb-5 pt-8">
+                <div className="w-fit">
+                  <h1 className="w-fit text-5xl font-poppinsFont font-bold">
+                    Hello
+                    <hr class="border-4 w-full border-[#c37a8e] cursor-pointer hover:border-red-500 duration-500 mb-5" />
+                  </h1>
+                  <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
+                    I'm Isaiah Sylvester
+                  </h1>
+                </div>
               </div>
+              <p className="max-w-lg">
+                I hold a passion for creativity, design and understanding which
+                I leverage through my development to ensure the end user's
+                experience feels intuitive & responsive. I value creating the
+                time for day to day practice & mental stimulation exploring side
+                projects and curiosities in pursuit to expand my abilities.
+              </p>
             </div>
-            <p className="max-w-lg">
-              I hold a passion for creativity, design and understanding which I
-              leverage through my development to ensure the end user's
-              experience feels intuitive & responsive. I value creating the time
-              for day to day practice & mental stimulation exploring side
-              projects and curiosities in pursuit to expand my abilities.
-            </p>
-          </div>
-          <img
-            src={require("../assets/portrait-sq.png")}
-            alt="Profile portrait"
-            className="object-cover mx-auto scale-90"
-            style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
-          />
-        </section>
-        <section className="flex">
+            <img
+              src={require("../assets/portrait-sq.png")}
+              alt="Profile portrait"
+              className="object-cover mx-auto pt-10"
+              style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
+            />
+          </section>
+        </div>
+        <section className="flex dark:bg-[#202120]">
           <div className="text-base w-full sm:w-auto sm:mx-auto sm:mb-12">
-            <div className="sm:grid sm:grid-cols-2 p-8 sm:space-x-20 lg:space-x-48 w-full sm:justify-center sm:mx-auto sm:items-center">
+            <div className="sm:grid sm:grid-cols-2 p-8 sm:space-x-20 lg:space-x-48 items-center">
               <div>
                 <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold pb-4">
-                  Frequent Development Tools
+                  Development Tools
                 </h2>
                 {/* <!-- Development tools section --> */}
                 <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full max-w-xl text-base font-semibold select-none">
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={require("../assets/react_logo.png")}
                       className="inline h-8 w-8 mr-2"
                       alt="React logo"
                     />
-                    React
+                    ReactJS
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={require("../assets/nodejs_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -64,7 +66,7 @@ export default function index() {
                     />
                     Node.js
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={pic}
                       className="inline h-8 w-8 mr-2"
@@ -72,7 +74,7 @@ export default function index() {
                     />
                     Next.js
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={require("../assets/cypress-logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -80,7 +82,7 @@ export default function index() {
                     />
                     Cypress
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={mongoDBIcon}
                       className="inline h-8 w-8 mr-2"
@@ -88,7 +90,7 @@ export default function index() {
                     />
                     MongoDB
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={graphqlIcon}
                       className="inline h-8 w-8 mr-2"
@@ -96,15 +98,15 @@ export default function index() {
                     />
                     GraphQL
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={require("../assets/javaScript_logo2.png")}
                       className="inline h-8 w-8 mr-2"
                       alt="Javascript logo"
                     />
-                    Javascript
+                    Javascript ES6
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={require("../assets/html_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -112,7 +114,7 @@ export default function index() {
                     />
                     HTML5
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={cssIcon}
                       className="inline h-8 w-8 mr-2"
@@ -120,15 +122,15 @@ export default function index() {
                     />
                     CSS3
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={require("../assets/git_logo.png")}
                       className="inline h-8 w-8 mr-2"
                       alt="Git logo"
                     />
-                    Git
+                    Git & Github
                   </li>
-                  <li className="border-2 flex items-center border-gray-400 border-opacity-50 dark:border-gray-500 rounded-lg p-2">
+                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
                     <img
                       src={tailwindIcon}
                       className="inline h-8 w-8 mr-2"
@@ -191,9 +193,9 @@ export default function index() {
         </section>
       </section>
       {/* <!-- Project section (Row layout) --> */}
-      <section className="items-center bg-[#c5bae7] dark:bg-[#323232] text-[#252525] dark:text-[#e4e4e4] flex flex-col">
+      <section className="items-center bg-[#c5bddd] dark:bg-[#323232] text-[#252525] dark:text-[#e4e4e4] flex flex-col">
         <h1 className="text-4xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-20 mb-20">
-          Projects
+          Featured Projects
         </h1>
         <div className="space-y-36 w-full lg:w-11/12 max-w-5xl sm:p-4">
           <div className="md:flex pb-14">
@@ -381,12 +383,12 @@ export default function index() {
         </div>
       </section>
       {/* <!-- Contact form --> */}
-      <section className="pb-4 bg-[#d1ada3] text-[#252525] dark:text-[#e4e4e4]">
+      <section className="pb-4 bg-[#e6ac9c] dark:bg-[#202120] text-[#252525] dark:text-[#e4e4e4]">
         <h2 className="text-4xl text-center font-poppinsFont font-extrabold pt-16">
           Let's Connect
         </h2>
         {/* <!-- Container --> */}
-        <div className="flex flex-col lg:flex-row justify-center items-center mx-auto md:mt-6 sm:p-6">
+        <div className="flex flex-col lg:flex-row justify-center mx-auto md:mt-6 sm:p-6">
           {/* <!-- Left column --> */}
           <div className="sm:pb-8 sm:p-4 sm:space-y-4 lg:p-15 mt-12 sm:mt-0 font-semibold text-xl sm:text-2xl">
             <div className="p-6 rounded-lg flex mx-auto items-center">
@@ -413,7 +415,7 @@ export default function index() {
           {/* <!-- Right column --> */}
           <div className="p-8 -mb-8 sm:m-0">
             <form
-              className="w-full max-w-lg"
+              className="w-full max-w-lg mx-auto"
               action="https://formspree.io/f/mbjwplbn"
               method="POST"
             >
