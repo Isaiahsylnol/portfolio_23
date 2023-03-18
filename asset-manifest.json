@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.18a7cdb6.css",
-    "main.js": "/static/js/main.bffb13e3.js",
+    "main.css": "/static/css/main.5f06b1ef.css",
+    "main.js": "/static/js/main.33f77b41.js",
     "static/js/787.d26f836c.chunk.js": "/static/js/787.d26f836c.chunk.js",
     "static/media/figma_design_2.png": "/static/media/figma_design_2.d949fdc53bd2493f0564.png",
     "static/media/petsnpals_figma.png": "/static/media/petsnpals_figma.a953ff33a909b410e6ad.png",
@@ -26,12 +26,12 @@
     "static/media/GraphQL-Logo.svg": "/static/media/GraphQL-Logo.85317997da9474f71fd69b88d9fd0a50.svg",
     "index.html": "/index.html",
     "static/media/CSS3_logo.svg": "/static/media/CSS3_logo.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
-    "main.18a7cdb6.css.map": "/static/css/main.18a7cdb6.css.map",
-    "main.bffb13e3.js.map": "/static/js/main.bffb13e3.js.map",
+    "main.5f06b1ef.css.map": "/static/css/main.5f06b1ef.css.map",
+    "main.33f77b41.js.map": "/static/js/main.33f77b41.js.map",
     "787.d26f836c.chunk.js.map": "/static/js/787.d26f836c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18a7cdb6.css",
-    "static/js/main.bffb13e3.js"
+    "static/css/main.5f06b1ef.css",
+    "static/js/main.33f77b41.js"
   ]
 }
