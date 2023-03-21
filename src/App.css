@@ -8,6 +8,7 @@
     src: url('./fonts/Poppins-Black.ttf');
 }
 
-#profile {
+
+.profile {
     background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 }

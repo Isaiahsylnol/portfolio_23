@@ -9,12 +9,15 @@ import cssIcon from "../assets/CSS3_logo.svg";
 
 export default function index() {
   return (
-    <main id="/" className="dark:bg-[#202120] text-[#252525]">
-      <section id="profile">
-        <div className="dark:bg-[#202120]">
-          <section className="sm:flex dark:text-[#e4e4e4] dark:bg-[#202120] lg:flex-row w-fit mx-auto lg:space-x-28 p-4">
+    <main
+      id="/"
+      className="dark:bg-[#232423] text-[#252525] pt-16 -mt-14 md:p-8 md:pt-16"
+    >
+      <section className="bg-[#f4f2f2] dark:bg-[#323232] mx-auto h-auto sm:rounded-2xl">
+        <div>
+          <section className="md:flex dark:text-[#e4e4e4] dark:bg-[#323232] lg:flex-row items-center justify-center lg:space-x-28 p-8 rounded-2xl">
             <div>
-              <div className="flex flex-row mb-5 pt-8">
+              <div className="flex flex-row mb-5 sm:pt-8">
                 <div className="w-fit">
                   <h1 className="w-fit text-5xl font-poppinsFont font-bold">
                     Hello
@@ -41,16 +44,16 @@ export default function index() {
             />
           </section>
         </div>
-        <section className="flex dark:bg-[#202120]">
-          <div className="text-base w-full sm:w-auto sm:mx-auto sm:mb-12">
-            <div className="sm:grid sm:grid-cols-2 p-8 sm:space-x-20 lg:space-x-48 items-center">
-              <div>
+        <section className="flex rounded-2xl">
+          <div className="text-base mx-auto sm:mb-12">
+            <div className="sm:grid sm:grid-cols-1 md:grid-cols-2 p-8 sm:space-x-20 lg:space-x-48 items-center">
+              <div className="mb-16 md:m-0">
                 <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold pb-4">
                   Development Tools
                 </h2>
                 {/* <!-- Development tools section --> */}
-                <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full max-w-xl text-base font-semibold select-none">
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full text-base font-semibold select-none">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={require("../assets/react_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -58,7 +61,7 @@ export default function index() {
                     />
                     ReactJS
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={require("../assets/nodejs_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -66,7 +69,7 @@ export default function index() {
                     />
                     Node.js
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={pic}
                       className="inline h-8 w-8 mr-2"
@@ -74,7 +77,7 @@ export default function index() {
                     />
                     Next.js
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={require("../assets/cypress-logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -82,7 +85,7 @@ export default function index() {
                     />
                     Cypress
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={mongoDBIcon}
                       className="inline h-8 w-8 mr-2"
@@ -90,7 +93,7 @@ export default function index() {
                     />
                     MongoDB
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={graphqlIcon}
                       className="inline h-8 w-8 mr-2"
@@ -98,7 +101,7 @@ export default function index() {
                     />
                     GraphQL
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={require("../assets/javaScript_logo2.png")}
                       className="inline h-8 w-8 mr-2"
@@ -106,7 +109,7 @@ export default function index() {
                     />
                     Javascript ES6
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={require("../assets/html_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -114,7 +117,7 @@ export default function index() {
                     />
                     HTML5
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={cssIcon}
                       className="inline h-8 w-8 mr-2"
@@ -122,7 +125,7 @@ export default function index() {
                     />
                     CSS3
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={require("../assets/git_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -130,7 +133,7 @@ export default function index() {
                     />
                     Git & Github
                   </li>
-                  <li className="border-2 flex items-center border-[#a2bfa5] shadow border-opacity-50 dark:border-neutral-700 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
                     <img
                       src={tailwindIcon}
                       className="inline h-8 w-8 mr-2"
@@ -140,9 +143,9 @@ export default function index() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="flex justify-center sm:justify-start">
                 {/* <!-- Personal Info --> */}
-                <ul className="text-base dark:text-[#e4e4e4] space-y-2 sm:space-y-0 sm:justify-center sm:items-center pt-12 pb-6 sm:p-0">
+                <ul className="text-base dark:text-[#e4e4e4] space-y-2 sm:space-y-0 pt-12 pb-6 sm:p-0">
                   <li className="font-bold text-2xl mb-3">
                     Software Developer
                   </li>
@@ -193,204 +196,200 @@ export default function index() {
         </section>
       </section>
       {/* <!-- Project section (Row layout) --> */}
-      <section className="items-center bg-[#c5bddd] dark:bg-[#323232] text-[#252525] dark:text-[#e4e4e4] flex flex-col">
-        <h1 className="text-4xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-20 mb-20">
-          Featured Projects
-        </h1>
-        <div className="space-y-36 w-full lg:w-11/12 max-w-5xl sm:p-4">
-          <div className="md:flex pb-14">
-            <div className="p-8 -mt-3 sm:pl-14 w-full items-start">
-              <h2 className="text-2xl font-poppinsFont font-semibold inline">
-                Pets N Pals
-              </h2>
-              <a
-                className="fa fa-github fa-2x p-4 hover:text-blue-600"
-                href="https://github.com/Isaiahsylnol/pets_n_pals"
-              ></a>
-              <div className="grid grid-cols-2 max-w-xs">
-                <ul>
-                  <li className="font-semibold pt-3 pb-2">Technologies:</li>
-                  <li>Next.js</li>
-                  <li>MongoDB</li>
-                  <li>Cypress</li>
-                  <li>Stripe</li>
-                </ul>
-                <ul>
-                  <li className="font-semibold pt-3 pb-2">Capabilities:</li>
-                  <li>Database Storage</li>
-                  <li>User Authorization</li>
-                  <li>Payment integration</li>
-                  <li>CRUD</li>
-                </ul>
+      <section className="w-fit mx-auto">
+        <section className="mt-20 text-[#252525] dark:text-[#e4e4e4]">
+          <h1 className="text-5xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-20 mb-12 pl-6 md:p-0">
+            Projects
+          </h1>
+          <div className="grid sm:grid-cols-2 gap-16 lg:gap-32 p-4">
+            <div className="mx-auto">
+              <div className="max-w-5xl md:max-w-xl lg:max-w-2xl">
+                <Carousel>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/petsnpals/petsnpals_figma.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="News section and mobile cart screen"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/petsnpals/petsnpals_figma_2.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Products page and product detail screen"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/petsnpals/petsnpals_figma_3.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Subscription and profile screen"
+                      />
+                    </div>
+                  </CarouselItem>
+                </Carousel>
               </div>
-            </div>
-            <div className="max-w-xl md:max-w-md lg:max-w-lg mx-auto">
-              <Carousel>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/petsnpals/petsnpals_figma.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="News section and mobile cart screen"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/petsnpals/petsnpals_figma_2.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Products page and product detail screen"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/petsnpals/petsnpals_figma_3.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Subscription and profile screen"
-                    />
-                  </div>
-                </CarouselItem>
-              </Carousel>
-            </div>
-          </div>
-          <div className="md:flex pb-14">
-            <div className="p-8 -mt-3 sm:pl-14 w-full items-start">
-              <h2 className="text-2xl font-poppinsFont font-semibold inline">
-                Rental Web App
-              </h2>
-              <a
-                className="fa fa-github fa-2x p-4 hover:text-blue-600"
-                href="https://github.com/Isaiahsylnol/rentalStoreWebApp"
-              ></a>
-              <div className="grid grid-cols-2 max-w-xs">
-                <ul>
-                  <li className="font-semibold pt-3 pb-2">Technologies:</li>
-                  <li>React</li>
-                  <li>Node.JS</li>
-                  <li>GraphQL</li>
-                  <li>MongoDB</li>
-                  <li>Tailwind CSS</li>
-                </ul>
-                <ul>
-                  <li className="font-semibold pt-3 pb-2">Capabilities:</li>
-                  <li>Database Storage</li>
-                  <li>User Registration</li>
-                  <li>Screen Navigation</li>
-                  <li>Cypress Testing</li>
-                  <li>Responsive Design</li>
-                </ul>
-              </div>
-            </div>
-            <div className="max-w-xl md:max-w-md lg:max-w-lg mx-auto">
-              <Carousel>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/rental_shop_app/figma_design.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Landing page and movie detail page"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/rental_shop_app/figma_design_2.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Movie list page"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/rental_shop_app/figma_design_4.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Feature film secion and profile screen"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/rental_shop_app/figma_design_3.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Mobile login screen"
-                    />
-                  </div>
-                </CarouselItem>
-              </Carousel>
-            </div>
-          </div>
-          <div className="md:flex pb-14">
-            <div className="p-8 -mt-3 sm:pl-14 w-full items-start">
-              <h2 className="text-2xl font-poppinsFont font-semibold inline">
-                Atmosphere Static Site
-              </h2>
-              <div className="inline text-sm">
+              <div className="p-3">
+                <h2 className="text-2xl font-poppinsFont font-semibold inline">
+                  Pets N Pals
+                </h2>
                 <a
                   className="fa fa-github fa-2x p-4 hover:text-blue-600"
-                  href="https://github.com/Isaiahsylnol/Atmosphere-site"
+                  href="https://github.com/Isaiahsylnol/pets_n_pals"
                 ></a>
-                <a
-                  className="fa fa-laptop fa-2x hover:text-blue-600 pt-3 xl:pt-0"
-                  href="https://isaiahsylnol.github.io/Atmosphere-site/"
-                ></a>
-              </div>
-              <div className="grid grid-cols-2 max-w-xs">
-                <ul>
-                  <li className="font-bold pt-3 pb-2">Technologies:</li>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                </ul>
+                <div className="grid grid-cols-2 max-w-xs">
+                  <ul>
+                    <li className="font-semibold pt-3 pb-2">Technologies:</li>
+                    <li>Next.js</li>
+                    <li>MongoDB</li>
+                    <li>Cypress</li>
+                    <li>Stripe</li>
+                  </ul>
+                  <ul>
+                    <li className="font-semibold pt-3 pb-2">Capabilities:</li>
+                    <li>Database Storage</li>
+                    <li>User Authorization</li>
+                    <li>Payment integration</li>
+                    <li>CRUD</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div className="max-w-xl md:max-w-md lg:max-w-lg mx-auto">
-              <Carousel>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/atmosphere_site/atmosphere_figma.jpg")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Atmosphere layers page"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/atmosphere_site/atmosphere_figma_2.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Media and sources page"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="uppercase font-bold text-white cursor-pointer">
-                    <img
-                      src={require("../assets/atmosphere_site/atmosphere_figma_3.png")}
-                      className="sm:rounded-lg shadow-md flex"
-                      alt="Landing page"
-                    />
-                  </div>
-                </CarouselItem>
-              </Carousel>
+            <div className="mx-auto">
+              <div className="max-w-5xl md:max-w-xl lg:max-w-2xl mx-auto">
+                <Carousel>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/rental_shop_app/figma_design.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Landing page and movie detail page"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/rental_shop_app/figma_design_2.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Movie list page"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/rental_shop_app/figma_design_4.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Feature film secion and profile screen"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/rental_shop_app/figma_design_3.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Mobile login screen"
+                      />
+                    </div>
+                  </CarouselItem>
+                </Carousel>
+              </div>
+              <div className="p-3">
+                <h2 className="text-2xl font-poppinsFont font-semibold inline">
+                  Rental Web App
+                </h2>
+                <a
+                  className="fa fa-github fa-2x p-4 hover:text-blue-600"
+                  href="https://github.com/Isaiahsylnol/pets_n_pals"
+                ></a>
+                <div className="grid grid-cols-2 max-w-xs">
+                  <ul>
+                    <li className="font-semibold pt-3 pb-2">Technologies:</li>
+                    <li>React</li>
+                    <li>Node.JS</li>
+                    <li>GraphQL</li>
+                    <li>MongoDB</li>
+                    <li>Tailwind CSS</li>
+                  </ul>
+                  <ul>
+                    <li className="font-semibold pt-3 pb-2">Capabilities:</li>
+                    <li>Database Storage</li>
+                    <li>User Registration</li>
+                    <li>Screen Navigation</li>
+                    <li>Cypress Testing</li>
+                    <li>Responsive Design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="mx-auto">
+              <div className="max-w-5xl md:max-w-xl lg:max-w-2xl">
+                <Carousel>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/atmosphere_site/atmosphere_figma.jpg")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Atmosphere layers page"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/atmosphere_site/atmosphere_figma_2.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Media and sources page"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="uppercase font-bold text-white cursor-pointer">
+                      <img
+                        src={require("../assets/atmosphere_site/atmosphere_figma_3.png")}
+                        className="sm:rounded-lg shadow-md flex"
+                        alt="Landing page"
+                      />
+                    </div>
+                  </CarouselItem>
+                </Carousel>
+              </div>
+              <div className="p-8 -mt-3">
+                <h2 className="text-2xl font-poppinsFont font-semibold inline">
+                  Atmosphere Static Site
+                </h2>
+                <a
+                  className="fa fa-github fa-2x p-4 hover:text-blue-600"
+                  href="https://github.com/Isaiahsylnol/pets_n_pals"
+                ></a>
+                <div className="grid grid-cols-2 max-w-xs">
+                  <ul>
+                    <li className="font-semibold pt-3 pb-2">Technologies:</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
       {/* <!-- Contact form --> */}
-      <section className="pb-4 bg-[#e6ac9c] dark:bg-[#202120] text-[#252525] dark:text-[#e4e4e4]">
+      <section className="pb-4 bg-[#f4f2f2] dark:bg-[#202120] text-[#252525] dark:text-[#e4e4e4] sm:rounded-2xl">
         <h2 className="text-4xl text-center font-poppinsFont font-extrabold pt-16">
           Let's Connect
         </h2>
         {/* <!-- Container --> */}
         <div className="flex flex-col lg:flex-row justify-center mx-auto md:mt-6 sm:p-6">
           {/* <!-- Left column --> */}
-          <div className="sm:pb-8 sm:p-4 sm:space-y-4 lg:p-15 mt-12 sm:mt-0 font-semibold text-xl sm:text-2xl">
+          <div className="sm:pb-8 sm:p-4 lg:p-15 mt-12 sm:mt-0 font-semibold text-xl">
             <div className="p-6 rounded-lg flex mx-auto items-center">
               <i
                 className="fa fa-map-marker fa-1x scale-150"
