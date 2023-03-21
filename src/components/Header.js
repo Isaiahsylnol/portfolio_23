@@ -59,7 +59,11 @@ const Header = () => {
             <Link to="/#contact">Contact</Link>
           </li>
           <li className="hover:text-gray-400 transition duration-300 p-2">
-            <a href={pdf} target="_blank">
+            <a
+              href={pdf}
+              target="_blank"
+              className="bg-[#ae6c82] hover:bg-[#975e71] text-white p-3 rounded-md"
+            >
               Resume
             </a>
           </li>

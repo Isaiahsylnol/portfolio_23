@@ -11,40 +11,38 @@ export default function index() {
   return (
     <main
       id="/"
-      className="dark:bg-[#232423] text-[#252525] pt-16 -mt-14 md:p-8 md:pt-16"
+      className="dark:bg-[#232423] text-[#252525] pt-16 -mt-14 md:pt-16"
     >
-      <section className="bg-[#f4f2f2] dark:bg-[#323232] mx-auto h-auto sm:rounded-2xl">
-        <div>
-          <section className="md:flex dark:text-[#e4e4e4] dark:bg-[#323232] lg:flex-row items-center justify-center lg:space-x-28 p-8 rounded-2xl">
-            <div>
-              <div className="flex flex-row mb-5 sm:pt-8">
-                <div className="w-fit">
-                  <h1 className="w-fit text-5xl font-poppinsFont font-bold">
-                    Hello
-                    <hr class="border-4 w-full border-[#c37a8e] cursor-pointer hover:border-red-500 duration-500 mb-5" />
-                  </h1>
-                  <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
-                    I'm Isaiah Sylvester
-                  </h1>
-                </div>
+      <section className="bg-[#f4f2f2] dark:bg-[#323232]">
+        <section className="md:flex dark:text-[#e4e4e4] dark:bg-[#323232] lg:flex-row items-center justify-center lg:space-x-28 p-8 rounded-2xl">
+          <div>
+            <div className="flex flex-row mb-5 sm:pt-8">
+              <div className="w-fit">
+                <h1 className="w-fit text-5xl font-poppinsFont font-bold">
+                  Hello
+                  <hr class="border-4 w-full border-[#c37a8e] cursor-pointer hover:border-red-500 duration-500 mb-5" />
+                </h1>
+                <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
+                  I'm Isaiah Sylvester
+                </h1>
               </div>
-              <p className="max-w-lg">
-                I hold a passion for creativity, design and understanding which
-                I leverage through my development to ensure the end user's
-                experience feels intuitive & responsive. I value creating the
-                time for day to day practice & mental stimulation exploring side
-                projects and curiosities in pursuit to expand my abilities.
-              </p>
             </div>
-            <img
-              src={require("../assets/portrait-sq.png")}
-              alt="Profile portrait"
-              className="object-cover mx-auto pt-10"
-              style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
-            />
-          </section>
-        </div>
-        <section className="flex rounded-2xl">
+            <p className="max-w-lg">
+              I hold a passion for creativity, design and understanding which I
+              leverage through my development to ensure the end user's
+              experience feels intuitive & responsive. I value creating the time
+              for day to day practice & mental stimulation exploring side
+              projects and curiosities in pursuit to expand my abilities.
+            </p>
+          </div>
+          <img
+            src={require("../assets/portrait-sq.png")}
+            alt="Profile portrait"
+            className="object-cover mx-auto pt-10"
+            style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
+          />
+        </section>
+        <section className="sm:flex rounded-2xl">
           <div className="text-base mx-auto sm:mb-12">
             <div className="sm:grid sm:grid-cols-1 md:grid-cols-2 p-8 sm:space-x-20 lg:space-x-48 items-center">
               <div className="mb-16 md:m-0">
@@ -143,11 +141,11 @@ export default function index() {
                   </li>
                 </ul>
               </div>
-              <div className="flex justify-center sm:justify-start">
+              <div className="  ">
                 {/* <!-- Personal Info --> */}
-                <ul className="text-base dark:text-[#e4e4e4] space-y-2 sm:space-y-0 pt-12 pb-6 sm:p-0">
+                <ul className="text-base dark:text-[#e4e4e4]">
                   <li className="font-bold text-2xl mb-3">
-                    Software Developer
+                    FullStack Developer
                   </li>
                   <li className="flex items-center">
                     <strong className="pr-6 sm:pr-2">
@@ -196,20 +194,20 @@ export default function index() {
         </section>
       </section>
       {/* <!-- Project section (Row layout) --> */}
-      <section className="w-fit mx-auto">
-        <section className="mt-20 text-[#252525] dark:text-[#e4e4e4]">
+      <section className="w-full mx-auto max-w-5xl">
+        <section className="text-[#252525] dark:text-[#e4e4e4] p-4">
           <h1 className="text-5xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-20 mb-12 pl-6 md:p-0">
             Projects
           </h1>
-          <div className="grid sm:grid-cols-2 gap-16 lg:gap-32 p-4">
-            <div className="mx-auto">
+          <div className="grid sm:grid-cols-2 gap-16 lg:gap-32">
+            <div>
               <div className="max-w-5xl md:max-w-xl lg:max-w-2xl">
                 <Carousel>
                   <CarouselItem>
                     <div className="uppercase font-bold text-white cursor-pointer">
                       <img
                         src={require("../assets/petsnpals/petsnpals_figma.png")}
-                        className="sm:rounded-lg shadow-md flex"
+                        className="rounded-lg shadow-md flex"
                         alt="News section and mobile cart screen"
                       />
                     </div>
@@ -218,7 +216,7 @@ export default function index() {
                     <div className="uppercase font-bold text-white cursor-pointer">
                       <img
                         src={require("../assets/petsnpals/petsnpals_figma_2.png")}
-                        className="sm:rounded-lg shadow-md flex"
+                        className="rounded-lg shadow-md flex"
                         alt="Products page and product detail screen"
                       />
                     </div>
@@ -227,7 +225,7 @@ export default function index() {
                     <div className="uppercase font-bold text-white cursor-pointer">
                       <img
                         src={require("../assets/petsnpals/petsnpals_figma_3.png")}
-                        className="sm:rounded-lg shadow-md flex"
+                        className="rounded-lg shadow-md flex"
                         alt="Subscription and profile screen"
                       />
                     </div>
@@ -260,14 +258,14 @@ export default function index() {
                 </div>
               </div>
             </div>
-            <div className="mx-auto">
+            <div>
               <div className="max-w-5xl md:max-w-xl lg:max-w-2xl mx-auto">
                 <Carousel>
                   <CarouselItem>
                     <div className="uppercase font-bold text-white cursor-pointer">
                       <img
                         src={require("../assets/rental_shop_app/figma_design.png")}
-                        className="sm:rounded-lg shadow-md flex"
+                        className="rounded-lg shadow-md flex"
                         alt="Landing page and movie detail page"
                       />
                     </div>
@@ -276,7 +274,7 @@ export default function index() {
                     <div className="uppercase font-bold text-white cursor-pointer">
                       <img
                         src={require("../assets/rental_shop_app/figma_design_2.png")}
-                        className="sm:rounded-lg shadow-md flex"
+                        className="rounded-lg shadow-md flex"
                         alt="Movie list page"
                       />
                     </div>
@@ -285,7 +283,7 @@ export default function index() {
                     <div className="uppercase font-bold text-white cursor-pointer">
                       <img
                         src={require("../assets/rental_shop_app/figma_design_4.png")}
-                        className="sm:rounded-lg shadow-md flex"
+                        className="rounded-lg shadow-md flex"
                         alt="Feature film secion and profile screen"
                       />
                     </div>
@@ -294,7 +292,7 @@ export default function index() {
                     <div className="uppercase font-bold text-white cursor-pointer">
                       <img
                         src={require("../assets/rental_shop_app/figma_design_3.png")}
-                        className="sm:rounded-lg shadow-md flex"
+                        className="rounded-lg shadow-md flex"
                         alt="Mobile login screen"
                       />
                     </div>
@@ -329,39 +327,37 @@ export default function index() {
                 </div>
               </div>
             </div>
-            <div className="mx-auto">
-              <div className="max-w-5xl md:max-w-xl lg:max-w-2xl">
-                <Carousel>
-                  <CarouselItem>
-                    <div className="uppercase font-bold text-white cursor-pointer">
-                      <img
-                        src={require("../assets/atmosphere_site/atmosphere_figma.jpg")}
-                        className="sm:rounded-lg shadow-md flex"
-                        alt="Atmosphere layers page"
-                      />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="uppercase font-bold text-white cursor-pointer">
-                      <img
-                        src={require("../assets/atmosphere_site/atmosphere_figma_2.png")}
-                        className="sm:rounded-lg shadow-md flex"
-                        alt="Media and sources page"
-                      />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="uppercase font-bold text-white cursor-pointer">
-                      <img
-                        src={require("../assets/atmosphere_site/atmosphere_figma_3.png")}
-                        className="sm:rounded-lg shadow-md flex"
-                        alt="Landing page"
-                      />
-                    </div>
-                  </CarouselItem>
-                </Carousel>
-              </div>
-              <div className="p-8 -mt-3">
+            <div>
+              <Carousel>
+                <CarouselItem>
+                  <div className="uppercase font-bold text-white cursor-pointer">
+                    <img
+                      src={require("../assets/atmosphere_site/atmosphere_figma.jpg")}
+                      className="rounded-lg shadow-md flex"
+                      alt="Atmosphere layers page"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="uppercase font-bold text-white cursor-pointer">
+                    <img
+                      src={require("../assets/atmosphere_site/atmosphere_figma_2.png")}
+                      className="rounded-lg shadow-md flex"
+                      alt="Media and sources page"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="uppercase font-bold text-white cursor-pointer">
+                    <img
+                      src={require("../assets/atmosphere_site/atmosphere_figma_3.png")}
+                      className="rounded-lg shadow-md flex"
+                      alt="Landing page"
+                    />
+                  </div>
+                </CarouselItem>
+              </Carousel>
+              <div className="p-3">
                 <h2 className="text-2xl font-poppinsFont font-semibold inline">
                   Atmosphere Static Site
                 </h2>

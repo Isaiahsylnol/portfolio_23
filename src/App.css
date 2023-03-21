@@ -10,5 +10,5 @@
 
 
 .profile {
-    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    background-image: radial-gradient( circle 788px at 0.7% 3.4%,  rgb(87, 110, 203) 0%, rgba(255,255,255,1) 90% );
 }
