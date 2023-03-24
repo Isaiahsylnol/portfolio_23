@@ -51,24 +51,19 @@ const Header = () => {
         className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#232423] md:bg-white z-10 backdrop-filter backdrop-blur-lg lg:h-full md:w-auto hidden"
         id="nav-content"
       >
-        <ul className="md:flex text-black font-poppinsFont dark:text-white justify-end items-center text-xl md:space-x-8">
-          <li
-            onClick={() => scrollFunction("contact")}
-            className="hover:text-gray-400 transition duration-300 p-2"
-          >
-            <Link to="/#contact">Contact</Link>
+        <ul className="md:flex text-black font-poppinsFont dark:text-white justify-end items-center text-xl sm:space-x-4 space-y-6  p-3 sm:p-0 md:space-y-0">
+          <li className="hover:text-gray-400 transition duration-300 sm:pl-5">
+            <Switcher />
           </li>
-          <li className="hover:text-gray-400 transition duration-300 p-2">
+          <li className="border-l-2 border-black dark:border-white h-7 hidden md:inline"></li>
+          <li className="hover:text-gray-400 transition duration-300">
             <a
               href={pdf}
               target="_blank"
-              className="bg-[#ae6c82] hover:bg-[#975e71] text-white p-3 rounded-md"
+              className="bg-[#ae6c82] hover:bg-[#975e71] text-white p-2 rounded-md"
             >
               Resume
             </a>
-          </li>
-          <li className="p-3 hover:text-gray-400 transition duration-300">
-            <Switcher />
           </li>
         </ul>
       </div>

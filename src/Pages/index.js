@@ -17,7 +17,7 @@ export default function index() {
         <section className="md:flex dark:text-[#e4e4e4] dark:bg-[#323232] lg:flex-row items-center justify-center lg:space-x-28 p-8 rounded-2xl">
           <div>
             <div className="flex flex-row mb-5 sm:pt-8">
-              <div className="w-fit">
+              <div className="w-fit max-w-none md:max-w-lg lg:max-w-none">
                 <h1 className="w-fit text-5xl font-poppinsFont font-bold">
                   Hello
                   <hr class="border-4 w-full border-[#c37a8e] cursor-pointer hover:border-red-500 duration-500 mb-5" />
@@ -27,7 +27,7 @@ export default function index() {
                 </h1>
               </div>
             </div>
-            <p className="max-w-lg">
+            <p className="max-w-md">
               I hold a passion for creativity, design and understanding which I
               leverage through my development to ensure the end user's
               experience feels intuitive & responsive. I value creating the time

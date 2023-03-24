@@ -38,19 +38,11 @@ const Carousel = ({ children }) => {
 
   return (
     <div
-      className="overflow-hidden"
+      className="overflow-hidden flex justify-center"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div
-        className="transition duration-300 ease-in-out whitespace-nowrap"
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-      >
-        {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: "100%" });
-        })}
-      </div>
-      <div className="indicators">
+      <div className="indicators absolute z-10 mt-72">
         {/* Carousel indexs */}
         {React.Children.map(children, (child, index) => {
           return (
@@ -65,6 +57,14 @@ const Carousel = ({ children }) => {
               }`}
             ></button>
           );
+        })}
+      </div>
+      <div
+        className="transition duration-300 ease-in-out whitespace-nowrap"
+        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+      >
+        {React.Children.map(children, (child, index) => {
+          return React.cloneElement(child, { width: "100%" });
         })}
       </div>
     </div>
