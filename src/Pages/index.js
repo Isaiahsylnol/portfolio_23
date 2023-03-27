@@ -1,6 +1,6 @@
 import React from "react";
 
-import Carousel, { CarouselItem } from "../components/Carousel/Carousel";
+import Carousel, { CarouselItem } from "../components/Carousel";
 import pic from "../assets/next_js_logo.svg";
 import graphqlIcon from "../assets/GraphQL-Logo.svg";
 import mongoDBIcon from "../assets/mongodb-logo.svg";
