@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.88389a7f.css",
-    "main.js": "/static/js/main.d64671fc.js",
+    "main.css": "/static/css/main.6846f2d6.css",
+    "main.js": "/static/js/main.a8ca565a.js",
     "static/js/787.d26f836c.chunk.js": "/static/js/787.d26f836c.chunk.js",
     "static/media/figma_design_2.png": "/static/media/figma_design_2.d949fdc53bd2493f0564.png",
     "static/media/petsnpals_figma.png": "/static/media/petsnpals_figma.a953ff33a909b410e6ad.png",
@@ -16,7 +16,7 @@
     "static/media/Poppins-Black.ttf": "/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
     "static/media/portrait-sq.png": "/static/media/portrait-sq.b6b1183e069c1f9c0dda.png",
     "static/media/nodejs_logo.png": "/static/media/nodejs_logo.dc0b97947064b4d4a8c6.png",
-    "static/media/isaiah_sylvester.pdf": "/static/media/isaiah_sylvester.01cae925776801e17eb8.pdf",
+    "static/media/isaiah_sylvester.pdf": "/static/media/isaiah_sylvester.4bb947e8c9dbdbfa2c41.pdf",
     "static/media/react_logo.png": "/static/media/react_logo.dcc679e5a23288678934.png",
     "static/media/git_logo.png": "/static/media/git_logo.237e2214562c441f67b2.png",
     "static/media/cypress-logo.png": "/static/media/cypress-logo.93b025ba2390956b6eae.png",
@@ -26,12 +26,12 @@
     "static/media/GraphQL-Logo.svg": "/static/media/GraphQL-Logo.85317997da9474f71fd69b88d9fd0a50.svg",
     "index.html": "/index.html",
     "static/media/CSS3_logo.svg": "/static/media/CSS3_logo.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
-    "main.88389a7f.css.map": "/static/css/main.88389a7f.css.map",
-    "main.d64671fc.js.map": "/static/js/main.d64671fc.js.map",
+    "main.6846f2d6.css.map": "/static/css/main.6846f2d6.css.map",
+    "main.a8ca565a.js.map": "/static/js/main.a8ca565a.js.map",
     "787.d26f836c.chunk.js.map": "/static/js/787.d26f836c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88389a7f.css",
-    "static/js/main.d64671fc.js"
+    "static/css/main.6846f2d6.css",
+    "static/js/main.a8ca565a.js"
   ]
 }
