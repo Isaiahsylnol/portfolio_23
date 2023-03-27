@@ -8,6 +8,15 @@ import tailwindIcon from "../assets/Tailwind_CSS_Logo.svg";
 import cssIcon from "../assets/CSS3_logo.svg";
 
 export default function index() {
+  function scrollFunction(id) {
+    let e = document?.getElementById(id);
+    e?.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+      inline: "start",
+    });
+  }
+
   return (
     <main
       id="/"
@@ -20,7 +29,7 @@ export default function index() {
               <div className="w-fit max-w-none md:max-w-lg lg:max-w-none">
                 <h1 className="w-fit text-5xl font-poppinsFont font-bold">
                   Hello
-                  <hr class="border-4 w-full border-[#c37a8e] cursor-pointer hover:border-red-500 duration-500 mb-5" />
+                  <hr class="border-4 w-full border-[#c37a8e] mb-5" />
                 </h1>
                 <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
                   I'm Isaiah Sylvester
@@ -34,6 +43,30 @@ export default function index() {
               for day to day practice & mental stimulation exploring side
               projects and curiosities in pursuit to expand my abilities.
             </p>
+            <h2 className="mt-5">
+              Aside from tech I hold keen interests for:{" "}
+            </h2>
+            <ul className="inline-flex gap-2 mt-2 text-sm w-96 flex-wrap">
+              <li className="border border-gray-400 rounded-md p-1">
+                Linguistic Studies
+              </li>
+              <li className="border border-gray-400 rounded-md p-1">
+                Marathons
+              </li>
+              <li className="border border-gray-400 rounded-md p-1">Fitness</li>
+              <li className="border border-gray-400 rounded-md p-1">Music</li>
+              <li className="border border-gray-400 rounded-md p-1">Hiking</li>
+              <li className="border border-gray-400 rounded-md p-1">Gaming</li>
+              <li className="border border-gray-400 rounded-md p-1">
+                Creative Art
+              </li>
+              <li className="border border-gray-400 rounded-md p-1">
+                World News
+              </li>
+              <li className="border border-gray-400 rounded-md p-1">
+                Photography
+              </li>
+            </ul>
           </div>
           <img
             src={require("../assets/portrait-sq.png")}
@@ -51,7 +84,7 @@ export default function index() {
                 </h2>
                 {/* <!-- Development tools section --> */}
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full text-base font-semibold select-none">
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={require("../assets/react_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -59,7 +92,7 @@ export default function index() {
                     />
                     ReactJS
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={require("../assets/nodejs_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -67,7 +100,7 @@ export default function index() {
                     />
                     Node.js
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={pic}
                       className="inline h-8 w-8 mr-2"
@@ -75,7 +108,7 @@ export default function index() {
                     />
                     Next.js
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={require("../assets/cypress-logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -83,7 +116,7 @@ export default function index() {
                     />
                     Cypress
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={mongoDBIcon}
                       className="inline h-8 w-8 mr-2"
@@ -91,7 +124,7 @@ export default function index() {
                     />
                     MongoDB
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={graphqlIcon}
                       className="inline h-8 w-8 mr-2"
@@ -99,7 +132,7 @@ export default function index() {
                     />
                     GraphQL
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={require("../assets/javaScript_logo2.png")}
                       className="inline h-8 w-8 mr-2"
@@ -107,7 +140,7 @@ export default function index() {
                     />
                     Javascript ES6
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={require("../assets/html_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -115,7 +148,7 @@ export default function index() {
                     />
                     HTML5
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={cssIcon}
                       className="inline h-8 w-8 mr-2"
@@ -123,7 +156,7 @@ export default function index() {
                     />
                     CSS3
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={require("../assets/git_logo.png")}
                       className="inline h-8 w-8 mr-2"
@@ -131,7 +164,7 @@ export default function index() {
                     />
                     Git & Github
                   </li>
-                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center border-opacity-50 dark:border-neutral-800 rounded-lg p-2">
+                  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
                     <img
                       src={tailwindIcon}
                       className="inline h-8 w-8 mr-2"
@@ -147,15 +180,7 @@ export default function index() {
                   <li className="font-bold text-2xl mb-3">
                     FullStack Developer
                   </li>
-                  <li className="flex items-center">
-                    <strong className="pr-6 sm:pr-2">
-                      <i
-                        className="fa fa-phone fa-2x scale-90 p-2 text-[#252525] dark:text-[#e4e4e4]"
-                        aria-hidden="true"
-                      ></i>
-                    </strong>
-                    647-237-2620
-                  </li>
+
                   <li className="flex items-center">
                     <strong className="pr-6 sm:pr-2">
                       <i
@@ -176,7 +201,7 @@ export default function index() {
                   </li>
                   <li className="flex pt-2">
                     <i
-                      className="fa-solid fa-graduation-cap fa-2x scale-90 pr-6 inline text-[#252525] dark:text-[#e4e4e4]"
+                      className="fa-solid fa-graduation-cap fa-2x scale-90 pr-3 inline text-[#252525] dark:text-[#e4e4e4]"
                       aria-hidden="true"
                     ></i>
                     <div className="inline">
@@ -186,6 +211,14 @@ export default function index() {
                         Advanced Diploma
                       </h5>
                     </div>
+                  </li>
+                  <li className="flex pt-1">
+                    <button
+                      onClick={() => scrollFunction("contact")}
+                      className="bg-[#7a82c3] transform transition duration-500 hover:scale-110 text-white p-3 mt-4 w-full rounded-md"
+                    >
+                      Contact Me
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -391,11 +424,7 @@ export default function index() {
                 className="fa fa-map-marker fa-1x scale-150"
                 aria-hidden="true"
               ></i>
-              <h2 className="inline pl-7 sm:pl-16">Toronto, ON, Canada</h2>
-            </div>
-            <div className="p-6 rounded-lg flex mx-auto items-center">
-              <i className="fa fa-phone fa-1x scale-150" aria-hidden="true"></i>
-              <h2 className="inline pl-7 sm:pl-16">647-237-2620</h2>
+              <h2 className="inline pl-7 sm:pl-16">Toronto, ON</h2>
             </div>
             <div className="p-6 rounded-lg flex mx-auto items-center">
               <i
@@ -451,7 +480,7 @@ export default function index() {
               <button
                 id="contact"
                 type="submit"
-                className="bg-blue-500 w-full text-center p-3 rounded-md mx-auto hover:bg-blue-600 text-white"
+                className="bg-[#c37a8e] w-full text-center p-3 rounded-md mx-auto hover:bg-[#a66879] text-white"
               >
                 Send Message
               </button>

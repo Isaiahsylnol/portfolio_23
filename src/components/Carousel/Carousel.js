@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./Carousel.css";
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -42,7 +41,15 @@ const Carousel = ({ children }) => {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="indicators absolute z-10 mt-72">
+      <div
+        className="transition duration-300 ease-in-out whitespace-nowrap"
+        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+      >
+        {React.Children.map(children, (child, index) => {
+          return React.cloneElement(child, { width: "100%" });
+        })}
+      </div>{" "}
+      <div className="absolute flex justify-center space-x-2 z-10 mt-72 pt-4 sm:pt-0 sm:hidden lg:inline-flex">
         {/* Carousel indexs */}
         {React.Children.map(children, (child, index) => {
           return (
@@ -50,21 +57,13 @@ const Carousel = ({ children }) => {
               onClick={() => {
                 updateIndex(index);
               }}
-              className={`hidden sm:block rounded-2xl h-3 w-3 ${
+              className={`rounded-2xl h-3 w-3 ${
                 index === activeIndex
-                  ? "bg-gray-500"
+                  ? "bg-gray-600"
                   : "bg-gray-400 hover:bg-gray-500"
               }`}
             ></button>
           );
-        })}
-      </div>
-      <div
-        className="transition duration-300 ease-in-out whitespace-nowrap"
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-      >
-        {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: "100%" });
         })}
       </div>
     </div>

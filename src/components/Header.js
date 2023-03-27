@@ -48,7 +48,7 @@ const Header = () => {
         </button>
       </div>
       <div
-        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#232423] md:bg-white z-10 backdrop-filter backdrop-blur-lg lg:h-full md:w-auto hidden"
+        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#232423] md:bg-white md:w-auto hidden"
         id="nav-content"
       >
         <ul className="md:flex text-black font-poppinsFont dark:text-white justify-end items-center text-xl sm:space-x-4 space-y-6  p-3 sm:p-0 md:space-y-0">
@@ -60,7 +60,7 @@ const Header = () => {
             <a
               href={pdf}
               target="_blank"
-              className="bg-[#ae6c82] hover:bg-[#975e71] text-white p-2 rounded-md"
+              className="bg-[#c37a8e] hover:bg-[#a66879] text-white p-2 rounded-md"
             >
               Resume
             </a>
