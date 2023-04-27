@@ -2,6 +2,16 @@ import React from "react";
 import Carousel, { CarouselItem } from "../components/Carousel";
 import profileImage from "../assets/portrait-sq.png";
 import { DevelopmentTools } from "../components/DevelopmentTools";
+import petsNPalsFigma from "../assets/petsnpals/petsnpals_figma.png";
+import petsNPalsFigma_2 from "../assets/petsnpals/petsnpals_figma_2.png";
+import petsNPalsFigma_3 from "../assets/petsnpals/petsnpals_figma_3.png";
+import rentalFigma from "../assets/rental_shop_app/figma_design.png";
+import rentalFigma_2 from "../assets/rental_shop_app/figma_design_2.png";
+import rentalFigma_3 from "../assets/rental_shop_app/figma_design_3.png";
+import rentalFigma_4 from "../assets/rental_shop_app/figma_design_4.png";
+import atmosphere_1 from "../assets/atmosphere_site/atmosphere_figma.jpg";
+import atmosphere_2 from "../assets/atmosphere_site/atmosphere_figma_2.png";
+import atmosphere_3 from "../assets/atmosphere_site/atmosphere_figma_3.png";
 
 export default function index() {
   function scrollFunction(id) {
@@ -32,13 +42,16 @@ export default function index() {
             </div>
           </div>
           <p className="max-w-md">
-            I hold a passion for creativity, design and understanding which I
-            leverage through my development to ensure the end user's experience
-            feels intuitive & responsive. I value creating the time for day to
-            day practice & mental stimulation exploring side projects and
-            curiosities in pursuit to expand my abilities.
+            I am passionate about fostering creativity, design, and
+            understanding in my work, which I leverage to create intuitive and
+            responsive user experiences. I prioritize making time for daily
+            practice and mental stimulation, which I achieve by exploring side
+            projects and pursuing new curiosities, in order to continually
+            expand my abilities.
           </p>
-          <h2 className="mt-5">Aside from tech I hold keen interests for: </h2>
+          <h2 className="mt-5">
+            In addition to technology, I have a strong passion for:
+          </h2>
           <div className="inline-flex gap-2 mt-2 text-sm w-96 flex-wrap">
             {[
               "Linguistic Studies",
@@ -73,54 +86,39 @@ export default function index() {
             <DevelopmentTools />
             <div>
               {/* <!-- Personal Info --> */}
-              <ul className="text-base dark:text-[#e4e4e4]">
-                <li className="font-bold text-2xl mb-3">FullStack Developer</li>
 
-                <li className="flex items-center">
-                  <strong className="pr-6 sm:pr-2">
-                    <i
-                      className="fa fa-envelope-o fa-2x scale-90 p-2 text-[#252525] dark:text-[#e4e4e4]"
-                      aria-hidden="true"
-                    ></i>
-                  </strong>
-                  contact@isaiahsylvester.com
-                </li>
-                <li className="flex items-center">
-                  <strong className="pr-6 sm:pr-2">
-                    <i
-                      className="fa fa-map-marker fa-2x scale-90 p-2 text-[#252525] dark:text-[#e4e4e4]"
-                      aria-hidden="true"
-                    ></i>
-                  </strong>
-                  Toronto, ON, Canada
-                </li>
-                <li className="flex pt-2">
+              <div>
+                <div className="flex m-4">
                   <i
-                    className="fa-solid fa-graduation-cap fa-2x scale-90 pr-3 inline text-[#252525] dark:text-[#e4e4e4]"
+                    className="pr-6 fa fa-envelope-o fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
                     aria-hidden="true"
                   ></i>
-                  <div className="inline">
-                    <h4 className="p-0 m-0"> George Brown College</h4>
+                  <div>contact@isaiahsylvester.com</div>
+                </div>
+                <div className="flex m-4">
+                  <i
+                    className="pr-8 fa fa-map-marker fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
+                    aria-hidden="true"
+                  ></i>
+                  <div>Toronto, ON, Canada</div>
+                </div>
+                <div className="flex m-4">
+                  <i
+                    className="pr-4 fa fa-graduation-cap fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
+                    aria-hidden="true"
+                  ></i>
+                  <div>
+                    <h4 className="p-0 m-0">George Brown College</h4>
                     <h5 className="sm:text-sm text-sm text-neutral-500 dark:text-neutral-400">
-                      {" "}
                       Advanced Diploma
                     </h5>
                   </div>
-                </li>
-                <li className="flex pt-1">
-                  <button
-                    onClick={() => scrollFunction("contact")}
-                    className="bg-[#7a82c3] transform transition duration-500 hover:scale-110 text-white p-3 mt-4 w-full rounded-md"
-                  >
-                    Contact Me
-                  </button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* <!-- Project section (Row layout) --> */}
       <section className="w-full mx-auto max-w-5xl text-[#252525] dark:text-[#e4e4e4] p-4">
         <h1 className="text-5xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-20 mb-12 pl-6 md:p-0">
@@ -133,7 +131,7 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={require("../assets/petsnpals/petsnpals_figma.png")}
+                      src={petsNPalsFigma}
                       className="rounded-lg shadow-md flex"
                       alt="News section and mobile cart screen"
                     />
@@ -142,7 +140,7 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={require("../assets/petsnpals/petsnpals_figma_2.png")}
+                      src={petsNPalsFigma_2}
                       className="rounded-lg shadow-md flex"
                       alt="Products page and product detail screen"
                     />
@@ -151,7 +149,7 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={require("../assets/petsnpals/petsnpals_figma_3.png")}
+                      src={petsNPalsFigma_3}
                       className="rounded-lg shadow-md flex"
                       alt="Subscription and profile screen"
                     />
@@ -191,7 +189,7 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={require("../assets/rental_shop_app/figma_design.png")}
+                      src={rentalFigma}
                       className="rounded-lg shadow-md flex"
                       alt="Landing page and movie detail page"
                     />
@@ -200,7 +198,7 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={require("../assets/rental_shop_app/figma_design_2.png")}
+                      src={rentalFigma_2}
                       className="rounded-lg shadow-md flex"
                       alt="Movie list page"
                     />
@@ -209,7 +207,7 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={require("../assets/rental_shop_app/figma_design_4.png")}
+                      src={rentalFigma_4}
                       className="rounded-lg shadow-md flex"
                       alt="Feature film secion and profile screen"
                     />
@@ -218,7 +216,7 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={require("../assets/rental_shop_app/figma_design_3.png")}
+                      src={rentalFigma_3}
                       className="rounded-lg shadow-md flex"
                       alt="Mobile login screen"
                     />
@@ -259,7 +257,7 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={require("../assets/atmosphere_site/atmosphere_figma.jpg")}
+                    src={atmosphere_1}
                     className="rounded-lg shadow-md flex"
                     alt="Atmosphere layers page"
                   />
@@ -268,7 +266,7 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={require("../assets/atmosphere_site/atmosphere_figma_2.png")}
+                    src={atmosphere_2}
                     className="rounded-lg shadow-md flex"
                     alt="Media and sources page"
                   />
@@ -277,7 +275,7 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={require("../assets/atmosphere_site/atmosphere_figma_3.png")}
+                    src={atmosphere_3}
                     className="rounded-lg shadow-md flex"
                     alt="Landing page"
                   />

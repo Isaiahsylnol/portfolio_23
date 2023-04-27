@@ -35,7 +35,7 @@ export const DevelopmentTools = () => {
 };
 
 const Tool = ({ icon, name }) => (
-  <li className="bg-[#dedede] dark:bg-[#282828] flex items-center rounded-lg p-2">
+  <li className="bg-[#e6e3e3] dark:bg-[#282828] flex items-center rounded-lg p-2">
     <img src={icon} className="inline h-8 w-8 mr-2" alt={`${name} logo`} />
     {name}
   </li>
