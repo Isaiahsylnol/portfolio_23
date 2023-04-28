@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="text-center text-[#707070] bg-white dark:bg-[#323232] w-full pt-8"
+      className="text-center text-[#707070] bg-[#f4f2f2] dark:bg-[#323232] w-full pt-8"
     >
       {/* <!-- Grid container --> */}
       <a

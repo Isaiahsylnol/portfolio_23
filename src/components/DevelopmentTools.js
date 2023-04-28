@@ -13,7 +13,7 @@ import gitIcon from "../assets/git_icon.png";
 
 export const DevelopmentTools = () => {
   return (
-    <div className="mb-16 md:m-0">
+    <div className="">
       <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold pb-4">
         Development Tools
       </h2>
