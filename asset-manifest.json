@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e256e73.css",
-    "main.js": "/static/js/main.aaf7e95f.js",
+    "main.css": "/static/css/main.cd4a70a8.css",
+    "main.js": "/static/js/main.d5288a13.js",
     "static/js/787.d26f836c.chunk.js": "/static/js/787.d26f836c.chunk.js",
     "static/media/figma_design_2.png": "/static/media/figma_design_2.d949fdc53bd2493f0564.png",
     "static/media/petsnpals_figma.png": "/static/media/petsnpals_figma.a953ff33a909b410e6ad.png",
@@ -20,18 +20,18 @@
     "static/media/react_icon.png": "/static/media/react_icon.dcc679e5a23288678934.png",
     "static/media/git_icon.png": "/static/media/git_icon.237e2214562c441f67b2.png",
     "static/media/cypress_icon.png": "/static/media/cypress_icon.93b025ba2390956b6eae.png",
-    "static/media/next_js_icon.svg": "/static/media/next_js_icon.4ecfaff068d2c413ee57ad471ffd5d70.svg",
+    "static/media/next_js_icon.svg": "/static/media/next_js_icon.bfb23e822fc36bcdb6ef5e563dd35342.svg",
     "static/media/mongodb_icon.svg": "/static/media/mongodb_icon.1aca075d5cce0819fea7ea0902d94ce4.svg",
-    "static/media/tailwind_css_icon.svg": "/static/media/tailwind_css_icon.319cd2de1897d256a7ea121fc862155d.svg",
+    "static/media/tailwind_css_icon.svg": "/static/media/tailwind_css_icon.fa33f4e8e025e5e800a2b8938c449152.svg",
     "static/media/graphql_icon.svg": "/static/media/graphql_icon.85317997da9474f71fd69b88d9fd0a50.svg",
     "index.html": "/index.html",
     "static/media/CSS3_icon.svg": "/static/media/CSS3_icon.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
-    "main.1e256e73.css.map": "/static/css/main.1e256e73.css.map",
-    "main.aaf7e95f.js.map": "/static/js/main.aaf7e95f.js.map",
+    "main.cd4a70a8.css.map": "/static/css/main.cd4a70a8.css.map",
+    "main.d5288a13.js.map": "/static/js/main.d5288a13.js.map",
     "787.d26f836c.chunk.js.map": "/static/js/787.d26f836c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e256e73.css",
-    "static/js/main.aaf7e95f.js"
+    "static/css/main.cd4a70a8.css",
+    "static/js/main.d5288a13.js"
   ]
 }
