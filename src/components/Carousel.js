@@ -35,36 +35,63 @@ const Carousel = ({ children }) => {
     setActiveIndex(newIndex);
   }
 
+  const prevSlide = () => {
+    setActiveIndex((activeIndex + children.length - 1) % children.length);
+  };
+
+  const nextSlide = () => {
+    setActiveIndex((activeIndex + 1) % children.length);
+  };
+
   return (
-    <div
-      className="overflow-hidden flex justify-center"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-    >
+    <div className="relative">
       <div
-        className="transition duration-300 ease-in-out whitespace-nowrap"
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        className="overflow-hidden flex justify-center items-center"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
       >
-        {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: "100%" });
-        })}
-      </div>{" "}
-      <div className="absolute flex justify-center space-x-2 z-10 mt-72 pt-4 sm:pt-0 sm:hidden lg:inline-flex">
-        {/* Carousel indexs */}
-        {React.Children.map(children, (child, index) => {
-          return (
+        <div
+          className="transition duration-300 ease-in-out whitespace-nowrap"
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        >
+          {React.Children.map(children, (child, index) => {
+            return React.cloneElement(child, { width: "100%" });
+          })}
+        </div>
+        <div className="absolute text-xl z-10 flex flex-row w-full h-5/6">
+          <div className="items-center hover:text-white float-left opacity-0 hover:opacity-100 transition duration-300 hidden sm:flex">
             <button
-              onClick={() => {
-                updateIndex(index);
-              }}
-              className={`rounded-2xl h-3 w-3 ${
-                index === activeIndex
-                  ? "bg-gray-600"
-                  : "bg-gray-400 hover:bg-gray-500"
-              }`}
-            ></button>
-          );
-        })}
+              className="w-24 h-14 uppercase bg-slate-600 bg-opacity-60"
+              onClick={prevSlide}
+            >
+              {"prev"}
+            </button>
+          </div>
+          <div className="w-full flex justify-center items-end space-x-2">
+            {React.Children.map(children, (child, index) => {
+              return (
+                <button
+                  onClick={() => {
+                    updateIndex(index);
+                  }}
+                  className={`rounded-2xl h-3 w-3 ${
+                    index === activeIndex
+                      ? "bg-gray-600"
+                      : "bg-gray-400 hover:bg-gray-500"
+                  }`}
+                ></button>
+              );
+            })}
+          </div>
+          <div className="items-center hover:text-white float-right opacity-0 hover:opacity-100 transition duration-300 hidden sm:flex">
+            <button
+              className="w-24 h-14 uppercase bg-slate-600 bg-opacity-60"
+              onClick={nextSlide}
+            >
+              {"next"}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

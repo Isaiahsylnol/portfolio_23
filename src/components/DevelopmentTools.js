@@ -10,14 +10,15 @@ import cypressIcon from "../assets/cypress_icon.png";
 import htmlIcon from "../assets/html_icon.png";
 import javascriptIcon from "../assets/javaScript_icon.png";
 import gitIcon from "../assets/git_icon.png";
+import typeScriptIcon from "../assets/typescript.svg";
 
 export const DevelopmentTools = () => {
   return (
-    <div className="">
-      <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold pb-4">
+    <div>
+      <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold mb-4">
         Development Tools
       </h2>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full text-base font-semibold select-none">
+      <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 dark:text-[#e4e4e4] w-full text-base font-semibold select-none">
         <Tool icon={reactIcon} name="ReactJS" />
         <Tool icon={nodeJSIcon} name="Node.js" />
         <Tool icon={nextJSIcon} name="Next.js" />
@@ -29,6 +30,7 @@ export const DevelopmentTools = () => {
         <Tool icon={cssIcon} name="CSS3" />
         <Tool icon={gitIcon} name="Git & Github" />
         <Tool icon={tailwindIcon} name="Tailwind CSS" />
+        <Tool icon={typeScriptIcon} name="TypeScript" />
       </ul>
     </div>
   );
