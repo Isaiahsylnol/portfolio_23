@@ -12,10 +12,10 @@ export default function index() {
             <div>
               <div className="flex flex-row mb-5 sm:pt-8">
                 <div className="w-fit md:max-w-lg lg:max-w-none">
-                  <h1 className="w-fit text-5xl font-poppinsFont font-bold">
+                  <h2 className="w-fit text-5xl font-poppinsFont font-bold">
                     Hello
                     <hr className="border-4 w-full border-[#c37a8e] mb-5" />
-                  </h1>
+                  </h2>
                   <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
                     I'm Isaiah Sylvester
                   </h1>
