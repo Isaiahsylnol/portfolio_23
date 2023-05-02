@@ -1,21 +1,7 @@
 import React from "react";
 import Carousel, { CarouselItem } from "../components/Carousel";
-import profileImage from "../assets/portrait-sq.png";
 import ScrollToTop from "../components/ScrollToTop";
 import { DevelopmentTools } from "../components/DevelopmentTools";
-import petsNPalsFigma from "../assets/petsnpals/petsnpals_figma.png";
-import petsNPalsFigma_2 from "../assets/petsnpals/petsnpals_figma_2.png";
-import petsNPalsFigma_3 from "../assets/petsnpals/petsnpals_figma_3.png";
-import rentalFigma from "../assets/rental_shop_app/figma_design.png";
-import rentalFigma_2 from "../assets/rental_shop_app/figma_design_2.png";
-import rentalFigma_3 from "../assets/rental_shop_app/figma_design_3.png";
-import rentalFigma_4 from "../assets/rental_shop_app/figma_design_4.png";
-import atmosphere_1 from "../assets/atmosphere_site/atmosphere_figma.jpg";
-import atmosphere_2 from "../assets/atmosphere_site/atmosphere_figma_2.png";
-import atmosphere_3 from "../assets/atmosphere_site/atmosphere_figma_3.png";
-import product_management_1 from "../assets/product_manager/product_manager_figma.png";
-import product_management_2 from "../assets/product_manager/product_manager_figma_2.png";
-import product_management_3 from "../assets/product_manager/product_manager_figma_3.png";
 
 export default function index() {
   return (
@@ -72,7 +58,13 @@ export default function index() {
         </div>
         <div className="col-span-2 sm:col-span-1 mx-auto">
           <img
-            src={profileImage}
+            sizes="(min-width: 25em) 25em, 100vw"
+            srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/portrait-sq.png?updatedAt=1683062031884 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/portrait-sq.png?updatedAt=1683062031884 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/portrait-sq.png?updatedAt=1683062031884 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/portrait-sq.png?updatedAt=1683062031884 1280w"
+            src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884"
             alt="Profile portrait"
             className="object-cover mx-auto mt-16 sm:mt-28"
             style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
@@ -124,7 +116,13 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={petsNPalsFigma}
+                      sizes="(min-width: 50em) 50em, 100vw"
+                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma.png?updatedAt=1683028442056 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma.png?updatedAt=1683028442056 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma.png?updatedAt=1683028442056 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma.png?updatedAt=1683028442056 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/petsnpals_figma.png?updatedAt=1683028442056 1280w"
+                      src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma.png?updatedAt=1683028442056"
                       className="rounded-lg shadow-md flex"
                       alt="News section and mobile cart screen"
                     />
@@ -133,7 +131,13 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={petsNPalsFigma_2}
+                      sizes="(min-width: 50em) 50em, 100vw"
+                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma_2.png?updatedAt=1683029238191 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_2.png?updatedAt=1683029238191 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma_2.png?updatedAt=1683029238191 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma_2.png?updatedAt=1683029238191 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/petsnpals_figma_2.png?updatedAt=1683029238191 1280w"
+                      src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_2.png?updatedAt=1683029238191"
                       className="rounded-lg shadow-md flex"
                       alt="Products page and product detail screen"
                     />
@@ -142,7 +146,13 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={petsNPalsFigma_3}
+                      sizes="(min-width: 50em) 50em, 100vw"
+                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma_3.png?updatedAt=1683031217105 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_3.png?updatedAt=1683031217105 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma_3.png?updatedAt=1683031217105 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma_3.png?updatedAt=1683031217105 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/petsnpals_figma_3.png?updatedAt=1683031217105 1280w"
+                      src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_3.png?updatedAt=1683031217105"
                       className="rounded-lg shadow-md flex"
                       alt="Subscription and profile screen"
                     />
@@ -182,7 +192,13 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={rentalFigma}
+                      sizes="(min-width: 50em) 50em, 100vw"
+                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_1.png?updatedAt=1683031736586 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_1.png?updatedAt=1683031736586 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_1.png?updatedAt=1683031736586 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_1.png?updatedAt=1683031736586 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/figma_1.png?updatedAt=1683031736586 1280w"
+                      src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_1.png?updatedAt=1683031736586"
                       className="rounded-lg shadow-md flex"
                       alt="Landing page and movie detail page"
                     />
@@ -191,7 +207,13 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={rentalFigma_2}
+                      sizes="(min-width: 50em) 50em, 100vw"
+                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_2.png?updatedAt=1683031810966 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_2.png?updatedAt=1683031810966 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_2.png?updatedAt=1683031810966 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_2.png?updatedAt=1683031810966 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/figma_2.png?updatedAt=1683031810966 1280w"
+                      src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_2.png?updatedAt=1683031810966"
                       className="rounded-lg shadow-md flex"
                       alt="Movie list page"
                     />
@@ -200,7 +222,13 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={rentalFigma_4}
+                      sizes="(min-width: 50em) 50em, 100vw"
+                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_3.png?updatedAt=1683031860728 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_3.png?updatedAt=1683031860728 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_3.png?updatedAt=1683031860728 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_3.png?updatedAt=1683031860728 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/figma_3.png?updatedAt=1683031860728 1280w"
+                      src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_3.png?updatedAt=1683031860728"
                       className="rounded-lg shadow-md flex"
                       alt="Feature film secion and profile screen"
                     />
@@ -209,9 +237,15 @@ export default function index() {
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
-                      src={rentalFigma_3}
+                      sizes="(min-width: 50em) 50em, 100vw"
+                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_4.png?updatedAt=1683031965710 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_4.png?updatedAt=1683031965710 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_4.png?updatedAt=1683031965710 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_4.png?updatedAt=1683031965710 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/figma_4.png?updatedAt=1683031965710 1280w"
+                      src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_4.png?updatedAt=1683031965710"
                       className="rounded-lg shadow-md flex"
-                      alt="Mobile login screen"
+                      alt="User login screen"
                     />
                   </div>
                 </CarouselItem>
@@ -250,7 +284,13 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={atmosphere_1}
+                    sizes="(min-width: 50em) 50em, 100vw"
+                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_1.jpg?updatedAt=1683033041284 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_1.jpg?updatedAt=1683033041284 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_1.jpg?updatedAt=1683033041284 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_1.jpg?updatedAt=1683033041284 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/atmosphere_1.jpg?updatedAt=1683033041284 1280w"
+                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_1.jpg?updatedAt=1683033041284"
                     className="rounded-lg shadow-md flex"
                     alt="Atmosphere layers page"
                   />
@@ -259,7 +299,13 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={atmosphere_2}
+                    sizes="(min-width: 50em) 50em, 100vw"
+                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_2.png?updatedAt=1683033129859 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_2.png?updatedAt=1683033129859 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_2.png?updatedAt=1683033129859 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_2.png?updatedAt=1683033129859 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/atmosphere_2.png?updatedAt=1683033129859 1280w"
+                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_2.png?updatedAt=1683033129859"
                     className="rounded-lg shadow-md flex"
                     alt="Media and sources page"
                   />
@@ -268,7 +314,13 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={atmosphere_3}
+                    sizes="(min-width: 50em) 50em, 100vw"
+                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_3.png?updatedAt=1683033185007 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_3.png?updatedAt=1683033185007 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_3.png?updatedAt=1683033185007 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_3.png?updatedAt=1683033185007 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/atmosphere_3.png?updatedAt=1683033185007 1280w"
+                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_3.png?updatedAt=1683033185007"
                     className="rounded-lg shadow-md flex"
                     alt="Landing page"
                   />
@@ -297,7 +349,13 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={product_management_1}
+                    sizes="(min-width: 50em) 50em, 100vw"
+                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_1.png?updatedAt=1683061523238 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_1.png?updatedAt=1683061523238 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_1.png?updatedAt=1683061523238 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_1.png?updatedAt=1683061523238 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/product_manager_1.png?updatedAt=1683061523238 1280w"
+                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_1.png?updatedAt=1683061523238"
                     className="rounded-lg shadow-md flex"
                     alt="Product Inquiry and product detail screens"
                   />
@@ -306,7 +364,13 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={product_management_2}
+                    sizes="(min-width: 50em) 50em, 100vw"
+                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_2.png?updatedAt=1683061792511 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_2.png?updatedAt=1683061792511 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_2.png?updatedAt=1683061792511 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_2.png?updatedAt=1683061792511 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/product_manager_2.png?updatedAt=1683061792511 1280w"
+                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_2.png?updatedAt=1683061792511"
                     className="rounded-lg shadow-md flex"
                     alt="Application hamburger menu and quick route selections screens"
                   />
@@ -315,7 +379,13 @@ export default function index() {
               <CarouselItem>
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
-                    src={product_management_3}
+                    sizes="(min-width: 50em) 50em, 100vw"
+                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_3.png?updatedAt=1683061926477 256w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_3.png?updatedAt=1683061926477 512w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_3.png?updatedAt=1683061926477 768w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_3.png?updatedAt=1683061926477 1024w,
+                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/product_manager_3.png?updatedAt=1683061926477 1280w"
+                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_3.png?updatedAt=1683061926477"
                     className="rounded-lg shadow-md flex"
                     alt="Maintain location and add product to location screens"
                   />
