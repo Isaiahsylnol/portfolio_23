@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Switcher from "./toggleDarkMode";
 import pdf from "../Pages/isaiah_sylvester.pdf";
+import ScrollToTop from "./ScrollToTop";
 
 // Small screen x Mobile menu
 function menuToggle() {
@@ -9,19 +10,10 @@ function menuToggle() {
 }
 
 const Header = () => {
-  function scrollFunction(id) {
-    let e = document?.getElementById(id);
-    e?.scrollIntoView({
-      block: "start",
-      behavior: "smooth",
-      inline: "start",
-    });
-  }
-
   return (
-    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#232423] bg-white text-black z-10 top-0 sticky">
+    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#232423] bg-white text-black z-20 top-0 sticky">
       <button
-        onClick={() => scrollFunction("/")}
+        onClick={ScrollToTop}
         className="hover:text-gray-400 transition duration-300 p-2"
       >
         <Link

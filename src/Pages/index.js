@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel, { CarouselItem } from "../components/Carousel";
 import profileImage from "../assets/portrait-sq.png";
+import ScrollToTop from "../components/ScrollToTop";
 import { DevelopmentTools } from "../components/DevelopmentTools";
 import petsNPalsFigma from "../assets/petsnpals/petsnpals_figma.png";
 import petsNPalsFigma_2 from "../assets/petsnpals/petsnpals_figma_2.png";
@@ -12,20 +13,14 @@ import rentalFigma_4 from "../assets/rental_shop_app/figma_design_4.png";
 import atmosphere_1 from "../assets/atmosphere_site/atmosphere_figma.jpg";
 import atmosphere_2 from "../assets/atmosphere_site/atmosphere_figma_2.png";
 import atmosphere_3 from "../assets/atmosphere_site/atmosphere_figma_3.png";
+import product_management_1 from "../assets/product_manager/product_manager_figma.png";
+import product_management_2 from "../assets/product_manager/product_manager_figma_2.png";
+import product_management_3 from "../assets/product_manager/product_manager_figma_3.png";
 
 export default function index() {
-  function scrollFunction(id) {
-    let e = document?.getElementById(id);
-    e?.scrollIntoView({
-      block: "start",
-      behavior: "smooth",
-      inline: "start",
-    });
-  }
-
   return (
-    <main id="/" className="bg-[#f4f2f2] dark:bg-[#323232] text-[#252525]">
-      <section className=" mx-auto grid max-w-7xl grid-cols-2">
+    <main id="#top" className="bg-[#f4f2f2] dark:bg-[#323232] text-[#252525]">
+      <section className="mx-auto grid max-w-7xl grid-cols-2">
         <div className="md:flex dark:text-[#e4e4e4] dark:bg-[#323232] lg:flex-row items-center justify-center lg:space-x-28 p-8 rounded-2xl col-span-2 sm:col-span-1">
           <section className="space-y-12">
             <div>
@@ -33,7 +28,7 @@ export default function index() {
                 <div className="w-fit md:max-w-lg lg:max-w-none">
                   <h1 className="w-fit text-5xl font-poppinsFont font-bold">
                     Hello
-                    <hr class="border-4 w-full border-[#c37a8e] mb-5" />
+                    <hr className="border-4 w-full border-[#c37a8e] mb-5" />
                   </h1>
                   <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
                     I'm Isaiah Sylvester
@@ -297,32 +292,89 @@ export default function index() {
               </div>
             </div>
           </div>
+          <div>
+            <Carousel>
+              <CarouselItem>
+                <div className="uppercase font-bold text-white cursor-pointer">
+                  <img
+                    src={product_management_1}
+                    className="rounded-lg shadow-md flex"
+                    alt="Product Inquiry and product detail screens"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="uppercase font-bold text-white cursor-pointer">
+                  <img
+                    src={product_management_2}
+                    className="rounded-lg shadow-md flex"
+                    alt="Application hamburger menu and quick route selections screens"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="uppercase font-bold text-white cursor-pointer">
+                  <img
+                    src={product_management_3}
+                    className="rounded-lg shadow-md flex"
+                    alt="Maintain location and add product to location screens"
+                  />
+                </div>
+              </CarouselItem>
+            </Carousel>
+            <div className="p-3">
+              <h2 className="text-2xl font-poppinsFont font-semibold inline">
+                Product Management System
+              </h2>
+              <div className="w-24 p-1 text-center text-sm uppercase rounded-md bg-[#fa8d33] text-white">
+                In progress
+              </div>
+              <a
+                className="fa fa-github fa-2x p-4 hover:text-blue-600"
+                href="https://github.com/Isaiahsylnol/product-manager-clone"
+              ></a>
+              <div className="grid grid-cols-2 max-w-xs">
+                <ul>
+                  <li className="font-semibold pt-3 pb-2">Technologies:</li>
+                  <li>Ionic</li>
+                  <li>Angular</li>
+                  <li>Supabase</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+                <ul>
+                  <li className="font-semibold pt-3 pb-2">Capabilities:</li>
+                  <li className="uppercase">crud</li>
+                  <li>Database Storage</li>
+                  <li>Screen Navigation</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* <!-- Contact form --> */}
-      <section className="pb-4 bg-[#f4f2f2] dark:bg-[#202120] text-[#252525] dark:text-[#e4e4e4] sm:rounded-2xl">
-        <h2 className="text-4xl text-center font-poppinsFont font-extrabold pt-16">
+      <section className="pb-12 pt-14 bg-[#f4f2f2] dark:bg-[#202120] text-[#252525] dark:text-[#e4e4e4] sm:rounded-2xl">
+        <h2 className="text-4xl text-center font-poppinsFont font-extrabold p-8">
           Let's Connect
         </h2>
         {/* <!-- Container --> */}
-        <div className="flex flex-col lg:flex-row justify-center mx-auto md:mt-6 sm:p-6">
+        <div className="flex flex-col lg:flex-row justify-center">
           {/* <!-- Left column --> */}
-          <div className="sm:pb-8 sm:p-4 lg:p-15 mt-12 sm:mt-0 font-semibold text-xl">
-            <div className="p-6 rounded-lg flex mx-auto items-center">
+          <div className="m-12 font-semibold text-xl space-y-12 mx-auto lg:mx-12">
+            <div>
               <i
                 className="fa fa-map-marker fa-1x scale-150"
                 aria-hidden="true"
               ></i>
-              <h2 className="inline pl-7 sm:pl-16">Toronto, ON</h2>
+              <h2 className="inline pl-10">Toronto, ON</h2>
             </div>
-            <div className="p-6 rounded-lg flex mx-auto items-center">
+            <div>
               <i
                 className="fa fa-envelope-o fa-1x scale-150"
                 aria-hidden="true"
               ></i>
-              <h2 className="inline pl-7 sm:pl-16">
-                contact@isaiahsylvester.com
-              </h2>
+              <h2 className="inline pl-10">contact@isaiahsylvester.com</h2>
             </div>
           </div>
           {/* <!-- Right column --> */}
@@ -373,12 +425,16 @@ export default function index() {
               >
                 Send Message
               </button>
-              <div></div>
-              <div className="flex flex-wrap -mx-3 mb-2"></div>
             </form>
           </div>
         </div>
       </section>
+      <button
+        onClick={ScrollToTop}
+        className="float-right pr-10 sm:pr-8 font-semibold font-poppinsFont uppercase text-sm"
+      >
+        Back to the top ^
+      </button>
     </main>
   );
 }
