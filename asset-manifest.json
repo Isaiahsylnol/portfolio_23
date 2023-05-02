@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.31d1c3ac.css",
-    "main.js": "/static/js/main.b2aa39b8.js",
+    "main.js": "/static/js/main.ba8658a7.js",
     "static/js/787.d26f836c.chunk.js": "/static/js/787.d26f836c.chunk.js",
     "static/media/Poppins-Black.ttf": "/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
     "static/media/nodejs_icon.png": "/static/media/nodejs_icon.dc0b97947064b4d4a8c6.png",
@@ -12,16 +12,16 @@
     "static/media/next_js_icon.svg": "/static/media/next_js_icon.4ecfaff068d2c413ee57ad471ffd5d70.svg",
     "static/media/mongodb_icon.svg": "/static/media/mongodb_icon.1aca075d5cce0819fea7ea0902d94ce4.svg",
     "static/media/typescript.svg": "/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
+    "index.html": "/index.html",
     "static/media/tailwind_css_icon.svg": "/static/media/tailwind_css_icon.319cd2de1897d256a7ea121fc862155d.svg",
     "static/media/graphql_icon.svg": "/static/media/graphql_icon.85317997da9474f71fd69b88d9fd0a50.svg",
-    "index.html": "/index.html",
     "static/media/CSS3_icon.svg": "/static/media/CSS3_icon.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "main.31d1c3ac.css.map": "/static/css/main.31d1c3ac.css.map",
-    "main.b2aa39b8.js.map": "/static/js/main.b2aa39b8.js.map",
+    "main.ba8658a7.js.map": "/static/js/main.ba8658a7.js.map",
     "787.d26f836c.chunk.js.map": "/static/js/787.d26f836c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d1c3ac.css",
-    "static/js/main.b2aa39b8.js"
+    "static/js/main.ba8658a7.js"
   ]
 }
