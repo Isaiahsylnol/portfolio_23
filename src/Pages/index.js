@@ -6,67 +6,64 @@ import { DevelopmentTools } from "../components/DevelopmentTools";
 export default function index() {
   return (
     <main id="#top" className="bg-[#f4f2f2] dark:bg-[#323232] text-[#252525]">
-      <section className="mx-auto grid max-w-7xl grid-cols-2">
-        <div className="md:flex dark:text-[#e4e4e4] dark:bg-[#323232] lg:flex-row items-center justify-center lg:space-x-28 p-8 rounded-2xl col-span-2 sm:col-span-1">
-          <section className="space-y-12">
-            <div>
-              <div className="flex flex-row mb-5 sm:pt-8">
-                <div className="w-fit md:max-w-lg lg:max-w-none">
-                  <h2 className="w-fit text-5xl font-poppinsFont font-bold">
-                    Hello
-                    <hr className="border-4 w-full border-[#c37a8e] mb-5" />
-                  </h2>
-                  <h1 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
-                    I'm Isaiah Sylvester
-                  </h1>
-                </div>
-              </div>
-              <p className="max-w-md">
-                I am passionate about fostering creativity, design, and
-                understanding in my work, which I leverage to create intuitive
-                and responsive user experiences. I prioritize making time for
-                daily practice and mental stimulation, which I achieve by
-                exploring side projects and pursuing new curiosities, in order
-                to continually expand my abilities.
-              </p>
-              <h2 className="mt-5">
-                In addition to technology, I have a strong passion for:
+      <section className="mx-auto grid grid-cols-2 max-w-7xl items-center">
+        <div className="dark:text-[#e4e4e4] dark:bg-[#323232] col-span-2 lg:col-span-1 p-6 sm:p-8">
+          <section>
+            <div className="mb-5 sm:pt-8">
+              <h1 className="w-fit text-5xl font-poppinsFont font-bold">
+                Hello
+                <hr className="border-4 w-full border-[#c37a8e] mb-5" />
+              </h1>
+              <h2 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
+                I'm Isaiah Sylvester
               </h2>
-              <div className="inline-flex gap-2 mt-2 text-sm lg:w-96 flex-wrap">
-                {[
-                  "Linguistic Studies",
-                  "Marathons",
-                  "Fitness",
-                  "Music",
-                  "Hiking",
-                  "Gaming",
-                  "Creative Art",
-                  "World News",
-                  "Photography",
-                ].map((interest, index) => (
-                  <div
-                    key={index}
-                    className="border border-gray-400 rounded-md p-1"
-                  >
-                    {interest}
-                  </div>
-                ))}
-              </div>
             </div>
+            <p className="max-w-lg">
+              I am passionate about fostering creativity, design, and
+              understanding in my work, which I leverage to create intuitive and
+              responsive user experiences. I prioritize making time for daily
+              practice and mental stimulation, which I achieve by exploring side
+              projects and pursuing new curiosities, in order to continually
+              expand my abilities.
+            </p>
+            <h2 className="mt-5">
+              In addition to technology, I have a strong passion for:
+            </h2>
+            <div className="inline-flex gap-2 mt-2 text-sm lg:w-96 flex-wrap mb-8">
+              {[
+                "Linguistic Studies",
+                "Marathons",
+                "Fitness",
+                "Music",
+                "Hiking",
+                "Gaming",
+                "Creative Art",
+                "World News",
+                "Photography",
+              ].map((interest, index) => (
+                <div
+                  key={index}
+                  className="border border-gray-400 rounded-md p-1"
+                >
+                  {interest}
+                </div>
+              ))}
+            </div>
+
             <DevelopmentTools />
           </section>
         </div>
-        <div className="col-span-2 sm:col-span-1 mx-auto">
+        <div className="col-span-2 lg:col-span-1 flex flex-col items-center m-4 p-12">
           <img
             sizes="(min-width: 25em) 25em, 100vw"
-            srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/portrait-sq.png?updatedAt=1683062031884 256w,
+            srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/portrait-sq.png?updatedAt=1683062031884 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/portrait-sq.png?updatedAt=1683062031884 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/portrait-sq.png?updatedAt=1683062031884 1024w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/portrait-sq.png?updatedAt=1683062031884 1280w"
             src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884"
             alt="Profile portrait"
-            className="object-cover mx-auto mt-16 sm:mt-28"
+            className="object-cover mt-16 sm:mt-12"
             style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
           />
           <div className="flex flex-col justify-start items-start gap-5 mt-16 sm:mt-20 dark:text-[#e4e4e4]">
@@ -74,9 +71,9 @@ export default function index() {
               Software Developer
             </h2>
             {/* <!-- Personal Info --> */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center">
               <i
-                className="pr-8 fa fa-map-marker fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
+                className="pl-1 pr-7 fa fa-map-marker fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
                 aria-hidden="true"
               ></i>
               Toronto, ON, Canada
@@ -106,7 +103,7 @@ export default function index() {
         </div>
       </section>
       <section className="w-full mx-auto max-w-5xl text-[#252525] dark:text-[#e4e4e4] p-4">
-        <h1 className="text-5xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-20 mb-12 pl-6 md:p-0">
+        <h1 className="text-5xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-14 mb-12 pl-6 md:p-0">
           Projects
         </h1>
         <div className="grid sm:grid-cols-2 gap-16 lg:gap-32">
@@ -117,7 +114,7 @@ export default function index() {
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
                       sizes="(min-width: 50em) 50em, 100vw"
-                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma.png?updatedAt=1683028442056 256w,
+                      srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma.png?updatedAt=1683028442056 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma.png?updatedAt=1683028442056 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma.png?updatedAt=1683028442056 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma.png?updatedAt=1683028442056 1024w,
@@ -132,7 +129,7 @@ export default function index() {
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
                       sizes="(min-width: 50em) 50em, 100vw"
-                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma_2.png?updatedAt=1683029238191 256w,
+                      srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma_2.png?updatedAt=1683029238191 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_2.png?updatedAt=1683029238191 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma_2.png?updatedAt=1683029238191 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma_2.png?updatedAt=1683029238191 1024w,
@@ -147,7 +144,7 @@ export default function index() {
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
                       sizes="(min-width: 50em) 50em, 100vw"
-                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma_3.png?updatedAt=1683031217105 256w,
+                      srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma_3.png?updatedAt=1683031217105 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_3.png?updatedAt=1683031217105 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma_3.png?updatedAt=1683031217105 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma_3.png?updatedAt=1683031217105 1024w,
@@ -193,7 +190,7 @@ export default function index() {
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
                       sizes="(min-width: 50em) 50em, 100vw"
-                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_1.png?updatedAt=1683031736586 256w,
+                      srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_1.png?updatedAt=1683031736586 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_1.png?updatedAt=1683031736586 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_1.png?updatedAt=1683031736586 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_1.png?updatedAt=1683031736586 1024w,
@@ -208,7 +205,7 @@ export default function index() {
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
                       sizes="(min-width: 50em) 50em, 100vw"
-                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_2.png?updatedAt=1683031810966 256w,
+                      srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_2.png?updatedAt=1683031810966 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_2.png?updatedAt=1683031810966 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_2.png?updatedAt=1683031810966 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_2.png?updatedAt=1683031810966 1024w,
@@ -223,7 +220,7 @@ export default function index() {
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
                       sizes="(min-width: 50em) 50em, 100vw"
-                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_3.png?updatedAt=1683031860728 256w,
+                      srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_3.png?updatedAt=1683031860728 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_3.png?updatedAt=1683031860728 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_3.png?updatedAt=1683031860728 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_3.png?updatedAt=1683031860728 1024w,
@@ -238,7 +235,7 @@ export default function index() {
                   <div className="uppercase font-bold text-white cursor-pointer">
                     <img
                       sizes="(min-width: 50em) 50em, 100vw"
-                      srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_4.png?updatedAt=1683031965710 256w,
+                      srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_4.png?updatedAt=1683031965710 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_4.png?updatedAt=1683031965710 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_4.png?updatedAt=1683031965710 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_4.png?updatedAt=1683031965710 1024w,
@@ -285,7 +282,7 @@ export default function index() {
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
                     sizes="(min-width: 50em) 50em, 100vw"
-                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_1.jpg?updatedAt=1683033041284 256w,
+                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_1.jpg?updatedAt=1683033041284 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_1.jpg?updatedAt=1683033041284 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_1.jpg?updatedAt=1683033041284 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_1.jpg?updatedAt=1683033041284 1024w,
@@ -300,7 +297,7 @@ export default function index() {
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
                     sizes="(min-width: 50em) 50em, 100vw"
-                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_2.png?updatedAt=1683033129859 256w,
+                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_2.png?updatedAt=1683033129859 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_2.png?updatedAt=1683033129859 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_2.png?updatedAt=1683033129859 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_2.png?updatedAt=1683033129859 1024w,
@@ -315,7 +312,7 @@ export default function index() {
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
                     sizes="(min-width: 50em) 50em, 100vw"
-                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_3.png?updatedAt=1683033185007 256w,
+                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_3.png?updatedAt=1683033185007 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_3.png?updatedAt=1683033185007 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_3.png?updatedAt=1683033185007 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_3.png?updatedAt=1683033185007 1024w,
@@ -350,7 +347,7 @@ export default function index() {
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
                     sizes="(min-width: 50em) 50em, 100vw"
-                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_1.png?updatedAt=1683061523238 256w,
+                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_1.png?updatedAt=1683061523238 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_1.png?updatedAt=1683061523238 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_1.png?updatedAt=1683061523238 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_1.png?updatedAt=1683061523238 1024w,
@@ -365,7 +362,7 @@ export default function index() {
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
                     sizes="(min-width: 50em) 50em, 100vw"
-                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_2.png?updatedAt=1683061792511 256w,
+                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_2.png?updatedAt=1683061792511 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_2.png?updatedAt=1683061792511 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_2.png?updatedAt=1683061792511 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_2.png?updatedAt=1683061792511 1024w,
@@ -380,7 +377,7 @@ export default function index() {
                 <div className="uppercase font-bold text-white cursor-pointer">
                   <img
                     sizes="(min-width: 50em) 50em, 100vw"
-                    srcset="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_3.png?updatedAt=1683061926477 256w,
+                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_3.png?updatedAt=1683061926477 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_3.png?updatedAt=1683061926477 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_3.png?updatedAt=1683061926477 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_3.png?updatedAt=1683061926477 1024w,
@@ -394,15 +391,16 @@ export default function index() {
             </Carousel>
             <div className="p-3">
               <h2 className="text-2xl font-poppinsFont font-semibold inline">
-                Product Management System
+                Product Management Clone
               </h2>
-              <div className="w-24 p-1 text-center text-sm uppercase rounded-md bg-[#fa8d33] text-white">
+              <div className="w-24 p-1 text-center text-xs uppercase rounded-md bg-[#fa8d33] text-white">
                 In progress
               </div>
               <a
                 className="fa fa-github fa-2x p-4 hover:text-blue-600"
                 href="https://github.com/Isaiahsylnol/product-manager-clone"
               ></a>
+
               <div className="grid grid-cols-2 max-w-xs">
                 <ul>
                   <li className="font-semibold pt-3 pb-2">Technologies:</li>
