@@ -66,7 +66,7 @@ export default function index() {
             className="object-cover mt-16 sm:mt-12"
             style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
           />
-          <div className="flex flex-col justify-start items-start gap-5 mt-16 sm:mt-20 dark:text-[#e4e4e4]">
+          <div className="flex flex-col gap-5 mt-16 sm:mt-20 dark:text-[#e4e4e4]">
             <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold">
               Software Developer
             </h2>
@@ -393,7 +393,7 @@ export default function index() {
               <h2 className="text-2xl font-poppinsFont font-semibold inline">
                 Product Management Clone
               </h2>
-              <div className="w-24 p-1 text-center text-xs uppercase rounded-md bg-[#fa8d33] text-white">
+              <div className="w-max p-1 text-center text-xs text-white uppercase rounded-md bg-[#fa8d33]">
                 In progress
               </div>
               <a
