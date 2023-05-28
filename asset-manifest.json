@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ba2f7f4.css",
-    "main.js": "/static/js/main.a0df6f2e.js",
+    "main.css": "/static/css/main.6611b316.css",
+    "main.js": "/static/js/main.0da3b7b3.js",
     "static/js/787.d26f836c.chunk.js": "/static/js/787.d26f836c.chunk.js",
-    "static/media/isaiah_sylvester.pdf": "/static/media/isaiah_sylvester.47bb8b6ae3c83f147af0.pdf",
     "static/media/Poppins-Black.ttf": "/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/isaiah_sylvester.pdf": "/static/media/isaiah_sylvester.11a7927d7faccf8a6f32.pdf",
     "static/media/nodejs_icon.png": "/static/media/nodejs_icon.dc0b97947064b4d4a8c6.png",
     "static/media/react_icon.png": "/static/media/react_icon.dcc679e5a23288678934.png",
     "static/media/git_icon.png": "/static/media/git_icon.237e2214562c441f67b2.png",
@@ -16,12 +16,12 @@
     "static/media/tailwind_css_icon.svg": "/static/media/tailwind_css_icon.319cd2de1897d256a7ea121fc862155d.svg",
     "static/media/graphql_icon.svg": "/static/media/graphql_icon.85317997da9474f71fd69b88d9fd0a50.svg",
     "static/media/CSS3_icon.svg": "/static/media/CSS3_icon.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
-    "main.9ba2f7f4.css.map": "/static/css/main.9ba2f7f4.css.map",
-    "main.a0df6f2e.js.map": "/static/js/main.a0df6f2e.js.map",
+    "main.6611b316.css.map": "/static/css/main.6611b316.css.map",
+    "main.0da3b7b3.js.map": "/static/js/main.0da3b7b3.js.map",
     "787.d26f836c.chunk.js.map": "/static/js/787.d26f836c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ba2f7f4.css",
-    "static/js/main.a0df6f2e.js"
+    "static/css/main.6611b316.css",
+    "static/js/main.0da3b7b3.js"
   ]
 }
