@@ -5,102 +5,120 @@ import { DevelopmentTools } from "../components/DevelopmentTools";
 
 export default function index() {
   return (
-    <main id="#top" className="bg-[#f4f2f2] dark:bg-[#323232] text-[#252525]">
-      <section className="mx-auto grid grid-cols-2 max-w-7xl items-center">
-        <div className="dark:text-[#e4e4e4] dark:bg-[#323232] col-span-2 lg:col-span-1 p-6 sm:p-8">
-          <section>
-            <div className="mb-5 sm:pt-8">
-              <h1 className="w-fit text-5xl font-poppinsFont font-bold">
-                Hello
-                <hr className="border-4 w-full border-[#c37a8e] mb-5" />
-              </h1>
-              <h2 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
-                I'm Isaiah Sylvester
-              </h2>
-            </div>
-            <p className="max-w-lg">
-              I am passionate about fostering creativity, design, and
-              understanding in my work, which I leverage to create intuitive and
-              responsive user experiences. I prioritize making time for daily
-              practice and mental stimulation, which I achieve by exploring side
-              projects and pursuing new curiosities, in order to continually
-              expand my abilities.
-            </p>
-            <h2 className="mt-5">
-              In addition to technology, I have a strong passion for:
-            </h2>
-            <div className="inline-flex gap-2 mt-2 text-sm lg:w-96 flex-wrap mb-8">
-              {[
-                "Linguistic Studies",
-                "Marathons",
-                "Fitness",
-                "Music",
-                "Hiking",
-                "Gaming",
-                "Creative Art",
-                "World News",
-                "Photography",
-              ].map((interest, index) => (
-                <div
-                  key={index}
-                  className="border border-gray-400 rounded-md p-1"
-                >
-                  {interest}
-                </div>
-              ))}
-            </div>
-
-            <DevelopmentTools />
-          </section>
+    <main
+      id="#top"
+      className="bg-[#f4f2f2] dark:bg-[#323232] text-[#252525] relative"
+    >
+      <section>
+        <div class="custom-shape-divider-top-1685229460">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
-        <div className="col-span-2 lg:col-span-1 flex flex-col items-center m-4 p-12">
-          <img
-            sizes="(min-width: 25em) 25em, 100vw"
-            srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/portrait-sq.png?updatedAt=1683062031884 256w,
+
+        <section className="mx-auto grid grid-cols-2 max-w-7xl items-center relative">
+          <div className="dark:text-[#e4e4e4] dark:bg-[#323232] col-span-2 lg:col-span-1 p-6 sm:p-8">
+            <section>
+              <div className="mb-5 sm:pt-8">
+                <h1 className="w-fit text-5xl font-poppinsFont font-bold">
+                  Hello
+                  <hr className="border-4 w-full border-[#c37a8e] mb-5" />
+                </h1>
+                <h2 className="pt-5 text-5xl font-poppinsFont dark:text-[#e4e4e4] font-extrabold inline">
+                  I'm Isaiah Sylvester
+                </h2>
+              </div>
+              <p className="max-w-lg">
+                I am passionate about fostering creativity, design, and
+                understanding in my work, which I leverage to create intuitive
+                and responsive user experiences. I prioritize making time for
+                daily practice and mental stimulation, which I achieve by
+                exploring side projects and pursuing new curiosities, in order
+                to continually expand my abilities.
+              </p>
+              <h2 className="mt-5">
+                In addition to technology, I have a strong passion for:
+              </h2>
+              <div className="inline-flex gap-2 mt-2 text-sm lg:w-96 flex-wrap mb-8">
+                {[
+                  "Linguistic Studies",
+                  "Fitness",
+                  "Photography",
+                  "Music",
+                  "Creative Art",
+                  "Hiking",
+                  "Gaming",
+                  "World News",
+                ].map((interest, index) => (
+                  <div
+                    key={index}
+                    className="border border-gray-400 rounded-md p-1"
+                  >
+                    {interest}
+                  </div>
+                ))}
+              </div>
+
+              <DevelopmentTools />
+            </section>
+          </div>
+          <div className="col-span-2 lg:col-span-1 flex flex-col items-center m-4 p-12">
+            <img
+              sizes="(min-width: 25em) 25em, 100vw"
+              srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/portrait-sq.png?updatedAt=1683062031884 256w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884 512w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/portrait-sq.png?updatedAt=1683062031884 768w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/portrait-sq.png?updatedAt=1683062031884 1024w,
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/portrait-sq.png?updatedAt=1683062031884 1280w"
-            src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884"
-            alt="Profile portrait"
-            className="object-cover mt-16 sm:mt-12"
-            style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
-          />
-          <div className="flex flex-col gap-5 mt-16 sm:mt-20 dark:text-[#e4e4e4]">
-            <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold">
-              Software Developer
-            </h2>
-            {/* <!-- Personal Info --> */}
-            <div className="flex items-center">
-              <i
-                className="pl-1 pr-7 fa fa-map-marker fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
-                aria-hidden="true"
-              ></i>
-              Toronto, ON, Canada
-            </div>
-            <div>
-              <i
-                className="pr-4 fa fa-graduation-cap fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
-                aria-hidden="true"
-              ></i>
-              <div className="inline-flex absolute">
-                <div>
-                  <h4>George Brown College</h4>
-                  <h5 className="text-sm text-neutral-500 dark:text-neutral-400">
-                    Advanced Diploma
-                  </h5>
+              src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884"
+              alt="Profile portrait"
+              className="object-cover mt-16 sm:mt-12"
+              style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
+            />
+            <div className="flex flex-col gap-5 mt-16 sm:mt-20 dark:text-[#e4e4e4]">
+              <h2 className="text-[#252525] dark:text-[#e4e4e4] text-2xl font-bold">
+                Software Developer
+              </h2>
+              {/* <!-- Personal Info --> */}
+              <div className="flex items-center">
+                <i
+                  className="pl-1 pr-7 fa fa-map-marker fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
+                  aria-hidden="true"
+                ></i>
+                Toronto, ON, Canada
+              </div>
+              <div>
+                <i
+                  className="pr-4 fa fa-graduation-cap fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
+                  aria-hidden="true"
+                ></i>
+                <div className="inline-flex absolute">
+                  <div>
+                    <h4>George Brown College</h4>
+                    <h5 className="text-sm text-neutral-500 dark:text-neutral-400">
+                      Advanced Diploma
+                    </h5>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <i
-                className="pr-6 fa fa-envelope-o fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
-                aria-hidden="true"
-              ></i>
-              contact@isaiahsylvester.com
+              <div className="flex items-center justify-center">
+                <i
+                  className="pr-6 fa fa-envelope-o fa-2x scale-90 text-[#252525] dark:text-[#e4e4e4]"
+                  aria-hidden="true"
+                ></i>
+                contact@isaiahsylvester.com
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
       <section className="w-full mx-auto max-w-5xl text-[#252525] dark:text-[#e4e4e4] p-4">
         <h1 className="text-5xl font-poppinsFont font-extrabold dark:text-[#e4e4e4] mt-14 mb-12 pl-6 md:p-0">

@@ -18,7 +18,6 @@ export default function Footer() {
       id="contact"
       className="text-center text-[#707070] bg-[#f4f2f2] dark:bg-[#323232] w-full pt-8"
     >
-      {/* <!-- Grid container --> */}
       <a
         className="fa fa-linkedin fa-3x p-4 hover:text-neutral-600"
         href="https://www.linkedin.com/in/isaiah-sylvester-5184785b/"

@@ -8,7 +8,46 @@
     src: url('./fonts/Poppins-Black.ttf');
 }
 
+body {
+    background-color: #ebebeb;
+}
+
 
 .profile {
     background-image: radial-gradient( circle 788px at 0.7% 3.4%,  rgb(87, 110, 203) 0%, rgba(255,255,255,1) 90% );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-shape-divider-top-1685229460 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+.custom-shape-divider-top-1685229460 svg {
+    position: relative;
+    display: block;
+    width: calc(172% + 1.3px);
+    height: 1100px;
+}
+
+.custom-shape-divider-top-1685229460 .shape-fill {
+    fill: #ebebeb;
+}
+
+@media only screen and (max-width: 600px) {
+    .custom-shape-divider-top-1685229460 svg {
+        position: relative;
+        display: block;
+        width: calc(242% + 1.3px);
+        height:700px;
+    }
 }
