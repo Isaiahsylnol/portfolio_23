@@ -11,7 +11,7 @@ function menuToggle() {
 
 const Header = () => {
   return (
-    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#232423] bg-white text-black z-20 top-0 sticky border-b border-b-gray-300 shadow">
+    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#232423] bg-white text-black z-20 top-0 sticky border-b border-b-gray-300 dark:border-b-neutral-700 shadow">
       <button
         onClick={ScrollToTop}
         className="hover:text-gray-400 transition duration-300 p-2"

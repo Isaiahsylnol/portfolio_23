@@ -10,7 +10,7 @@ export default function index() {
       className="bg-[#f4f2f2] dark:bg-[#323232] text-[#252525] relative"
     >
       <section>
-        <div class="custom-shape-divider-top-1685229460">
+        <div class="custom-shape-divider-top-1685229460 dark:hidden">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,6 @@ export default function index() {
             ></path>
           </svg>
         </div>
-
         <section className="mx-auto grid grid-cols-2 max-w-7xl items-center relative">
           <div className="dark:text-[#e4e4e4] dark:bg-[#323232] col-span-2 lg:col-span-1 p-6 sm:p-8">
             <section>
@@ -66,7 +65,6 @@ export default function index() {
                   </div>
                 ))}
               </div>
-
               <DevelopmentTools />
             </section>
           </div>
@@ -440,7 +438,7 @@ export default function index() {
         </div>
       </section>
       {/* <!-- Contact form --> */}
-      <section className="pb-12 pt-14 bg-[#f4f2f2] dark:bg-[#202120] text-[#252525] dark:text-[#e4e4e4] sm:rounded-2xl">
+      <section className="pb-12 pt-14 bg-[#f4f2f2] dark:bg-[#323232] text-[#252525] dark:text-[#e4e4e4] sm:rounded-2xl">
         <h2 className="text-4xl text-center font-poppinsFont font-extrabold p-8">
           Let's Connect
         </h2>
@@ -517,7 +515,7 @@ export default function index() {
       </section>
       <button
         onClick={ScrollToTop}
-        className="float-right pr-10 sm:pr-8 font-semibold font-poppinsFont uppercase text-sm"
+        className="float-right pr-10 pt-3 sm:pr-8 font-semibold font-poppinsFont dark:text-[#707070] uppercase text-sm"
       >
         Back to the top ^
       </button>
