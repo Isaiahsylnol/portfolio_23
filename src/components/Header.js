@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Switcher from "./toggleDarkMode";
-import pdf from "../Pages/isaiah_sylvester.pdf";
+import pdf from "../Pages/Isaiah_Sylvester_Resume.pdf";
 import ScrollToTop from "./ScrollToTop";
 
 // Small screen x Mobile menu
