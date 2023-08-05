@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Switcher from "./toggleDarkMode";
 import pdf from "../Pages/Isaiah_Sylvester_Resume.pdf";
-import ScrollToTop from "./ScrollToTop";
+import scrollTo from "./ScrollTo";
 
 // Small screen x Mobile menu
 function menuToggle() {
@@ -11,18 +10,10 @@ function menuToggle() {
 
 const Header = () => {
   return (
-    <nav className="flex flex-wrap justify-between w-full items-center dark:bg-[#232423] bg-white text-black z-20 top-0 sticky border-b border-b-gray-300 dark:border-b-neutral-700 shadow">
-      <button
-        onClick={ScrollToTop}
-        className="hover:text-gray-400 transition duration-300 p-2"
-      >
-        <Link
-          to="/"
-          className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4"
-        >
+    <nav id="#top" className="flex pt-4 flex-wrap justify-between w-full items-center dark:bg-[#201c1c] bg-[#f4f2f2] text-black">
+        <div className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4 cursor-default">
           IS
-        </Link>
-      </button>
+        </div>
       <div className="block md:hidden">
         <button
           id="nav-toggle"
@@ -40,22 +31,43 @@ const Header = () => {
         </button>
       </div>
       <div
-        className="w-full md:mr-3 lg:mr-8 md:flex md:items-center bg-white/10 md:dark:bg-[#232423] md:bg-white md:w-auto hidden"
+        className="w-full md:mr-3 pt-8 sm:pt-0 lg:mr-8 text-center md:flex md:items-center bg-white/10 dark:bg-[#201c1c] md:bg-[#f4f2f2] md:w-auto hidden"
         id="nav-content"
       >
-        <ul className="md:flex text-black font-poppinsFont dark:text-white justify-end items-center text-xl sm:space-x-4 space-y-6  p-3 sm:p-0 md:space-y-0">
-          <li className="hover:text-gray-400 transition duration-300 sm:pl-5">
-            <Switcher />
+        <ul className="md:flex font-poppinsFont text-black dark:text-[#e4e4e4] items-center text-xl gap-10 space-y-5 md:space-y-0 ml-6">
+        <li className="hover:text-[#a66879] transition duration-300 cursor-pointer" onClick={() => scrollTo("#projects")}>
+            <button
+              title="View my projects"
+            >
+              Projects
+            </button>
           </li>
-          <li className="border-l-2 border-black dark:border-white h-7 hidden md:inline"></li>
-          <li className="hover:text-gray-400 transition duration-300">
+          <li className="hover:text-[#a66879] transition duration-300 cursor-pointer" onClick={() => scrollTo("#about")}>
+            <button
+              title="Read about me"
+            >
+              About
+            </button>
+          </li>
+          <li className="hover:text-[#a66879] transition duration-300 cursor-pointer" onClick={() => scrollTo("#contact")}>
+            <button
+              title="Contact me"
+            >
+              Contact
+            </button>
+          </li>
+          <li className="hover:text-[#a66879] transition duration-300">
             <a
               href={pdf}
               target="_blank"
-              className="bg-[#c37a8e] hover:bg-[#a66879] text-white p-2 rounded-md"
+              rel="noopener"
+              title="View my resume"
             >
               Resume
             </a>
+          </li>
+          <li className="hover:text-amber-500 transition duration-300 flex flex-col items-center" title="Toggle dark/light mode">
+            <Switcher />
           </li>
         </ul>
       </div>

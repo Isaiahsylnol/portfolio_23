@@ -16,15 +16,11 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="text-center text-[#707070] bg-[#f4f2f2] dark:bg-[#323232] w-full pt-8"
+      className="text-center text-[#707070] bg-[#f4f2f2] dark:bg-[#201c1c] w-full pt-8"
     >
       <a
         className="fa fa-linkedin fa-3x p-4 hover:text-neutral-600"
         href="https://www.linkedin.com/in/isaiah-sylvester-5184785b/"
-      ></a>
-      <a
-        className="fa fa-twitter fa-3x p-4 hover:text-neutral-600"
-        href="https://twitter.com/IsaiahSyl"
       ></a>
       <a
         className="fa fa-github fa-3x p-4 hover:text-neutral-600"
