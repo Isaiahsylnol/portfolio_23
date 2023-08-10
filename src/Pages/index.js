@@ -3,8 +3,40 @@ import Carousel, { CarouselItem } from "../components/Carousel";
 import scrollToTop from "../components/ScrollTo";
 import { DevelopmentTools } from "../components/DevelopmentTools";
 import Art from "../components/Art";
+import ProjectCard from "../components/ProjectCard";
 
 export default function index() {
+
+  const petsnpals = {
+    name: "Pets N Pals",
+    tools: ["Next.js", "MongoDB", "Stripe", "Tailwind CSS"],
+    description: "Aimed at empowering users to effortlessly discover a wealth of curated pet-related insights. The front-end and back-end technologies offer a streamlined experience. From the latest pet care tips and curated products to enlightening articles, the platform provides curated information for pet enthusiasts.",
+    github: "https://github.com/Isaiahsylnol/pets_n_pals"
+  }
+
+  const movieRentalApp = {
+    name: "Movie Rental Site",
+    tools: ["React", "GraphQL", "MongoDB", "Tailwind CSS"],
+    description: "This platform offers a movie rental experience, where users can access a wide range of films. GraphQL efficiently manages movie data retrieval, while Express and MongoDB provide a robust backend. Tailwind CSS ensures responsive design.",
+    github: "https://github.com/Isaiahsylnol/rentalStoreWebApp",
+    demo: "https://movie-app-2-13fb90b27d3b.herokuapp.com/"
+  }
+
+  const productMS = {
+    name: "Product Management System",
+    tools: ["Ionic", "Angular", "MySQL", "TypeScript", "Tailwind CSS"],
+    description: "This app enables users to easily access information on existing products by SKU, assign products to bunk locations, create list and perform other essential tasks related to product management.",
+    github: "https://github.com/Isaiahsylnol/product-manager-clone",
+    status: true
+  }
+
+  const atmosphereSite = {
+    name: "Atmospere Site",
+    tools: ["HTML5", "CSS3"],
+    description: "Designed HTML5 and CSS app showcasing NASA's planetary media and atmospheric layers. Immersive interface offers educational exploration of celestial phenomena. Engaging visuals and interactive features provide insights into atmospheric science and celestial beauty.",
+    github: "https://github.com/Isaiahsylnol/Atmosphere-site",
+    demo: "https://isaiahsylnol.github.io/Atmosphere-site/"
+  }
 
   return (
     <main    
@@ -14,29 +46,26 @@ export default function index() {
           <div>
             <h1 className="w-fit text-3xl font-poppinsFont font-bold">
               Hello
-              <hr className="border-4 w-full border-[#c37a8e] mb-5" />
+              <hr className="border-4 w-full border-[#c37a8e] mb-5"/>
             </h1>
           </div>
           <p className="max-w-2xl text-4xl font-bold items-start justify-start mb-7">
           I'm Isaiah Sylvester, a software developer from Toronto, ON, on a mission to create intuitive and responsive user experiences by fostering creativity and design.
           </p>
         </div>
-        <div className="flex items-center mx-auto justify-center h-3/4 rounded-3xl bg-amber-400 dark:bg-[#363a4b]">
+        <div className="flex items-center justify-center h-3/4 rounded-3xl bg-amber-400 dark:bg-[#363a4b]">
           <Art />
         </div>
       </section>
-      <section>
-        <div className="w-full mx-auto flex flex-col p-5 sm:p-12 max-w-6xl items-center">
-          <DevelopmentTools />
-        </div>
+      <section className="mx-auto p-5 sm:p-12 max-w-6xl">
+        <DevelopmentTools />
       </section>
-       <section className="w-full mx-auto max-w-7xl text-[#252525] dark:text-zinc-100 p-14">
+       <section className="mx-auto max-w-6xl text-[#252525] dark:text-zinc-100 p-5 sm:p-14">
         <h1 id="#projects" className="text-4xl font-poppinsFont font-extrabold dark:text-zinc-100 mb-12 md:p-0">
           Projects
         </h1>
         <div className="grid md:grid-cols-2 gap-16 lg:gap-32">
           <div>
-            <div className="max-w-5xl md:max-w-xl lg:max-w-2xl">
               <Carousel>
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
@@ -84,27 +113,9 @@ export default function index() {
                   </div>
                 </CarouselItem>
               </Carousel>
-            </div>
-            <div className="flex items-center pt-2">
-              <h2 className="text-2xl font-poppinsFont font-semibold inline">
-                Pets N Pals
-              </h2>
-              <a
-                className="fa fa-github fa-xl p-4 hover:text-blue-600"
-                href="https://github.com/Isaiahsylnol/pets_n_pals"
-              ></a>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-              minus debitis similique magni! Praesentium tempore impedit dicta
-              minima ipsam.
-            </p>
-            <a className="block mt-5" href="/rental-movie-app">
-              Read More
-            </a>
+            <ProjectCard name={petsnpals.name} description={petsnpals.description} status={petsnpals.status} tools={petsnpals.tools} github={petsnpals.github}/>
           </div>
           <div>
-            <div className="max-w-5xl md:max-w-xl lg:max-w-2xl mx-auto">
               <Carousel>
                 <CarouselItem>
                   <div className="uppercase font-bold text-white cursor-pointer">
@@ -167,37 +178,7 @@ export default function index() {
                   </div>
                 </CarouselItem>
               </Carousel>
-            </div>
-            <div className="flex items-center pt-2">
-              <h2 className="text-2xl font-poppinsFont font-semibold inline pr-3">
-                Rental Web App
-              </h2>
-              <a
-                className="fa fa-arrow-up-right-from-square fa-xl p-1 hover:text-blue-600"
-                href="https://movie-app-2-13fb90b27d3b.herokuapp.com/"
-              ></a>
-              <a
-                className="fa fa-github fa-xl p-1 hover:text-blue-600"
-                href="https://github.com/Isaiahsylnol/pets_n_pals"
-              ></a>
-            </div>
-            <p className="pb-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-              minus debitis similique magni! Praesentium tempore impedit dicta
-              minima ipsam.
-            </p>
-            <div className="inline-flex gap-2 text-sm flex-wrap mb-8">
-              {["React", "GraphQL", "MongoDB", "Tailwind CSS"].map(
-                (interest, index) => (
-                  <div
-                    key={index}
-                    className="border border-gray-400 rounded-md p-1"
-                  >
-                    {interest}
-                  </div>
-                )
-              )}
-            </div>
+              <ProjectCard name={movieRentalApp.name} description={movieRentalApp.description} status={movieRentalApp.status} tools={movieRentalApp.tools} demo={movieRentalApp.demo} github={movieRentalApp.github}/>
           </div>
           <div>
             <Carousel>
@@ -247,22 +228,7 @@ export default function index() {
                 </div>
               </CarouselItem>
             </Carousel>
-            <div className="p-3">
-              <h2 className="text-2xl font-poppinsFont font-semibold inline">
-                Atmosphere Static Site
-              </h2>
-              <a
-                className="fa fa-github fa-xl p-4 hover:text-blue-600"
-                href="https://github.com/Isaiahsylnol/pets_n_pals"
-              ></a>
-              <div className="grid grid-cols-2 max-w-xs">
-                <ul>
-                  <li className="font-semibold pt-3 pb-2">Technologies:</li>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                </ul>
-              </div>
-            </div>
+            <ProjectCard name={atmosphereSite.name} description={atmosphereSite.description} status={atmosphereSite.status} tools={atmosphereSite.tools} demo={atmosphereSite.demo}  github={atmosphereSite.github}/>
           </div>
           <div>
             <Carousel>
@@ -312,37 +278,7 @@ export default function index() {
                 </div>
               </CarouselItem>
             </Carousel>
-            <div className="p-3">
-              <div className="w-max p-1 text-center text-xs text-white uppercase rounded-md bg-[#fa8d33]">
-                In progress
-              </div>
-              <div className="flex items-center pt-2">
-                <h2 className="text-2xl font-poppinsFont font-semibold inline pr-3">
-                  Product Management Clone
-                </h2>
-                <a
-                  className="fa fa-github fa-xl p-1 hover:text-blue-600"
-                  href="https://github.com/Isaiahsylnol/pets_n_pals"
-                ></a>
-              </div>
-              <p className="pb-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-                minus debitis similique magni! Praesentium tempore impedit dicta
-                minima ipsam.
-              </p>
-              <div className="inline-flex gap-2 text-sm flex-wrap mb-8">
-                {["Ionic", "Angular", "MySQL", "TypeScript"].map(
-                  (interest, index) => (
-                    <div
-                      key={index}
-                      className="border border-gray-400 rounded-md p-1"
-                    >
-                      {interest}
-                    </div>
-                  )
-                )}
-              </div>
-            </div>
+            <ProjectCard name={productMS.name} description={productMS.description} tools={productMS.tools} status={productMS.status}  github={productMS.github}/>
           </div>
         </div>
       </section> 
@@ -446,19 +382,20 @@ export default function index() {
       </section>
       {/* <!-- Contact form --> */}
       <section id="#contact" className="pb-12 justify-center mx-auto pt-14 bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] dark:text-zinc-100 sm:rounded-2xl">
-        <h2 className="text-4xl text-center font-poppinsFont font-extrabold p-8">
+        <h2 className="text-4xl text-center font-poppinsFont font-extrabold">
           Let's Connect
         </h2>
-        <p className="max-w-xl justify-center mx-auto p-10 sm:p-0 mb-10">
+        <p className="max-w-xl justify-center mx-auto p-10 lg:p-0 lg:mt-8 mb-16">
           I welcome new opportunities and am eager to connect. Feel free to
           reach out for questions, collaborations, feedback, or just to say
           hello. My inbox is always open, and I look forward to hearing from
           you!
         </p>
         {/* <!-- Container --> */}
-        <div className="flex flex-col lg:flex-row justify-center">
+        <div className="md:grid grid-cols-2 max-w-5xl mx-auto items-center">
           {/* <!-- Left column --> */}
-          <div className="m-12 text-xl space-y-12 mx-auto lg:mx-12">
+          <div className="flex justify-center text-xl">
+            <div className="space-y-12">
             <div>
               <i
                 className="fa fa-map-marker fa-1x scale-150"
@@ -468,14 +405,23 @@ export default function index() {
             </div>
             <div>
               <i
+                className="fa fa-phone fa-1x scale-150"
+                aria-hidden="true"
+              ></i>
+              <h2 className="inline pl-10">647-491-9116</h2>
+            </div>
+            <div>
+              <i
                 className="fa fa-envelope-o fa-1x scale-150"
                 aria-hidden="true"
               ></i>
               <h2 className="inline pl-10">contact@isaiahsylvester.com</h2>
             </div>
+            </div>
           </div>
           {/* <!-- Right column --> */}
-          <div className="p-8 -mb-8 sm:m-0">
+          <div className="p-8 mt-12 md:mt-0">
+            {/* Contact Form */}
             <form
               className="w-full max-w-lg mx-auto"
               action="https://formspree.io/f/mbjwplbn"
