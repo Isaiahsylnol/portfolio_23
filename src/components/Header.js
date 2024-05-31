@@ -10,7 +10,7 @@ function menuToggle() {
 
 const Header = () => {
   return (
-    <nav id="#top" className="flex pt-4 flex-wrap justify-between w-full items-center dark:bg-[#201c1c] bg-[#f4f2f2] text-black">
+    <nav id="top" className="flex pt-4 flex-wrap justify-between w-full items-center dark:bg-[#201c1c] bg-[#f4f2f2] text-black">
         <div className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4 cursor-default">
           IS
         </div>

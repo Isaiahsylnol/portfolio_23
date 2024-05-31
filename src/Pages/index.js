@@ -1,46 +1,43 @@
-import React from "react";
-import Carousel, { CarouselItem } from "../components/Carousel";
+import React, { useState, useEffect } from "react";
 import scrollToTop from "../components/ScrollTo";
 import { DevelopmentTools } from "../components/DevelopmentTools";
 import Art from "../components/Art";
 import ProjectCard from "../components/ProjectCard";
+import { projects } from "../data/projectData";
+import { slides } from "../data/slideData";
 
-export default function index() {
-  const petsnpals = {
-    name: "Pets N Pals",
-    tools: ["Next.js", "MongoDB", "Stripe", "Tailwind CSS"],
-    description:
-      "Aimed at empowering users to effortlessly discover a wealth of curated pet-related insights. The front-end and back-end technologies offer a streamlined experience. From the latest pet care tips and curated products to enlightening articles, the platform provides curated information for pet enthusiasts.",
-    github: "https://github.com/Isaiahsylnol/pets_n_pals",
-    demo: "https://test-frontend-lake.vercel.app/shop",
-  };
+export default function Index() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
 
-  const movieRentalApp = {
-    name: "Movie Rental Site",
-    tools: ["React", "GraphQL", "MongoDB", "Tailwind CSS"],
-    description:
-      "This platform offers a movie rental experience, where users can access a wide range of films. GraphQL efficiently manages movie data retrieval, while Express and MongoDB provide a robust backend. Tailwind CSS ensures responsive design.",
-    github: "https://github.com/Isaiahsylnol/rentalStoreWebApp",
-    demo: "https://movie-app-2-13fb90b27d3b.herokuapp.com/",
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+        setFade(true);
+      }, 1000);
+    }, 12000);
 
-  const productMS = {
-    name: "Product Management System",
-    tools: ["Ionic", "Angular", "MySQL", "TypeScript", "Tailwind CSS"],
-    description:
-      "This app enables users to easily access information on existing products by SKU, assign products to bunk locations, create list and perform other essential tasks related to product management.",
-    github: "https://github.com/Isaiahsylnol/product-manager-clone",
-    status: true,
-  };
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
-  const atmosphereSite = {
-    name: "Atmospere Site",
-    tools: ["HTML5", "CSS3"],
-    description:
-      "Designed HTML5 and CSS app showcasing NASA's planetary media and atmospheric layers. Immersive interface offers educational exploration of celestial phenomena. Engaging visuals and interactive features provide insights into atmospheric science and celestial beauty.",
-    github: "https://github.com/Isaiahsylnol/Atmosphere-site",
-    demo: "https://isaiahsylnol.github.io/Atmosphere-site/",
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <main className="bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525]">
@@ -73,248 +70,18 @@ export default function index() {
           Projects
         </h1>
         <div className="grid md:grid-cols-2 gap-16 lg:gap-32">
-          <div>
-            <Carousel>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma_2.png?updatedAt=1716899028194 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_2.png?updatedAt=1716899028194 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma_2.png?updatedAt=1716899028194 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma_2.png?updatedAt=1716899028194 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/petsnpals_figma_2.png?updatedAt=1716899028194 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_2.png?updatedAt=1716899028194"
-                    className="rounded-lg shadow-md"
-                    alt="News section and mobile cart screen"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma.png?updatedAt=1716899044459 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma.png?updatedAt=1716899044459 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma.png?updatedAt=1716899044459 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma.png?updatedAt=1716899044459 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/petsnpals_figma.png?updatedAt=1716899044459 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma.png?updatedAt=1716899044459"
-                    className="rounded-lg shadow-md"
-                    alt="Products page and product detail screen"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/petsnpals_figma_3.png?updatedAt=1716899060582 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_3.png?updatedAt=1716899060582 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/petsnpals_figma_3.png?updatedAt=1716899060582 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/petsnpals_figma_3.png?updatedAt=1716899060582 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/petsnpals_figma_3.png?updatedAt=1716899060582 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/petsnpals_figma_3.png?updatedAt=1716899060582"
-                    className="rounded-lg shadow-md"
-                    alt="Subscription and profile screen"
-                  />
-                </div>
-              </CarouselItem>
-            </Carousel>
+          {Object.entries(projects).map(([key, project]) => (
             <ProjectCard
-              name={petsnpals.name}
-              description={petsnpals.description}
-              status={petsnpals.status}
-              tools={petsnpals.tools}
-              github={petsnpals.github}
-              demo={petsnpals.demo}
+              key={key}
+              name={project.name}
+              tools={project.tools}
+              description={project.description}
+              github={project.github}
+              demo={project.demo}
+              images={project.images}
+              status={project.status}
             />
-          </div>
-          <div>
-            <Carousel>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_1.png?updatedAt=1683031736586 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_1.png?updatedAt=1683031736586 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_1.png?updatedAt=1683031736586 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_1.png?updatedAt=1683031736586 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/figma_1.png?updatedAt=1683031736586 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_1.png?updatedAt=1683031736586"
-                    className="rounded-lg shadow-md"
-                    alt="Landing page and movie detail page"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_2.png?updatedAt=1683031810966 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_2.png?updatedAt=1683031810966 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_2.png?updatedAt=1683031810966 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_2.png?updatedAt=1683031810966 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/figma_2.png?updatedAt=1683031810966 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_2.png?updatedAt=1683031810966"
-                    className="rounded-lg shadow-md"
-                    alt="Movie list page"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_3.png?updatedAt=1683031860728 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_3.png?updatedAt=1683031860728 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_3.png?updatedAt=1683031860728 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_3.png?updatedAt=1683031860728 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/figma_3.png?updatedAt=1683031860728 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_3.png?updatedAt=1683031860728"
-                    className="rounded-lg shadow-md"
-                    alt="Feature film secion and profile screen"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/figma_4.png?updatedAt=1683031965710 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_4.png?updatedAt=1683031965710 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/figma_4.png?updatedAt=1683031965710 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/figma_4.png?updatedAt=1683031965710 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/figma_4.png?updatedAt=1683031965710 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/figma_4.png?updatedAt=1683031965710"
-                    className="rounded-lg shadow-md"
-                    alt="User login screen"
-                  />
-                </div>
-              </CarouselItem>
-            </Carousel>
-            <ProjectCard
-              name={movieRentalApp.name}
-              description={movieRentalApp.description}
-              status={movieRentalApp.status}
-              tools={movieRentalApp.tools}
-              demo={movieRentalApp.demo}
-              github={movieRentalApp.github}
-            />
-          </div>
-          <div>
-            <Carousel>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_1.jpg?updatedAt=1683033041284 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_1.jpg?updatedAt=1683033041284 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_1.jpg?updatedAt=1683033041284 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_1.jpg?updatedAt=1683033041284 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/atmosphere_1.jpg?updatedAt=1683033041284 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_1.jpg?updatedAt=1683033041284"
-                    className="rounded-lg shadow-md"
-                    alt="Atmosphere layers page"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_2.png?updatedAt=1683033129859 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_2.png?updatedAt=1683033129859 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_2.png?updatedAt=1683033129859 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_2.png?updatedAt=1683033129859 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/atmosphere_2.png?updatedAt=1683033129859 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_2.png?updatedAt=1683033129859"
-                    className="rounded-lg shadow-md"
-                    alt="Media and sources page"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/atmosphere_3.png?updatedAt=1683033185007 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_3.png?updatedAt=1683033185007 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/atmosphere_3.png?updatedAt=1683033185007 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/atmosphere_3.png?updatedAt=1683033185007 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/atmosphere_3.png?updatedAt=1683033185007 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/atmosphere_3.png?updatedAt=1683033185007"
-                    className="rounded-lg shadow-md"
-                    alt="Landing page"
-                  />
-                </div>
-              </CarouselItem>
-            </Carousel>
-            <ProjectCard
-              name={atmosphereSite.name}
-              description={atmosphereSite.description}
-              status={atmosphereSite.status}
-              tools={atmosphereSite.tools}
-              demo={atmosphereSite.demo}
-              github={atmosphereSite.github}
-            />
-          </div>
-          <div>
-            <Carousel>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_1.png?updatedAt=1683061523238 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_1.png?updatedAt=1683061523238 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_1.png?updatedAt=1683061523238 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_1.png?updatedAt=1683061523238 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/product_manager_1.png?updatedAt=1683061523238 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_1.png?updatedAt=1683061523238"
-                    className="rounded-lg shadow-md"
-                    alt="Product Inquiry and product detail screens"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_2.png?updatedAt=1683061792511 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_2.png?updatedAt=1683061792511 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_2.png?updatedAt=1683061792511 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_2.png?updatedAt=1683061792511 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/product_manager_2.png?updatedAt=1683061792511 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_2.png?updatedAt=1683061792511"
-                    className="rounded-lg shadow-md"
-                    alt="Application hamburger menu and quick route selections screens"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="uppercase font-bold text-white cursor-pointer">
-                  <img
-                    sizes="(min-width: 50em) 50em, 100vw"
-                    srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/product_manager_3.png?updatedAt=1683061926477 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_3.png?updatedAt=1683061926477 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/product_manager_3.png?updatedAt=1683061926477 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/product_manager_3.png?updatedAt=1683061926477 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/product_manager_3.png?updatedAt=1683061926477 1280w"
-                    src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/product_manager_3.png?updatedAt=1683061926477"
-                    className="rounded-lg shadow-md"
-                    alt="Maintain location and add product to location screens"
-                  />
-                </div>
-              </CarouselItem>
-            </Carousel>
-            <ProjectCard
-              name={productMS.name}
-              description={productMS.description}
-              tools={productMS.tools}
-              status={productMS.status}
-              github={productMS.github}
-            />
-          </div>
+          ))}
         </div>
       </section>
       {/* About me section container */}
@@ -323,19 +90,8 @@ export default function index() {
           id="#about"
           className="mx-auto pt-12 justify-center items-center grid md:grid-cols-2 lg:space-x-14 max-w-4xl"
         >
-          <div className="">
-            <img
-              sizes="(min-width: 25em) 25em, 100vw"
-              srcSet="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-256/portrait-sq.png?updatedAt=1683062031884 256w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884 512w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-768/portrait-sq.png?updatedAt=1683062031884 768w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1024/portrait-sq.png?updatedAt=1683062031884 1024w,
-                      https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/portrait-sq.png?updatedAt=1683062031884 1280w"
-              src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/portrait-sq.png?updatedAt=1683062031884"
-              alt="Profile portrait"
-              className="object-cover justify-center mx-auto p-8"
-              style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
-            />
+          <div style={{ opacity: fade ? 1 : 0, transition: "opacity 1s" }}>
+            {slides[currentIndex]}
           </div>
           <div className="max-w-3xl space-y-5 dark:text-zinc-100 p-8 lg:p-0">
             <h2 className="text-[#252525] dark:text-zinc-100 text-2xl font-bold">
@@ -418,7 +174,7 @@ export default function index() {
           </div>
         </div>
       </section>
-      {/* <!-- Contact form --> */}
+      {/* <!-- Contact form section --> */}
       <section
         id="#contact"
         className="pb-12 justify-center mx-auto pt-14 bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] dark:text-zinc-100 sm:rounded-2xl"
@@ -432,7 +188,7 @@ export default function index() {
           hello. My inbox is always open, and I look forward to hearing from
           you!
         </p>
-        {/* <!-- Container --> */}
+        {/* <!-- Grid Container --> */}
         <div className="md:grid grid-cols-2 max-w-5xl mx-auto items-center">
           {/* <!-- Left column --> */}
           <div className="flex justify-center text-xl">
@@ -446,13 +202,6 @@ export default function index() {
               </div>
               <div>
                 <i
-                  className="fa fa-phone fa-1x scale-150"
-                  aria-hidden="true"
-                ></i>
-                <h2 className="inline pl-10">647-491-9116</h2>
-              </div>
-              <div>
-                <i
                   className="fa fa-envelope-o fa-1x scale-150"
                   aria-hidden="true"
                 ></i>
@@ -462,7 +211,6 @@ export default function index() {
           </div>
           {/* <!-- Right column --> */}
           <div className="p-8 mt-12 md:mt-0">
-            {/* Contact Form */}
             <form
               className="w-full max-w-lg mx-auto"
               action="https://formspree.io/f/mbjwplbn"
@@ -513,12 +261,14 @@ export default function index() {
           </div>
         </div>
       </section>
-      <button
-        onClick={() => scrollToTop("#top")}
-        className="float-right pr-10 pt-3 sm:pr-8 font-semibold font-poppinsFont dark:text-[#707070] uppercase text-sm"
-      >
-        Back to the top ^
-      </button>
+      {showScrollToTop && (
+        <button
+          onClick={() => scrollToTop("top")}
+          className="fixed bottom-4 right-4 bg-blue-500 text-xs text-white px-3 py-2 rounded"
+        >
+          Scroll to Top
+        </button>
+      )}
     </main>
   );
 }
