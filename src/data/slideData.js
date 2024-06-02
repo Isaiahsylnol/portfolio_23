@@ -10,8 +10,7 @@ export const slides = [
                       https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/IMG_6406_KAs50-17v.JPG?updatedAt=1716914378395 1280w"
       src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/IMG_6406_KAs50-17v.JPG?updatedAt=1716914378395"
       alt="Profile portrait"
-      className="object-cover justify-center mx-auto p-8"
-      style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
+      className="object-cover justify-center mx-auto p-8 ripple-effect"
     />,
     <img
       sizes="(min-width: 25em) 25em, 100vw"
@@ -22,8 +21,7 @@ export const slides = [
                     https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/IMG_2636%202_ha2nsPz8F.jpg?updatedAt=1716914879805 1280w"
       src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/IMG_2636%202_ha2nsPz8F.jpg?updatedAt=1716914879805"
       alt="Profile portrait"
-      className="object-cover justify-center mx-auto p-8"
-      style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
+      className="object-cover justify-center mx-auto p-8 ripple-effect"
     />,
     <img
       sizes="(min-width: 25em) 25em, 100vw"
@@ -34,7 +32,6 @@ export const slides = [
                   https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-1280/image000000_TRCTu9TE-.JPG?updatedAt=1716913418491 1280w"
       src="https://ik.imagekit.io/bbwxfzjdl2zg/tr:w-512/image000000_TRCTu9TE-.JPG?updatedAt=1716913418491"
       alt="Profile portrait"
-      className="object-cover justify-center mx-auto p-8"
-      style={{ borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }}
+      className="object-cover justify-center mx-auto p-8 ripple-effect"
     />,
   ];

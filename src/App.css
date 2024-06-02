@@ -46,3 +46,26 @@ body {
         height:700px;
     }
 }
+
+.ripple-effect {
+    animation: ripple 25s infinite;
+  }
+  
+  @keyframes ripple {
+    0%, 100% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    25% {
+      border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+    }
+    35% {
+        border-radius: 75% 25% 70% 30% / 30% 30% 70% 70%; 
+    }
+    50% {
+      border-radius: 30% 70% 70% 30% / 60% 60% 30% 30%;
+    }
+    75% {
+      border-radius: 20% 80% 80% 20% / 50% 50% 50% 50%;
+    }
+  }
+  
