@@ -40,7 +40,7 @@ export default function Index() {
   }, []);
 
   return (
-    <main className="bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525]">
+    <main className="bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] mt-12">
       <section className="md:space-x-9 max-w-6xl mx-auto md:grid md:grid-cols-2 items-center text-[#252525] dark:text-zinc-100 p-8">
         <div>
           <div>
@@ -88,50 +88,57 @@ export default function Index() {
       <section className="pb-16 bg-[#ebebeb] dark:bg-[#282828]">
         <div
           id="#about"
-          className="mx-auto pt-12 justify-center items-center grid md:grid-cols-2 lg:space-x-14 max-w-4xl">
-          <div style={{ opacity: fade ? 1 : 0, transition: "opacity 1s", height: "440px" }}>
+          className="mx-auto pt-12 justify-center items-center grid md:grid-cols-2 lg:space-x-14 max-w-4xl"
+        >
+          <div
+            style={{
+              opacity: fade ? 1 : 0,
+              transition: "opacity 1s",
+            }}
+          >
             {slides[currentIndex]}
           </div>
-          <div >
-           <div className="max-w-3xl space-y-3 dark:text-zinc-100 p-8 lg:p-0">
-           <h2 className="text-[#252525] dark:text-zinc-100 text-2xl font-bold">
-              About Me
-            </h2>
-            <p>
-              I am passionate about fostering creativity, design, and
-              understanding in my work, which I leverage to create intuitive and
-              responsive user experiences. I prioritize making time for daily
-              practice and mental stimulation, which I achieve by exploring side
-              projects and pursuing new curiosities, in order to continually
-              expand my abilities.
-            </p>
-           </div>
-            
+          <div>
+            <div className="max-w-3xl space-y-3 dark:text-zinc-100 p-8 lg:p-0">
+              <h2 className="text-[#252525] dark:text-zinc-100 text-2xl font-bold">
+                About Me
+              </h2>
+              <p>
+                I am passionate about fostering creativity, design, and
+                understanding in my work, which I leverage to create intuitive
+                and responsive user experiences. I prioritize making time for
+                daily practice and mental stimulation, which I achieve by
+                exploring side projects and pursuing new curiosities, in order
+                to continually expand my abilities.
+              </p>
+            </div>
             <div className="p-8 lg:p-0 lg:mt-8 -mt-3">
-            <h2 className="mb-3">In addition to technology, I have a strong passion for:</h2>
-            <div className="inline-flex gap-2 flex-wrap text-xs">
-              {[
-                "Linguistic Studies",
-                "Fitness",
-                "Photography",
-                "Music",
-                "Creative Art",
-                "Hiking",
-                "Gaming",
-                "World News",
-                "Running",
-              ].map((interest, index) => (
-                <p
-                  key={index}
-                  className="border border-gray-400 rounded-md p-1"
-                >
-                  {interest}
-                </p>
-              ))}
+              <h2 className="mb-3">
+                In addition to technology, I have a strong passion for:
+              </h2>
+              <div className="inline-flex gap-2 flex-wrap text-xs">
+                {[
+                  "Linguistic Studies",
+                  "Fitness",
+                  "Photography",
+                  "Music",
+                  "Creative Art",
+                  "Hiking",
+                  "Gaming",
+                  "World News",
+                  "Running",
+                ].map((interest, index) => (
+                  <p
+                    key={index}
+                    className="border border-gray-400 rounded-md p-1"
+                  >
+                    {interest}
+                  </p>
+                ))}
+              </div>
             </div>
-            </div>
-            </div>
-            {/* <!-- Personal Info --> */}
+          </div>
+          {/* <!-- Personal Info --> */}
         </div>
         <div className="grid grid-cols-2 max-w-6xl lg:mt-20 mx-auto justify-center text-center dark:text-zinc-100 p-5">
           <div className="pt-6 text-center">

@@ -1,24 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Switcher from "./toggleDarkMode";
 import pdf from "../Pages/Isaiah_Sylvester_Resume.pdf";
 import scrollTo from "./ScrollTo";
 
 // Small screen x Mobile menu
-function menuToggle() {
-  document.getElementById("nav-content").classList.toggle("hidden");
+function menuToggle(setIsMenuOpen) {
+  const navContent = document.getElementById("nav-content");
+  navContent.classList.toggle("translate-x-full");
+  navContent.classList.toggle("translate-x-0");
+  setIsMenuOpen((prev) => !prev);
 }
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Close menu when clicking outside
+    const handleClickOutside = (event) => {
+      const navContent = document.getElementById("nav-content");
+      const navToggle = document.getElementById("nav-toggle");
+      if (
+        navContent &&
+        navContent.classList.contains("translate-x-0") &&
+        !navContent.contains(event.target) &&
+        !navToggle.contains(event.target)
+      ) {
+        menuToggle(setIsMenuOpen);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleMenuItemClick = (callback) => {
+    if (window.innerWidth < 768) {
+      menuToggle(setIsMenuOpen);
+    }
+    callback();
+  };
+
   return (
-    <nav id="top" className="flex pt-4 flex-wrap justify-between w-full items-center dark:bg-[#201c1c] bg-[#f4f2f2] text-black">
-        <div className="text-4xl dark:text-white text-black font-poppinsFont font-semibold w-auto ml-4 cursor-default">
-          IS
-        </div>
-      <div className="block md:hidden">
+    <nav
+      id="top"
+      className="flex justify-between pt-4 text-black dark:bg-[#201c1c] bg-[#f4f2f2] h-fit z-50 fixed top-0 w-full"
+    >
+      <div className="text-4xl block dark:text-white font-poppinsFont font-semibold w-auto ml-4 -mt-1 cursor-default">
+        IS
+      </div>
+      <div className="block md:hidden w-full absolute z-50">
         <button
           id="nav-toggle"
-          onClick={menuToggle}
-          className="flex items-center mt-2 mr-4 text-gray-700 hover:text-[#af7ac3] dark:text-white"
+          onClick={() => menuToggle(setIsMenuOpen)}
+          className="flex items-center float-right mt-2 mr-4 text-gray-700 dark:text-white"
         >
           <svg
             className="fill-current h-5 w-5"
@@ -30,46 +67,52 @@ const Header = () => {
           </svg>
         </button>
       </div>
+      {isMenuOpen && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-30" />
+      )}
       <div
-        className="w-full md:mr-3 pt-8 sm:pt-0 lg:mr-8 text-center md:flex md:items-center bg-white/10 dark:bg-[#201c1c] md:bg-[#f4f2f2] md:w-auto hidden"
+        className="fixed top-0 right-0 h-full dark:bg-[#201c1c] bg-[#f4f2f2] transform translate-x-full transition-transform duration-300 ease-in-out z-40 md:translate-x-0 md:relative md:w-auto md:flex md:pt-0 lg:mr-8 pt-16 pb-16 sm:p-0"
         id="nav-content"
       >
-        <ul className="md:flex font-poppinsFont text-black dark:text-[#e4e4e4] items-center text-xl gap-10 space-y-5 md:space-y-0 ml-6">
-        <li className="hover:text-[#a66879] transition duration-300 cursor-pointer" onClick={() => scrollTo("#projects")}>
-            <button
-              title="View my projects"
+        <div className="flex w-full justify-start -mt-7">
+          <ul className="md:flex p-8 md:m-0 -mb-12 font-poppinsFont text-black dark:text-[#e4e4e4] text-4xl md:text-xl gap-10 md:space-y-0 space-y-3">
+            <li
+              className="hover:text-emerald-500 transition duration-300 cursor-pointer"
+              onClick={() => handleMenuItemClick(() => scrollTo("#projects"))}
             >
-              Projects
-            </button>
-          </li>
-          <li className="hover:text-[#a66879] transition duration-300 cursor-pointer" onClick={() => scrollTo("#about")}>
-            <button
-              title="Read about me"
+              <button title="View my projects">Projects</button>
+            </li>
+            <li
+              className="hover:text-emerald-500 transition duration-300 cursor-pointer"
+              onClick={() => handleMenuItemClick(() => scrollTo("#about"))}
             >
-              About
-            </button>
-          </li>
-          <li className="hover:text-[#a66879] transition duration-300 cursor-pointer" onClick={() => scrollTo("#contact")}>
-            <button
-              title="Contact me"
+              <button title="Read about me">About</button>
+            </li>
+            <li
+              className="hover:text-emerald-500 transition duration-300 cursor-pointer"
+              onClick={() => handleMenuItemClick(() => scrollTo("#contact"))}
             >
-              Contact
-            </button>
-          </li>
-          <li className="hover:text-[#a66879] transition duration-300">
-            <a
-              href={pdf}
-              target="_blank"
-              rel="noopener"
-              title="View my resume"
+              <button title="Contact me">Contact</button>
+            </li>
+            <li className="hover:text-emerald-500 transition duration-300">
+              <a
+                href={pdf}
+                target="_blank"
+                rel="noopener"
+                title="View my resume"
+                onClick={() => handleMenuItemClick(() => {})}
+              >
+                Resume
+              </a>
+            </li>
+            <li
+              className="flex hover:text-amber-500 transition duration-300 items-center w-full justify-center"
+              title="Toggle dark/light mode"
             >
-              Resume
-            </a>
-          </li>
-          <li className="hover:text-amber-500 transition duration-300 flex flex-col items-center" title="Toggle dark/light mode">
-            <Switcher />
-          </li>
-        </ul>
+              <Switcher />
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
