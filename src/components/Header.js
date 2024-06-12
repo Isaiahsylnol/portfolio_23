@@ -44,10 +44,7 @@ const Header = () => {
   };
 
   return (
-    <nav
-      id="top"
-      className="flex justify-between pt-4 text-black dark:bg-[#201c1c] bg-[#f4f2f2] h-fit z-50 fixed top-0 w-full"
-    >
+    <nav className="flex justify-between pt-4 text-black dark:bg-[#201c1c] bg-[#f4f2f2] h-fit z-50 fixed top-0 w-full">
       <div className="text-4xl block dark:text-white font-poppinsFont font-semibold w-auto ml-4 -mt-1 cursor-default">
         IS
       </div>

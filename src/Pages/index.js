@@ -40,7 +40,10 @@ export default function Index() {
   }, []);
 
   return (
-    <main className="bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] mt-12">
+    <main
+      id="top"
+      className="bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] pt-16 sm:pt-8"
+    >
       <section className="md:space-x-9 max-w-6xl mx-auto md:grid md:grid-cols-2 items-center text-[#252525] dark:text-zinc-100 p-8">
         <div>
           <div>
@@ -94,6 +97,7 @@ export default function Index() {
             style={{
               opacity: fade ? 1 : 0,
               transition: "opacity 1s",
+              height: "440px",
             }}
           >
             {slides[currentIndex]}
@@ -112,6 +116,7 @@ export default function Index() {
                 to continually expand my abilities.
               </p>
             </div>
+
             <div className="p-8 lg:p-0 lg:mt-8 -mt-3">
               <h2 className="mb-3">
                 In addition to technology, I have a strong passion for:

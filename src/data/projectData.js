@@ -2,7 +2,7 @@
 
 export const projects = {
   product: {
-    name: "Product Management System",
+    name: "Produt Management System",
     tools: ["Ionic", "Angular", "Database", "TypeScript", "Tailwind CSS"],
     description:
       "This app enables users to easily access information on existing products by SKU, assign products to bunk locations, create list and perform other essential tasks related to product management.",
