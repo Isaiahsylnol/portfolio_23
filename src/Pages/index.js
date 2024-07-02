@@ -58,7 +58,7 @@ export default function Index() {
             fostering creativity and design.
           </p>
         </div>
-        <div className="flex items-center justify-center h-3/4 rounded-3xl bg-amber-400 dark:bg-[#363a4b]">
+        <div className="flex items-center justify-center h-3/4 rounded-3xl dark:bg-[#363a4b]">
           <Art />
         </div>
       </section>

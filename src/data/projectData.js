@@ -28,7 +28,7 @@ export const projects = {
     tools: ["Next.js", "MongoDB", "Stripe", "Tailwind CSS"],
     description:
       "Aimed at empowering users to effortlessly discover a wealth of curated pet-related insights. The front-end and back-end technologies offer a streamlined experience. From the latest pet care tips and curated products to enlightening articles, the platform provides curated information for pet enthusiasts.",
-    github: "https://github.com/Isaiahsylnol/pets_n_pals",
+    github: "https://github.com/Isaiahsylnol/pets-n-pals",
     demo: "https://test-frontend-lake.vercel.app/shop",
     images: [
       {
