@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Profile from "./Pages/Index";
+import Profile from "./Pages/index";
 import NotFound from "./Pages/NotFound";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
