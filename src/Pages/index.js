@@ -42,21 +42,17 @@ export default function Index() {
   return (
     <main
       id="top"
-      className="bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] pt-16 sm:pt-8"
-    >
-      <section className="md:space-x-9 max-w-6xl mx-auto md:grid md:grid-cols-2 items-center text-[#252525] dark:text-zinc-100 p-8">
-        <div>
-          <div>
+      className="bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] pt-16 sm:pt-0">
+      <section className="md:space-x-9 max-w-6xl mx-auto md:grid md:grid-cols-2 items-center text-[#252525] dark:text-zinc-100 sm:p-8 p-4">
+        <div className="md:pl-14 mx-auto">
             <h1 className="w-fit text-3xl font-poppinsFont font-bold">
               Hello
               <hr className="border-4 w-full border-[#c37a8e] mb-5" />
             </h1>
-          </div>
-          <p className="max-w-2xl text-4xl font-bold items-start justify-start mb-7">
-            I'm Isaiah Sylvester, a software developer from Toronto, ON, on a
-            mission to create intuitive and responsive user experiences by
-            fostering creativity and design.
+          <p className="max-w-2xl text-4xl font-bold items-start justify-start mb-4">
+            I'm Isaiah Sylvester
           </p>
+          <p className="text-xl">a software developer from Toronto, ON, on a mission to create intuitive and responsive user experiences by fostering creativity and design.</p>
         </div>
         <div className="flex items-center justify-center h-3/4 rounded-3xl dark:bg-[#363a4b]">
           <Art />
@@ -68,8 +64,7 @@ export default function Index() {
       <section className="mx-auto max-w-6xl text-[#252525] dark:text-zinc-100 p-5 sm:p-14">
         <h1
           id="#projects"
-          className="text-4xl font-poppinsFont font-extrabold dark:text-zinc-100 mb-12 md:p-0"
-        >
+          className="text-4xl font-poppinsFont font-extrabold dark:text-zinc-100 mb-12 md:p-0">
           Projects
         </h1>
         <div className="grid md:grid-cols-2 gap-16 lg:gap-32">
@@ -82,8 +77,7 @@ export default function Index() {
               github={project.github}
               demo={project.demo}
               images={project.images}
-              status={project.status}
-            />
+              status={project.status}/>
           ))}
         </div>
       </section>
@@ -91,15 +85,13 @@ export default function Index() {
       <section className="pb-16 bg-[#ebebeb] dark:bg-[#282828]">
         <div
           id="#about"
-          className="mx-auto pt-12 justify-center items-center grid md:grid-cols-2 lg:space-x-14 max-w-4xl"
-        >
+          className="mx-auto pt-12 justify-center items-center grid md:grid-cols-2 lg:space-x-14 max-w-4xl">
           <div
             style={{
               opacity: fade ? 1 : 0,
               transition: "opacity 1s",
               height: "440px",
-            }}
-          >
+            }}>
             {slides[currentIndex]}
           </div>
           <div>
@@ -116,7 +108,6 @@ export default function Index() {
                 to continually expand my abilities.
               </p>
             </div>
-
             <div className="p-8 lg:p-0 lg:mt-8 -mt-3">
               <h2 className="mb-3">
                 In addition to technology, I have a strong passion for:
@@ -135,8 +126,7 @@ export default function Index() {
                 ].map((interest, index) => (
                   <p
                     key={index}
-                    className="border border-gray-400 rounded-md p-1"
-                  >
+                    className="border border-gray-400 rounded-md p-1">
                     {interest}
                   </p>
                 ))}
@@ -149,8 +139,8 @@ export default function Index() {
           <div className="pt-6 text-center">
             <i
               className="pr-4 fa fa-graduation-cap fa-2x scale-90 text-[#252525] dark:text-zinc-100"
-              aria-hidden="true"
-            ></i>
+              aria-hidden="true">
+            </i>
             <h1 className="text-[#252525] dark:text-zinc-100 text-xl font-bold">
               Education
             </h1>
@@ -168,8 +158,8 @@ export default function Index() {
           <div className="pt-6">
             <i
               className="pr-4 fa fa-award fa-2x scale-90 text-[#252525] dark:text-zinc-100"
-              aria-hidden="true"
-            ></i>
+              aria-hidden="true">
+            </i>
             <h1 className="text-[#252525] dark:text-zinc-100 text-xl font-bold">
               Certificates
             </h1>
@@ -193,8 +183,7 @@ export default function Index() {
       {/* <!-- Contact form section --> */}
       <section
         id="#contact"
-        className="pb-12 justify-center mx-auto pt-14 bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] dark:text-zinc-100 sm:rounded-2xl"
-      >
+        className="pb-12 justify-center mx-auto pt-14 bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] dark:text-zinc-100 sm:rounded-2xl">
         <h2 className="text-4xl text-center font-poppinsFont font-extrabold">
           Let's Connect
         </h2>
@@ -212,15 +201,15 @@ export default function Index() {
               <div>
                 <i
                   className="fa fa-map-marker fa-1x scale-150"
-                  aria-hidden="true"
-                ></i>
+                  aria-hidden="true">
+                </i>
                 <h2 className="inline pl-10">Toronto, ON</h2>
               </div>
               <div>
                 <i
                   className="fa fa-envelope-o fa-1x scale-150"
-                  aria-hidden="true"
-                ></i>
+                  aria-hidden="true">
+                </i>
                 <h2 className="inline pl-10">contact@isaiahsylvester.com</h2>
               </div>
             </div>
@@ -230,8 +219,7 @@ export default function Index() {
             <form
               className="w-full max-w-lg mx-auto"
               action="https://formspree.io/f/mbjwplbn"
-              method="POST"
-            >
+              method="POST">
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <input
@@ -262,15 +250,14 @@ export default function Index() {
                     className="w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     name="message"
                     rows="12"
-                    placeholder="Message"
-                  ></textarea>
+                    placeholder="Message">
+                    </textarea>
                 </div>
               </div>
               <button
                 id="contact"
                 type="submit"
-                className="bg-[#c37a8e] w-full text-center p-3 rounded-md mx-auto hover:bg-[#a66879] text-white"
-              >
+                className="bg-[#c37a8e] w-full text-center p-3 rounded-md mx-auto hover:bg-[#a66879] text-white">
                 Send Message
               </button>
             </form>
@@ -280,8 +267,7 @@ export default function Index() {
       {showScrollToTop && (
         <button
           onClick={() => scrollToTop("top")}
-          className="fixed bottom-4 right-4 bg-blue-500 text-xs text-white px-3 py-2 rounded"
-        >
+          className="fixed bottom-4 right-4 bg-blue-500 text-xs text-white px-3 py-2 rounded">
           Scroll to Top
         </button>
       )}
