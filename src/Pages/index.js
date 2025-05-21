@@ -62,11 +62,11 @@ export default function Index() {
         <DevelopmentTools />
       </section>
       <section className="mx-auto max-w-6xl text-[#252525] dark:text-zinc-100 p-5 sm:p-14">
-        <h1
+        <h2
           id="#projects"
-          className="text-4xl font-poppinsFont font-extrabold dark:text-zinc-100 mb-12 md:p-0">
+          className="text-2xl font-poppinsFont font-extrabold dark:text-zinc-100 mb-4 md:p-0">
           Projects
-        </h1>
+        </h2>
         <div className="grid md:grid-cols-2 gap-16 lg:gap-32">
           {Object.entries(projects).map(([key, project]) => (
             <ProjectCard
@@ -94,7 +94,7 @@ export default function Index() {
             }}>
             {slides[currentIndex]}
           </div>
-          <div>
+          <div tabIndex={0}>
             <div className="max-w-3xl space-y-3 dark:text-zinc-100 p-8 lg:p-0">
               <h2 className="text-[#252525] dark:text-zinc-100 text-2xl font-bold">
                 About Me
@@ -141,16 +141,16 @@ export default function Index() {
               className="pr-4 fa fa-graduation-cap fa-2x scale-90 text-[#252525] dark:text-zinc-100"
               aria-hidden="true">
             </i>
-            <h1 className="text-[#252525] dark:text-zinc-100 text-xl font-bold">
+            <h2 className="text-[#252525] dark:text-zinc-100 text-xl font-bold">
               Education
-            </h1>
+            </h2>
             <div className="inline-flex">
               <div className="space-y-3 mt-3">
                 <div>
-                  <h4>George Brown College</h4>
-                  <h5 className="text-sm text-neutral-500 dark:text-neutral-400">
+                  <h3>George Brown College</h3>
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
                     Advanced Diploma in Computer Technology
-                  </h5>
+                  </p>
                 </div>
               </div>
             </div>
@@ -160,21 +160,21 @@ export default function Index() {
               className="pr-4 fa fa-award fa-2x scale-90 text-[#252525] dark:text-zinc-100"
               aria-hidden="true">
             </i>
-            <h1 className="text-[#252525] dark:text-zinc-100 text-xl font-bold">
+            <h2 className="text-[#252525] dark:text-zinc-100 text-xl font-bold">
               Certificates
-            </h1>
+            </h2>
             <div className="space-y-3 mt-3">
               <div>
-                <h4>AWS Cloud Technical Essentials</h4>
-                <h5 className="text-sm text-neutral-500 dark:text-neutral-400">
+                <h3>AWS Cloud Technical Essentials</h3>
+                <p className="text-sm text-neutral-500 dark:text-neutral-400">
                   Coursera
-                </h5>
+                </p>
               </div>
               <div>
-                <h4>JavaScript: The Advanced Concepts (2023 Update)</h4>
-                <h5 className="text-sm text-neutral-500 dark:text-neutral-400">
+                <h3>JavaScript: The Advanced Concepts (2023 Update)</h3>
+                <p className="text-sm text-neutral-500 dark:text-neutral-400">
                   Udemy
-                </h5>
+                </p>
               </div>
             </div>
           </div>
@@ -267,6 +267,7 @@ export default function Index() {
       {showScrollToTop && (
         <button
           onClick={() => scrollToTop("top")}
+          tabIndex={0}
           className="fixed bottom-4 right-4 bg-blue-500 text-xs text-white px-3 py-2 rounded">
           Scroll to Top
         </button>

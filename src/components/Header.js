@@ -96,9 +96,16 @@ const Header = () => {
               </a>
             </li> */}
             <li
-              className="flex hover:text-amber-500 transition duration-300 items-center w-full justify-center"
-              title="Toggle dark/light mode">
-              <Switcher />
+            className="flex hover:text-amber-500 transition duration-300 items-center w-full justify-center"
+            title="Toggle dark/light mode"
+            tabIndex="0" // Makes the element focusable
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault(); // Prevent scrolling when pressing Space
+                document.querySelector(".Switcher").click(); // Simulate a click on the Switcher
+              }
+            }}>
+              <Switcher className="Switcher" />
             </li>
           </ul>
         </div>

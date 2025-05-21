@@ -39,9 +39,9 @@ export default function ProjectCard({
         <div className="items-center">
           {status && (
             <>
-              <div className="w-max p-1 mb-2 text-center text-xs text-white uppercase rounded-md bg-[#fa8d33]">
-                In progress
-              </div>
+             <div className="w-max px-2 py-1 mb-2 text-center text-xs font-semibold text-white uppercase rounded-md bg-[#b02a00] shadow-sm">
+  In progress
+</div>
             </>
           )}
           <h2 className="text-lg font-poppinsFont font-semibold inline pr-2">

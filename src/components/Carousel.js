@@ -63,6 +63,7 @@ const Carousel = ({ children }) => {
             <button
               className="w-24 h-14 uppercase bg-slate-600 bg-opacity-60"
               onClick={prevSlide}
+              aira-label="Previous Slide"
             >
               {"prev"}
             </button>
@@ -79,6 +80,7 @@ const Carousel = ({ children }) => {
                       ? "bg-gray-600"
                       : "bg-gray-400 hover:bg-gray-500"
                   }`}
+                  aria-label="Select Slide"
                 ></button>
               );
             })}
@@ -87,6 +89,7 @@ const Carousel = ({ children }) => {
             <button
               className="w-24 h-14 uppercase bg-slate-600 bg-opacity-60"
               onClick={nextSlide}
+              aria-label="Next Slide"
             >
               {"next"}
             </button>
