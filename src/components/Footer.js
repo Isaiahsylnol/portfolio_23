@@ -16,26 +16,26 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="text-center text-[#707070] bg-[#f4f2f2] dark:bg-[#201c1c] w-full pt-8"
+      className="text-center text-[#707070] bg-[#f4f2f2] dark:bg-[#201c1c] w-full mt-3"
     >
       <a
-        className="fa fa-linkedin fa-3x p-4 hover:text-neutral-600"
+        className="fa fa-linkedin fa-2x p-3 hover:text-neutral-600"
         href="https://www.linkedin.com/in/isaiah-sylvester-5184785b/"
       ></a>
       <a
-        className="fa fa-github fa-3x p-4 hover:text-neutral-600"
+        className="fa fa-github fa-2x p-3 hover:text-neutral-600"
         href="https://github.com/Isaiahsylnol"
       ></a>
       <a
-        className="fa fa-codepen fa-3x p-4 hover:text-neutral-600"
+        className="fa fa-codepen fa-2x p-3 hover:text-neutral-600"
         href="https://codepen.io/isaiahsylnol"
       ></a>
       <a
-        className="fa fa-instagram fa-3x p-4 hover:text-neutral-600"
+        className="fa fa-instagram fa-2x p-3 hover:text-neutral-600"
         href="https://www.instagram.com/capmatic/"
       ></a>
       {/* <!-- Copyright --> */}
-      <div className="mt-3 p-5">© 2021 Isaiah Sylvester</div>
+      <div className="-mt-3 p-3">© 2025 Isaiah Sylvester</div>
     </footer>
   );
 }

@@ -43,7 +43,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex justify-between pt-2 text-black dark:bg-[#201c1c] h-fit z-50 fixed top-0 w-full">
+    <nav className="flex justify-between text-black dark:bg-[#201c1c] h-10 z-50 -mt-7 w-full">
       <div className="text-4xl block dark:text-white font-poppinsFont font-semibold w-auto ml-4 -mt-1 cursor-default">
         IS
       </div>
@@ -76,7 +76,15 @@ const Header = () => {
               className="hover:text-emerald-500 transition duration-300 cursor-pointer"
               onClick={() => handleMenuItemClick(() => scrollTo("#projects"))}
             >
-              <button title="View my projects">Projects</button>
+              <button title="View my projects">Portraits</button>
+            </li>
+            <li
+              className="hover:text-emerald-500 transition duration-300 cursor-pointer"
+              onClick={() => handleMenuItemClick(() => scrollTo("#projects"))}
+            >
+              <a title="View my projects" href="/photography/landscapes">
+                Landscapes
+              </a>
             </li>
             <li
               className="hover:text-emerald-500 transition duration-300 cursor-pointer"
@@ -91,7 +99,7 @@ const Header = () => {
               <button title="Contact me">Contact</button>
             </li>
             <li
-              className="flex hover:text-amber-500 transition duration-300 items-center w-full justify-center"
+              className="flex hover:text-amber-500 transition duration-300 w-full justify-center"
               title="Toggle dark/light mode"
             >
               <Switcher />

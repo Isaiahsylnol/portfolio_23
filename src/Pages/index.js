@@ -5,6 +5,7 @@ import Art from "../components/Art";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projectData";
 import { slides } from "../data/slideData";
+import Header from "../components/Header";
 
 export default function Index() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,6 +45,7 @@ export default function Index() {
       id="top"
       className="bg-[#f4f2f2] dark:bg-[#201c1c] text-[#252525] pt-16 sm:pt-8"
     >
+      <Header />
       <section className="md:space-x-9 max-w-6xl mx-auto md:grid md:grid-cols-2 items-center text-[#252525] dark:text-zinc-100 p-8">
         <div>
           <div>
