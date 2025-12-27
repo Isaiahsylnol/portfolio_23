@@ -20,9 +20,17 @@ const images = [
   "/portraits/David-2017-08_R9Nj_FV-h.jpg?updatedAt=1722159668969",
   "/portraits/Jonathan_8390602582_5HiFtdFon.webp",
   "/portraits/Canadian-Tire-PitStop_8nIjK55CH.JPG?updatedAt=1722159711773",
+  "/portraits/_DSC6405-1_r5hByMsJw.webp",
   "/portraits/T4002_8557497835_efRo0cS_P.webp",
+  "/portraits/Brazil-2014-1_DID0DAWJI.webp",
+  "/portraits/Suits-2_jFEmOGN3A.webp",
+  "/portraits/isaa_DSC6089_JZJlkwSQ2.webp",
   "/portraits/DSC_3166-2_9ei0MralE.webp",
+  "/portraits/_DSC6649_w0z_Yf7xh.webp",
+  "/portraits/_DSC6598_IIO4Zb2ug.webp",
   "/portraits/DSC_2607_LcpCohPDJ.webp",
+  "/portraits/Johnathan-2013_1mBA7PFNWe.JPG",
+  "/portraits/wedding_DSC3943_Y-nOF06VF.jpg",
 ];
 
 const ImageWithSkeleton = ({ path, alt, onClick }) => {
@@ -64,13 +72,21 @@ const PortraitsGrid = () => {
     images[4],
     images[7],
     images[12],
+    images[25],
     images[5],
     images[17],
     images[8],
+    images[24],
     images[16],
     images[13],
     images[15],
-    images[9],
+    images[18],
+    images[19],
+    images[21],
+    images[22],
+    images[23],
+    images[14],
+    images[20],
   ];
 
   useEffect(() => {
